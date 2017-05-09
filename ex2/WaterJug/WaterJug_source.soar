@@ -1,0 +1,13 @@
+source _firstload.soar
+pushd all
+source all_source.soar
+popd
+pushd elaborations
+source elaborations_source.soar
+popd
+source WaterJug-apply.soar
+source WaterJug-propose.soar
+source initialize-WaterJug.soar
+pushd initialize-WaterJug
+source initialize-WaterJug_source.soar
+popd

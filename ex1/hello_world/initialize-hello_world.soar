@@ -1,0 +1,15 @@
+sp {propose*initialize-hello_world
+   (state <s> ^superstate nil
+             -^name)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name initialize-hello_world)
+}
+
+sp {apply*initialize-hello_world
+   (state <s> ^operator <op>)
+   (<op> ^name initialize-hello_world)
+-->
+   (<s> ^name hello_world)
+}
+

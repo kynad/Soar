@@ -1,0 +1,16 @@
+
+sp {water-jug*propose*init-water-jugs
+   (state <state> ^superstate nil)
+  -(<state> ^name )
+-->
+   (<state> ^operator <oper> +)
+   (<oper> ^name init-water-jugs)
+}
+
+sp {water-jug*apply*init-water-jugs
+   (state <state> ^operator.name init-water-jugs)
+-->
+   (<state> ^name water-jug ^jug <jug1> ^jug <jug2>)
+   (<jug1> ^volume 5 ^contents 0)
+   (<jug2> ^volume 3 ^contents 0)
+}

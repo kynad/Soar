@@ -1,0 +1,45 @@
+##
+#  @file WaterJug-propose.soar
+#  @author Dany Rovinsky
+#
+#  @brief Trying to separate between propose and apply rules in hope that this will add some readability.
+#         This file encapsulates all propose productions (not including initialize).
+##
+
+## propose-fill rule  
+#  suggests to fill a jug if it has some volume left
+sp { water-jug*propose*fill
+   (state <state> ^name water-jug ^jug <jug>)
+   (<jug> ^empty > 0)
+-->
+   (<state> ^operator <oper> +)
+   (<oper> ^name fill ^fill-jug <jug> )
+}
+
+## propose-empty rule
+#  suggests to empty a jug if it is not empty
+sp {water-jug*propose*empty
+   (state <state> ^name water-jug ^jug <jug>)
+   (<jug> ^contents > 0)
+-->
+   (<state> ^operator <oper> +)
+   (<oper> ^name empty ^empty-jug <jug>)
+}
+
+## propose-pour rule
+#  suggests to pour water from jug_1 to jug_2 if:
+#                         jug_1 is not empty AND 
+#                         jug_2 is not full  AND
+#                         jug_1 is not jug_2.
+sp {water-jug*propose*pour
+   (state <state> ^name water-jug ^jug <jug_1> ^jug { <jug_1> <> <jug_2> })
+   (<jug_1> ^contents > 0)
+   (<jug_2> ^empty > 0)
+-->
+   (<state> ^operator <oper> +)
+   (<oper> ^name pour ^empty-jug <jug_1> ^fill-jug <jug_2>)
+}
+
+
+
+   

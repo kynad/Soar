@@ -1,0 +1,50 @@
+## 
+#  @name Hello World
+#  @author Dany Rovinsky
+##
+
+
+# propose:
+#     if state is first state and there is no count in memory:
+#         add initialize_count operator
+sp {hello_world*propose*initialize_count
+   (state <s> ^superstate nil)
+   (<s> -^name count)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name initialize_count)
+}
+
+# apply:
+#     if has operator initialize_count:
+#         change state name to count
+#         add count to memory and init it to 0
+sp {hello_world*apply*initialize_count
+   (state <s> ^operator.name initialize_count)
+-->
+   (<s> ^name count
+        ^count 0)
+}
+
+# propose:
+#    if state has count:
+#        add new operator with the attribute name : "count"
+sp {hello_world*propose*count
+   (state <s> ^count)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name count)
+}
+
+# apply:
+#    if state has operator with the name "count" and has count node:
+#        print "Hello World number count: %d" % count
+#        count += 1
+sp {hello_world*apply*count
+   (state <s> ^operator.name count
+              ^count <count>)
+-->
+   (write (crlf) |Hello World number count: | <count>)
+   (<s> ^count <count> - 
+               (+ 1 <count>))
+}

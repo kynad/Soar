@@ -1,0 +1,67 @@
+##
+#  @file WaterJug-apply.soar
+#  @author Dany Rovinsky
+#
+#  @brief Trying to separate between propose and apply rules in hope that this will add some readability.
+#         This file encapsulates all apply productions (not including initialize).
+##
+
+## apply-fill rule
+#  replaces the value of jug's contents with the value of volume
+sp {water-jug*apply*fill
+   (state <state> ^name water-jug ^operator <oper> ^jug <jug>)
+   (<oper> ^name fill ^fill-jug <jug>)
+   (<jug> ^contents <jug_content> ^volume <jug_volume>)
+-->
+   (<jug> ^contents <jug_volume>)
+   (<jug> ^contents <jug_content> -)
+}
+
+## apply-empty rule
+#  replaces the value of jug's contents with 0
+sp {water-jug*apply*empty
+   (state <state> ^name water-jug ^operator <oper> ^jug <jug>)
+   (<oper> ^name empty ^empty-jug <jug>)
+   (<jug> ^volume <jug_volume> ^contents <jug_contents>)
+-->
+   (<jug> ^contents 0 ^contents <jug_contents> -)
+}
+
+## apply-pour-will-empty-empty-jug rule
+#
+#  this simple rule is splitted into two, beacuse there are two possible paths here.
+#  this probably could be avoided by adding elaborators that would do max and min on the content.
+#
+#  @condition: jug_1_content leq jug_2_empty (i.e. there is more free volume in jug_2 than the content in jug_1)
+#  @action: replace the contents of the first jug with 0
+#           replace the contents of the second jug with the sum of the contents of the two jugs.
+sp {water-jug*apply*pour*will-empty-empty-jug
+   (state <state> ^name water-jug ^operator <oper>)
+   (<oper> ^name pour ^empty-jug <jug_1> ^fill-jug <jug_2>)
+   (<jug_2> ^volume <jug_2_volume> ^contents <jug_2_content> ^empty <jug_2_empty>)
+   (<jug_1> ^volume <jug_1_volume> ^contents { <jug_1_content> <= <jug_2_empty> })
+-->
+   (<jug_1> ^contents 0 ^contents <jug_1_content> -)
+   (<jug_2> ^contents (+ <jug_2_content> <jug_1_content>))
+   (<jug_2> ^contents <jug_2_content> - )
+}
+
+## apply-pour-will-not-empty-jug rule
+#
+#  this simple rule is splitted into two, beacuse there are two possible paths here.
+#  this probably could be avoided by adding elaborators that would do max and min on the content.
+#
+#  @condition: jug_1_content is greater than jug_2_empty (i.e. there is less free volume in jug_2 than the content in jug_1)
+#  @action: replace the contents of the first jug with the difference between that content and the free volume of the second jug
+#           replace the contents of the second jug with its volume
+sp {water-jug*apply*pour*will-not-empty-jug
+   (state <state> ^name water-jug ^operator <oper>)
+   (<oper> ^name pour ^empty-jug <jug_1> ^fill-jug <jug_2>)
+   (<jug_2> ^volume <jug_2_volume> ^contents <jug_2_content> ^empty <jug_2_empty>)
+   (<jug_1> ^volume <jug_1_volume> ^contents { <jug_1_content> > <jug_2_empty> })
+-->   
+   (<jug_1> ^contents (- <jug_1_content> <jug_2_empty>))
+   (<jug_1> ^contents <jug_1_content> -)
+   (<jug_2> ^contents <jug_2_voulme> ^contents <jug_2_content> - )
+}
+
