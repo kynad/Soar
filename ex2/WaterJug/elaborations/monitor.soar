@@ -1,0 +1,42 @@
+##
+#  @file monitor.soar
+#  @author Dany Rovinsky
+#
+#  @brief Elaboration productions to log the current state and operator.
+#         Outputs to the above data to screen.
+##
+
+sp {water-jug*monitor*state
+   (state <state> ^name water-jug ^jug <jug_1> <jug_2>)
+   (<jug_1> ^volume 3 ^contents <jug_1_con>)
+   (<jug_2> ^volume 5 ^contents <jug_2_con>)
+-->
+   (write (crlf) | 3:| <jug_1_con> | 5:| <jug_2_con> )
+}
+
+
+sp {water-jug*monitor*operator-application*empty
+   (state <state> ^name water-jug ^operator <oper>)
+   (<oper> ^name empty ^empty-jug.volume <volume>)
+-->
+   (write | EMPTY(| <volume> |)|)
+}
+
+
+sp {water-jug*monitor*operator-application*fill
+   (state <state> ^name water-jug ^operator <oper>)
+   (<oper> ^name fill ^fill-jug.volume <volume>)
+-->
+   (write | FILL(| <volume> |)|)
+}
+
+   
+sp {water-jug*monitor*operator-application*pour
+   (state <state> ^name water-jug ^operator <oper>)
+   (<oper> ^name pour ^empty-jug <jug_1> ^fill-jug <jug_2>)
+   (<jug_1> ^volume <jug_1_volume> ^contents <jug_1_content>)
+   (<jug_2> ^volume <jug_2_volume> ^contents <jug_2_content>)
+-->
+   (write | POUR(| <jug_1_volume> |:| <jug_1_content> |,| <jug_2_volume> |:| <jug_2_content> |)|)
+}
+

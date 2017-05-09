@@ -5,10 +5,13 @@ VERSION 4
 2	0	FOLDER all all 3
 3	0	FOLDER elaborations elaborations 4
 4	3	FOPERATOR _all _all.soar 5
-5	3	FOPERATOR empty empty.soar 12
-6	3	FOPERATOR top-state top-state.soar 6
-7	0	FOPERATOR WaterJug-apply WaterJug-apply.soar 13
-8	0	FOPERATOR WaterJug-propose WaterJug-propose.soar 11
-9	0	HLOPERATOR initialize-WaterJug initialize-WaterJug.soar initialize-WaterJug 9 7
-10	9	FOPERATOR elaborations elaborations.soar 8
+5	3	FOPERATOR empty empty.soar 6
+6	3	FOPERATOR monitor monitor.soar 13
+7	3	FOPERATOR top-state top-state.soar 7
+8	0	FOPERATOR WaterJug-detect-goal WaterJug-detect-goal.soar 12
+9	0	FOPERATOR WaterJug-apply WaterJug-apply.soar 8
+10	0	FOPERATOR WaterJug-propose WaterJug-propose.soar 9
+11	0	FOPERATOR WaterJug-select WaterJug-select.soar 14
+12	0	HLOPERATOR initialize-WaterJug initialize-WaterJug.soar initialize-WaterJug 9 10
+13	12	FOPERATOR elaborations elaborations.soar 11
 END

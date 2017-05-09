@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{titling}
+\usepackage{cjhebrew}
+
+\usepackage{enumerate}
+
+%%% Title = מבוא למערכות תבוניות, חכמות, וקוגניטיביות
+%%%         תרגיל 2
+\title{\<mbw' lm`rkwt tbwnywt .hkmwt wqwgny.tybywt>\\2 \<trgyl>}
+
+%%% Author = דני רובינסקי - 304359276
+\author{304359276 - \<dny rwbynsqy>}
+\date{}
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+  \item Original water-jug  w/o search control took \textbf{285.27} cycles on average.
+  \item The take w/o search control took \textbf{3172.3} cycles on average. 
+  \item After the basic search control was implemented. the original and the take variants took \textbf{55.58} and \textbf{338.72} cycles, respectively.
+  \item My heuristic included four additional rules:
+    \begin{itemize}
+      \item Refrain from filling a non-empty jug.
+      \item Refrain from emptying a non-full jug.
+      \item Refrain from filling a jug, is the other jug is full.
+      \item Refrain from emptying a jug, if the other jug is also empty.
+    \end{itemize}
+    The original and take variants should have reach an average of 8 cycles after the implementation, but since we only test for 10 attempts the results were \textbf{8} and \textbf{8.2}.\\
+    The reason for such improvement is that this policy is avoiding all possible loops (repeating a state that was previously encountered).\\
+    \textbf{Note:} The last two rules are assuming that the starting states (both jugs are full, or both are empty) will not be the goal states (they will never be reached with such policy). Without them, the average number of cycles were 9 and 10 and there is no upper bound on the number of cycles anymore, because not all possible loops are avoided.
+\end{enumerate}
+
+\end{document}

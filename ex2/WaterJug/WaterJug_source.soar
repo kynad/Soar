@@ -5,8 +5,10 @@ popd
 pushd elaborations
 source elaborations_source.soar
 popd
+source WaterJug-detect-goal.soar
 source WaterJug-apply.soar
 source WaterJug-propose.soar
+source WaterJug-select.soar
 source initialize-WaterJug.soar
 pushd initialize-WaterJug
 source initialize-WaterJug_source.soar

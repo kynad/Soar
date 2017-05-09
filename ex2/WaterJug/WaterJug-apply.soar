@@ -2,12 +2,11 @@
 #  @file WaterJug-apply.soar
 #  @author Dany Rovinsky
 #
-#  @brief Trying to separate between propose and apply rules in hope that this will add some readability.
-#         This file encapsulates all apply productions (not including initialize).
+#  @brief This file contains all apply productions (not including initialize).
 ##
 
 ## apply-fill rule
-#  replaces the value of jug's contents with the value of volume
+#  Replaces the value of jug's contents with the value of volume
 sp {water-jug*apply*fill
    (state <state> ^name water-jug ^operator <oper> ^jug <jug>)
    (<oper> ^name fill ^fill-jug <jug>)
@@ -18,7 +17,7 @@ sp {water-jug*apply*fill
 }
 
 ## apply-empty rule
-#  replaces the value of jug's contents with 0
+#  Replaces the value of jug's contents with 0
 sp {water-jug*apply*empty
    (state <state> ^name water-jug ^operator <oper> ^jug <jug>)
    (<oper> ^name empty ^empty-jug <jug>)
@@ -29,8 +28,8 @@ sp {water-jug*apply*empty
 
 ## apply-pour-will-empty-empty-jug rule
 #
-#  this simple rule is splitted into two, beacuse there are two possible paths here.
-#  this probably could be avoided by adding elaborators that would do max and min on the content.
+#  This simple rule is splitted into two, beacuse there are two possible paths here.
+#  This probably could be avoided by adding elaborators that would do max and min on the content.
 #
 #  @condition: jug_1_content leq jug_2_empty (i.e. there is more free volume in jug_2 than the content in jug_1)
 #  @action: replace the contents of the first jug with 0
@@ -62,6 +61,73 @@ sp {water-jug*apply*pour*will-not-empty-jug
 -->   
    (<jug_1> ^contents (- <jug_1_content> <jug_2_empty>))
    (<jug_1> ^contents <jug_1_content> -)
-   (<jug_2> ^contents <jug_2_voulme> ^contents <jug_2_content> - )
+   (<jug_2> ^contents <jug_2_volume> ^contents <jug_2_content> - )
 }
+
+
+## apply-operator-record-last-operator-pour
+#  Maintains the last operator in memory to avoid repeating the same operation twice.
+sp {water-jug*apply*operator*record*last-operator*pour
+   (state <state> ^name water-jug ^operator <oper>)
+   (<oper> ^name pour ^fill-jug <fill_jug> ^empty-jug <empty_jug>)
+-->
+   (<state> ^last-operator <last-op>)
+   (<last-op> ^name pour ^fill-jug <fill_jug> ^empty-jug <empty_jug>)
+}
+
+
+## apply-operator-remove-last-operator-pour
+#  Removes last-operator if current operator is pour and last one was either not pour, or pour but for a different jug.
+sp {water-jug*apply*operator*remove*last-operator*pour
+   (state <state> ^name water-jug ^operator <oper> ^last-operator <last-op>)
+   (<oper> ^name pour ^fill-jug <fill_jug> ^empty-jug <empty_jug>)
+  -(<last-op> ^name pour ^fill-jug <fill_jug> ^empty-jug <empty_jug>)
+-->
+   (<state> ^last-operator <last-op> -)
+}
+
+
+## apply-operator-record-last-operator-fill
+#  Maintains the last operator in memory to avoid repeating the same operation twice.
+sp {water-jug*apply*operator*record*last-operator*fill
+   (state <state> ^name water-jug ^operator <oper>)
+   (<oper> ^name fill ^fill-jug <fill_jug>)
+-->
+   (<state> ^last-operator <last-op>)
+   (<last-op> ^name fill ^fill-jug <fill_jug>)
+}
+
+
+## apply-operator-remove-last-operator-fill
+#  Remove last-operator if current operator is fill and last one was either not fill, or fill but for a different jug.
+sp {water-jug*apply*operator*remove*last-operator*fill
+   (state <state> ^name water-jug ^operator <oper> ^last-operator <last-op>)
+   (<oper> ^name fill ^fill-jug <fill_jug>)
+  -(<last-op> ^name fill ^fill-jug <fill_jug>)
+-->
+   (<state> ^last-operator <last-op> -)
+}
+
+## apply-operator-record-last-operator-empty
+#  Maintains the last operator in memory to avoid repeating the same operation twice.
+sp {water-jug*apply*operator*record*last-operator*empty
+   (state <state> ^name water-jug ^operator <oper>)
+   (<oper> ^name empty ^empty-jug <empty_jug>)
+-->
+   (<state> ^last-operator <last-op>)
+   (<last-op> ^name empty ^empty-jug <empty_jug>)
+}
+
+
+## apply-operator-remove-last-operator-pour
+#  Remove last-operator if current operator is pour and last one was either not pour, or pour but for a different jug.
+sp {water-jug*apply*operator*remove*last-operator*empty
+   (state <state> ^name water-jug ^operator <oper> ^last-operator <last-op>)
+   (<oper> ^name empty ^empty-jug <empty_jug>)
+  -(<last-op> ^name empty ^empty-jug <empty_jug>)
+-->
+   (<state> ^last-operator <last-op> -)
+}
+
+
 

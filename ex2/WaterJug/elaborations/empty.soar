@@ -1,4 +1,12 @@
+##
+#  @file empty.soar
+#  @author Dany Rovinsky
+#
+#  @brief Elaboration production to deduce the value of the ^empty attribute of a jug.
+##
 
+## elaborate-empty
+#  Deduce the value of 'empty', by the rule: empty = volume - contents.
 sp {water-jug*elaborate*empty
    (state <state> ^name water-jug ^jug <jug>)
    (<jug> ^volume <jug_volume> ^contents <jug_content>)

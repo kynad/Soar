@@ -1,4 +1,11 @@
+##
+#  @file initialize-WaterJug.soar
+#  @author Dany Rovinsky
+#
+#  @brief Initializes state and jugs.
+##
 
+## propose-init-water-jugs
 sp {water-jug*propose*init-water-jugs
    (state <state> ^superstate nil)
   -(<state> ^name )
@@ -7,10 +14,13 @@ sp {water-jug*propose*init-water-jugs
    (<oper> ^name init-water-jugs)
 }
 
+## apply-init-water-jugs
+#  Init the state name to "water-jug"
+#  Init two jugs to their defaults (e.g. 5 litre and 3 litre, both empty).
 sp {water-jug*apply*init-water-jugs
    (state <state> ^operator.name init-water-jugs)
 -->
    (<state> ^name water-jug ^jug <jug1> ^jug <jug2>)
-   (<jug1> ^volume 5 ^contents 0)
-   (<jug2> ^volume 3 ^contents 0)
+   (<jug1> ^volume 5 ^contents 5)
+   (<jug2> ^volume 3 ^contents 3)
 }

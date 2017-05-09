@@ -1,0 +1,79 @@
+##
+#  @file WaterJug-select.soar
+#  @author Dany Rovinsky
+#
+#  @brief This file contains all select productions.
+##
+
+
+## avoid-inverse-fill
+#  Reduce the priority of the 'fill' operator, if the previous operator was 'empty'.
+sp {water-jug*select*operator*avoid*inverse*fill
+   (state <state> ^name water-jug ^operator <oper> + ^last-operator <last_oper>)
+   (<oper> ^name fill ^fill-jug <fill_jug>)
+   (<last_oper> ^name empty ^empty-jug <empty_jug>)
+-->
+   (<state> ^operator <oper> <)
+}
+
+## avoid-inverse-empty
+#  Reduce the priority of the 'empty' operator, if the previous operator was 'fill'.
+sp {water-jug*select*operator*avoid*inverse*empty
+   (state <state> ^name water-jug ^operator <oper> + ^last-operator <last_oper>)
+   (<oper> ^name empty ^empty-jug <empty_jug>)
+   (<last_oper> ^name fill ^fill-jug <fill_jug>)
+-->
+   (<state> ^operator <oper> <)
+}
+
+## avoid-inverse-pour
+#  Reduce the priority of the 'pour' operator, if the previous operator was also 'pour'.
+sp {water-jug*select*avoid*inverse*pour
+   (state <state> ^name water-jug ^operator <oper> + ^last-operator <last_oper>)
+   (<oper> ^name pour ^fill-jug <fill_jug>)
+   (<last_oper> ^name pour ^empty-jug <empty_jug>)
+-->
+   (<state> ^operator <oper> <)
+}
+
+## avoid-full-full-state
+#  Reduce the priority of the 'fill' operator, if the other jug is full.
+sp {water-jug*select*avoid*full*full*state
+   (state <state> ^name water-jug ^operator <oper> + ^jug <jug>)
+   (<oper> ^name fill ^fill-jug { <fill_jug> <> <jug>} )
+   (<jug> ^empty 0)
+-->
+   (<state> ^operator <oper> <)
+}
+
+## avoid-empty-empty-state
+#  Reduce the priority of the 'empty' operator, if the other jug is empty.
+sp {water-jug*select*avoid*empty*empty*state
+   (state <state> ^name water-jug ^operator <oper> + ^jug <jug>)
+   (<oper> ^name empty ^empty-jug { <empty_jug> <> <jug> })
+   (<jug> ^contents 0)
+-->
+   (<state> ^operator <oper> <)
+}
+
+## avoid-empty-non-full-jug
+#  Reduce the priority of the 'empty' operator if the jug to empty is not full.
+sp {water-jug*select*avoid*empty*non*full*jug
+   (state <state> ^name water-jug ^operator <oper> + )
+   (<oper> ^name empty ^empty-jug <jug>)
+   (<jug> ^empty > 0)
+-->
+   (<state> ^operator <oper> <)
+}
+
+## avoid-fill-non-empty-jug
+#  Reduce the priority of the 'fill' operator if the jug to fill is non-empty.
+sp {water-jug*select*avoid*fill*non*empty*jug
+   (state <state> ^name water-jug ^operator <oper> + )
+   (<oper> ^name fill ^fill-jug <jug>)
+   (<jug> ^contents > 0)
+-->
+   (<state> ^operator <oper> <)
+}
+
+

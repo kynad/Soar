@@ -1,0 +1,18 @@
+##
+#  @file WaterJug-detect-goal.soar
+#  @author Dany Rovinsky
+#
+#  @brief Contains the rule(s) required to determine the goal state and halt the execution.
+##
+
+## detect-goal-achieved rule
+#  Prints msg and halts.
+sp {water-jug*detect*goal*achieved
+   (state <state> ^name water-jug ^jug <jug>)
+   (<jug> ^volume 5 ^contents 4)
+-->
+   (write (crlf) |The problem has been solved.|)
+   (halt)
+}
+
+
