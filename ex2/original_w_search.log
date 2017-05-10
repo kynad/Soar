@@ -1,0 +1,2110 @@
+source {/home/dany/Study/Soar/ex2/WaterJug.soar}
+**
+*
+****
+*
+*
+**********
+**
+Warning: On the LHS of production water-jug*propose*pour, identifier <jug_2> is not connected to any goal or impasse.
+*
+***
+**
+Total: 27 productions sourced.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O3 (fill)
+ FILL(3)
+ 3:3 5:0
+     3: O: O2 (fill)
+ FILL(5)
+ 3:3 5:5
+     4: O: O5 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     5: O: O8 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     6: O: O12 (fill)
+ FILL(5)
+ 3:3 5:5
+     7: O: O9 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     8: O: O16 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     9: O: O20 (fill)
+ FILL(5)
+ 3:3 5:5
+    10: O: O17 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    11: O: O22 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    12: O: O25 (fill)
+ FILL(5)
+ 3:0 5:5
+    13: O: O23 (fill)
+ FILL(3)
+ 3:3 5:5
+    14: O: O27 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    15: O: O30 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    16: O: O32 (fill)
+ FILL(5)
+ 3:0 5:5
+    17: O: O35 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    18: O: O40 (fill)
+ FILL(5)
+ 3:3 5:5
+    19: O: O37 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    20: O: O44 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    21: O: O47 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    22: O: O51 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    23: O: O52 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    24: O: O56 (fill)
+ FILL(5)
+ 3:0 5:5
+    25: O: O57 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    26: O: O62 (fill)
+ FILL(5)
+ 3:3 5:5
+    27: O: O59 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    28: O: O66 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    29: O: O70 (fill)
+ FILL(5)
+ 3:3 5:5
+    30: O: O67 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    31: O: O74 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    32: O: O75 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    33: O: O77 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    34: O: O82 (fill)
+ FILL(5)
+ 3:0 5:5
+    35: O: O83 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    36: O: O87 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    37: O: O85 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    38: O: O90 (fill)
+ FILL(5)
+ 3:0 5:5
+    39: O: O93 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    40: O: O95 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    41: O: O97 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    42: O: O102 (fill)
+ FILL(5)
+ 3:0 5:5
+    43: O: O103 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    44: O: O108 (fill)
+ FILL(5)
+ 3:3 5:5
+    45: O: O105 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    46: O: O112 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    47: O: O113 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    48: O: O115 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    49: O: O120 (fill)
+ FILL(5)
+ 3:0 5:5
+    50: O: O118 (fill)
+ FILL(3)
+ 3:3 5:5
+    51: O: O122 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    52: O: O123 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    53: O: O124 (fill)
+ FILL(5)
+ 3:0 5:5
+    54: O: O127 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    55: O: O129 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    56: O: O135 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    57: O: O139 (fill)
+ FILL(5)
+ 3:2 5:5
+    58: O: O138 (fill)
+ FILL(3)
+ 3:3 5:5
+    59: O: O143 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    60: O: O142 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    61: O: O144 (fill)
+ FILL(3)
+ 3:3 5:0
+    62: O: O146 (fill)
+ FILL(5)
+ 3:3 5:5
+    63: O: O148 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    64: O: O151 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    65: O: O155 (fill)
+ FILL(5)
+ 3:3 5:5
+    66: O: O157 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    67: O: O152 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    68: O: O160 (fill)
+ FILL(3)
+ 3:3 5:0
+    69: O: O161 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    70: O: O164 (fill)
+ FILL(5)
+ 3:0 5:5
+    71: O: O167 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    72: O: O172 (fill)
+ FILL(5)
+ 3:3 5:5
+    73: O: O174 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    74: O: O176 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    75: O: O178 (fill)
+ FILL(5)
+ 3:0 5:5
+    76: O: O179 (fill)
+ FILL(3)
+ 3:3 5:5
+    77: O: O182 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    78: O: O183 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    79: O: O186 (fill)
+ FILL(3)
+ 3:3 5:0
+    80: O: O187 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    81: O: O189 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    82: O: O193 (fill)
+ FILL(5)
+ 3:0 5:5
+    83: O: O191 (fill)
+ FILL(3)
+ 3:3 5:5
+    84: O: O196 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    85: O: O198 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    86: O: O201 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    87: O: O199 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    88: O: O204 (fill)
+ FILL(5)
+ 3:0 5:5
+    89: O: O206 (fill)
+ FILL(3)
+ 3:3 5:5
+    90: O: O209 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    91: O: O208 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    92: O: O212 (fill)
+ FILL(5)
+ 3:0 5:5
+    93: O: O210 (fill)
+ FILL(3)
+ 3:3 5:5
+    94: O: O215 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    95: O: O217 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    96: O: O218 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    97: O: O220 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    98: O: O225 (fill)
+ FILL(5)
+ 3:0 5:5
+    99: O: O226 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   100: O: O230 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   101: O: O228 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   102: O: O233 (fill)
+ FILL(5)
+ 3:0 5:5
+   103: O: O236 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   104: O: O240 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   105: O: O244 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   106: O: O247 (fill)
+ FILL(3)
+ 3:3 5:3
+   107: O: O249 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+run
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O3 (fill)
+ FILL(3)
+ 3:3 5:5
+     4: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     5: O: O8 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     6: O: O11 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     7: O: O9 (empty)
+ EMPTY(3)
+ 3:0 5:0
+     8: O: O14 (fill)
+ FILL(5)
+ 3:0 5:5
+     9: O: O16 (fill)
+ FILL(3)
+ 3:3 5:5
+    10: O: O18 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    11: O: O19 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    12: O: O22 (fill)
+ FILL(3)
+ 3:3 5:0
+    13: O: O20 (fill)
+ FILL(5)
+ 3:3 5:5
+    14: O: O25 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    15: O: O24 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    16: O: O26 (fill)
+ FILL(5)
+ 3:0 5:5
+    17: O: O29 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    18: O: O31 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    19: O: O37 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    20: O: O39 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    21: O: O43 (fill)
+ FILL(3)
+ 3:3 5:0
+    22: O: O44 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    23: O: O46 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    24: O: O50 (fill)
+ FILL(5)
+ 3:0 5:5
+    25: O: O48 (fill)
+ FILL(3)
+ 3:3 5:5
+    26: O: O52 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    27: O: O55 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    28: O: O58 (fill)
+ FILL(3)
+ 3:3 5:3
+    29: O: O60 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O3 (fill)
+ FILL(3)
+ 3:3 5:5
+     4: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     5: O: O5 (empty)
+ EMPTY(5)
+ 3:0 5:0
+     6: O: O9 (fill)
+ FILL(5)
+ 3:0 5:5
+     7: O: O7 (fill)
+ FILL(3)
+ 3:3 5:5
+     8: O: O11 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     9: O: O14 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    10: O: O16 (fill)
+ FILL(5)
+ 3:0 5:5
+    11: O: O17 (fill)
+ FILL(3)
+ 3:3 5:5
+    12: O: O21 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    13: O: O20 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    14: O: O22 (fill)
+ FILL(3)
+ 3:3 5:0
+    15: O: O24 (fill)
+ FILL(5)
+ 3:3 5:5
+    16: O: O27 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    17: O: O29 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    18: O: O32 (fill)
+ FILL(3)
+ 3:3 5:3
+    19: O: O34 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O3 (fill)
+ FILL(3)
+ 3:3 5:0
+     3: O: O2 (fill)
+ FILL(5)
+ 3:3 5:5
+     4: O: O6 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O8 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O9 (empty)
+ EMPTY(5)
+ 3:0 5:0
+     7: O: O11 (fill)
+ FILL(3)
+ 3:3 5:0
+     8: O: O14 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     9: O: O17 (fill)
+ FILL(5)
+ 3:0 5:5
+    10: O: O18 (fill)
+ FILL(3)
+ 3:3 5:5
+    11: O: O21 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    12: O: O22 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    13: O: O23 (fill)
+ FILL(5)
+ 3:0 5:5
+    14: O: O25 (fill)
+ FILL(3)
+ 3:3 5:5
+    15: O: O27 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    16: O: O28 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    17: O: O31 (fill)
+ FILL(3)
+ 3:3 5:0
+    18: O: O32 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    19: O: O36 (fill)
+ FILL(3)
+ 3:3 5:3
+    20: O: O35 (fill)
+ FILL(5)
+ 3:3 5:5
+    21: O: O40 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    22: O: O42 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    23: O: O45 (fill)
+ FILL(3)
+ 3:3 5:3
+    24: O: O47 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O3 (fill)
+ FILL(3)
+ 3:3 5:5
+     4: O: O5 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O8 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O11 (fill)
+ FILL(3)
+ 3:3 5:3
+     7: O: O10 (fill)
+ FILL(5)
+ 3:3 5:5
+     8: O: O15 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     9: O: O17 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    10: O: O19 (fill)
+ FILL(5)
+ 3:0 5:5
+    11: O: O22 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    12: O: O26 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    13: O: O30 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    14: O: O32 (fill)
+ FILL(5)
+ 3:0 5:5
+    15: O: O33 (fill)
+ FILL(3)
+ 3:3 5:5
+    16: O: O37 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    17: O: O39 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    18: O: O43 (fill)
+ FILL(5)
+ 3:3 5:5
+    19: O: O40 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    20: O: O47 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    21: O: O48 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    22: O: O54 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    23: O: O57 (fill)
+ FILL(3)
+ 3:3 5:0
+    24: O: O58 (fill)
+ FILL(5)
+ 3:3 5:5
+    25: O: O62 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    26: O: O64 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    27: O: O67 (fill)
+ FILL(3)
+ 3:3 5:3
+    28: O: O69 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O4 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:2
+     5: O: O8 (empty)
+ EMPTY(5)
+ 3:0 5:0
+     6: O: O13 (fill)
+ FILL(5)
+ 3:0 5:5
+     7: O: O11 (fill)
+ FILL(3)
+ 3:3 5:5
+     8: O: O15 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     9: O: O18 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    10: O: O19 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    11: O: O21 (fill)
+ FILL(3)
+ 3:3 5:0
+    12: O: O24 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    13: O: O27 (fill)
+ FILL(5)
+ 3:0 5:5
+    14: O: O30 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    15: O: O35 (fill)
+ FILL(5)
+ 3:3 5:5
+    16: O: O37 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    17: O: O32 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    18: O: O40 (fill)
+ FILL(3)
+ 3:3 5:0
+    19: O: O41 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    20: O: O43 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    21: O: O45 (fill)
+ FILL(3)
+ 3:3 5:0
+    22: O: O48 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    23: O: O51 (fill)
+ FILL(5)
+ 3:0 5:5
+    24: O: O52 (fill)
+ FILL(3)
+ 3:3 5:5
+    25: O: O56 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    26: O: O58 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    27: O: O62 (fill)
+ FILL(5)
+ 3:3 5:5
+    28: O: O64 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    29: O: O66 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    30: O: O68 (fill)
+ FILL(5)
+ 3:0 5:5
+    31: O: O69 (fill)
+ FILL(3)
+ 3:3 5:5
+    32: O: O73 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    33: O: O72 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    34: O: O74 (fill)
+ FILL(3)
+ 3:3 5:0
+    35: O: O77 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    36: O: O80 (fill)
+ FILL(5)
+ 3:0 5:5
+    37: O: O81 (fill)
+ FILL(3)
+ 3:3 5:5
+    38: O: O84 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    39: O: O87 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    40: O: O90 (fill)
+ FILL(3)
+ 3:3 5:3
+    41: O: O89 (fill)
+ FILL(5)
+ 3:3 5:5
+    42: O: O94 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    43: O: O93 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    44: O: O95 (fill)
+ FILL(5)
+ 3:0 5:5
+    45: O: O98 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    46: O: O100 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    47: O: O102 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    48: O: O107 (fill)
+ FILL(5)
+ 3:0 5:5
+    49: O: O108 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    50: O: O112 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    51: O: O116 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    52: O: O119 (fill)
+ FILL(3)
+ 3:3 5:3
+    53: O: O121 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O3 (fill)
+ FILL(3)
+ 3:3 5:5
+     4: O: O5 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:0
+     6: O: O7 (fill)
+ FILL(5)
+ 3:0 5:5
+     7: O: O9 (fill)
+ FILL(3)
+ 3:3 5:5
+     8: O: O11 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     9: O: O12 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    10: O: O13 (fill)
+ FILL(5)
+ 3:0 5:5
+    11: O: O16 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    12: O: O21 (fill)
+ FILL(5)
+ 3:3 5:5
+    13: O: O23 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    14: O: O18 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    15: O: O26 (fill)
+ FILL(3)
+ 3:3 5:0
+    16: O: O24 (fill)
+ FILL(5)
+ 3:3 5:5
+    17: O: O28 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    18: O: O29 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    19: O: O32 (fill)
+ FILL(5)
+ 3:0 5:5
+    20: O: O33 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    21: O: O38 (fill)
+ FILL(5)
+ 3:3 5:5
+    22: O: O40 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    23: O: O42 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    24: O: O44 (fill)
+ FILL(5)
+ 3:0 5:5
+    25: O: O47 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    26: O: O51 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    27: O: O49 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    28: O: O54 (fill)
+ FILL(5)
+ 3:0 5:5
+    29: O: O56 (fill)
+ FILL(3)
+ 3:3 5:5
+    30: O: O59 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    31: O: O61 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    32: O: O64 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    33: O: O62 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    34: O: O69 (fill)
+ FILL(3)
+ 3:3 5:0
+    35: O: O70 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    36: O: O72 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    37: O: O74 (fill)
+ FILL(3)
+ 3:3 5:0
+    38: O: O76 (fill)
+ FILL(5)
+ 3:3 5:5
+    39: O: O79 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    40: O: O78 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    41: O: O82 (fill)
+ FILL(3)
+ 3:3 5:0
+    42: O: O80 (fill)
+ FILL(5)
+ 3:3 5:5
+    43: O: O84 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    44: O: O87 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    45: O: O88 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    46: O: O94 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    47: O: O96 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    48: O: O98 (fill)
+ FILL(5)
+ 3:0 5:5
+    49: O: O100 (fill)
+ FILL(3)
+ 3:3 5:5
+    50: O: O103 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    51: O: O105 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    52: O: O108 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    53: O: O106 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    54: O: O113 (fill)
+ FILL(3)
+ 3:3 5:0
+    55: O: O111 (fill)
+ FILL(5)
+ 3:3 5:5
+    56: O: O115 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    57: O: O116 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    58: O: O117 (fill)
+ FILL(3)
+ 3:3 5:0
+    59: O: O119 (fill)
+ FILL(5)
+ 3:3 5:5
+    60: O: O122 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    61: O: O124 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    62: O: O126 (fill)
+ FILL(5)
+ 3:0 5:5
+    63: O: O127 (fill)
+ FILL(3)
+ 3:3 5:5
+    64: O: O130 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    65: O: O133 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    66: O: O135 (fill)
+ FILL(5)
+ 3:0 5:5
+    67: O: O136 (fill)
+ FILL(3)
+ 3:3 5:5
+    68: O: O139 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    69: O: O142 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    70: O: O143 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    71: O: O145 (fill)
+ FILL(3)
+ 3:3 5:0
+    72: O: O147 (fill)
+ FILL(5)
+ 3:3 5:5
+    73: O: O150 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    74: O: O149 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    75: O: O151 (fill)
+ FILL(5)
+ 3:0 5:5
+    76: O: O154 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    77: O: O159 (fill)
+ FILL(5)
+ 3:3 5:5
+    78: O: O161 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    79: O: O163 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    80: O: O164 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    81: O: O168 (fill)
+ FILL(5)
+ 3:0 5:5
+    82: O: O166 (fill)
+ FILL(3)
+ 3:3 5:5
+    83: O: O171 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    84: O: O173 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    85: O: O174 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    86: O: O176 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    87: O: O181 (fill)
+ FILL(5)
+ 3:0 5:5
+    88: O: O182 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    89: O: O184 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    90: O: O186 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    91: O: O189 (fill)
+ FILL(3)
+ 3:3 5:0
+    92: O: O192 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    93: O: O195 (fill)
+ FILL(5)
+ 3:0 5:5
+    94: O: O198 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    95: O: O203 (fill)
+ FILL(5)
+ 3:3 5:5
+    96: O: O200 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    97: O: O205 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    98: O: O206 (fill)
+ FILL(3)
+ 3:3 5:0
+    99: O: O209 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   100: O: O213 (fill)
+ FILL(3)
+ 3:3 5:3
+   101: O: O215 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O3 (fill)
+ FILL(3)
+ 3:3 5:5
+     4: O: O5 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:0
+     6: O: O9 (fill)
+ FILL(3)
+ 3:3 5:0
+     7: O: O7 (fill)
+ FILL(5)
+ 3:3 5:5
+     8: O: O12 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     9: O: O11 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    10: O: O13 (fill)
+ FILL(5)
+ 3:0 5:5
+    11: O: O15 (fill)
+ FILL(3)
+ 3:3 5:5
+    12: O: O18 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    13: O: O17 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    14: O: O21 (fill)
+ FILL(5)
+ 3:0 5:5
+    15: O: O22 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    16: O: O26 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    17: O: O30 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    18: O: O33 (fill)
+ FILL(3)
+ 3:3 5:3
+    19: O: O32 (fill)
+ FILL(5)
+ 3:3 5:5
+    20: O: O36 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    21: O: O39 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    22: O: O40 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    23: O: O42 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    24: O: O45 (fill)
+ FILL(3)
+ 3:3 5:0
+    25: O: O47 (fill)
+ FILL(5)
+ 3:3 5:5
+    26: O: O50 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    27: O: O49 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    28: O: O51 (fill)
+ FILL(5)
+ 3:0 5:5
+    29: O: O54 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    30: O: O59 (fill)
+ FILL(5)
+ 3:3 5:5
+    31: O: O56 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    32: O: O61 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    33: O: O64 (fill)
+ FILL(5)
+ 3:0 5:5
+    34: O: O65 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    35: O: O69 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    36: O: O73 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    37: O: O74 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    38: O: O78 (fill)
+ FILL(5)
+ 3:0 5:5
+    39: O: O79 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    40: O: O81 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    41: O: O83 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    42: O: O88 (fill)
+ FILL(5)
+ 3:0 5:5
+    43: O: O86 (fill)
+ FILL(3)
+ 3:3 5:5
+    44: O: O90 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    45: O: O93 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    46: O: O95 (fill)
+ FILL(5)
+ 3:0 5:5
+    47: O: O96 (fill)
+ FILL(3)
+ 3:3 5:5
+    48: O: O99 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    49: O: O102 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    50: O: O104 (fill)
+ FILL(5)
+ 3:0 5:5
+    51: O: O105 (fill)
+ FILL(3)
+ 3:3 5:5
+    52: O: O109 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    53: O: O111 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    54: O: O115 (fill)
+ FILL(5)
+ 3:3 5:5
+    55: O: O112 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    56: O: O117 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    57: O: O118 (fill)
+ FILL(3)
+ 3:3 5:0
+    58: O: O121 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    59: O: O124 (fill)
+ FILL(5)
+ 3:0 5:5
+    60: O: O127 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    61: O: O129 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    62: O: O135 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    63: O: O138 (fill)
+ FILL(3)
+ 3:3 5:0
+    64: O: O141 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    65: O: O145 (fill)
+ FILL(3)
+ 3:3 5:3
+    66: O: O144 (fill)
+ FILL(5)
+ 3:3 5:5
+    67: O: O148 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    68: O: O149 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    69: O: O152 (fill)
+ FILL(5)
+ 3:0 5:5
+    70: O: O153 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    71: O: O157 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    72: O: O161 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    73: O: O164 (fill)
+ FILL(3)
+ 3:3 5:3
+    74: O: O163 (fill)
+ FILL(5)
+ 3:3 5:5
+    75: O: O168 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    76: O: O170 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    77: O: O173 (fill)
+ FILL(3)
+ 3:3 5:3
+    78: O: O172 (fill)
+ FILL(5)
+ 3:3 5:5
+    79: O: O176 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    80: O: O179 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    81: O: O183 (fill)
+ FILL(5)
+ 3:3 5:5
+    82: O: O185 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    83: O: O187 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    84: O: O190 (fill)
+ FILL(3)
+ 3:3 5:3
+    85: O: O192 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O3 (fill)
+ FILL(3)
+ 3:3 5:0
+     3: O: O2 (fill)
+ FILL(5)
+ 3:3 5:5
+     4: O: O6 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O8 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O11 (fill)
+ FILL(3)
+ 3:3 5:3
+     7: O: O13 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O3 (fill)
+ FILL(3)
+ 3:3 5:5
+     4: O: O5 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O8 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O10 (fill)
+ FILL(5)
+ 3:0 5:5
+     7: O: O11 (fill)
+ FILL(3)
+ 3:3 5:5
+     8: O: O15 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     9: O: O14 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    10: O: O18 (fill)
+ FILL(5)
+ 3:0 5:5
+    11: O: O19 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    12: O: O23 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    13: O: O21 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    14: O: O26 (fill)
+ FILL(5)
+ 3:0 5:5
+    15: O: O28 (fill)
+ FILL(3)
+ 3:3 5:5
+    16: O: O31 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    17: O: O30 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    18: O: O34 (fill)
+ FILL(5)
+ 3:0 5:5
+    19: O: O35 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    20: O: O39 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    21: O: O43 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    22: O: O45 (fill)
+ FILL(5)
+ 3:0 5:5
+    23: O: O48 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    24: O: O53 (fill)
+ FILL(5)
+ 3:3 5:5
+    25: O: O50 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    26: O: O55 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    27: O: O58 (fill)
+ FILL(5)
+ 3:0 5:5
+    28: O: O56 (fill)
+ FILL(3)
+ 3:3 5:5
+    29: O: O60 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    30: O: O63 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    31: O: O66 (fill)
+ FILL(3)
+ 3:3 5:3
+    32: O: O68 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O3 (fill)
+ FILL(3)
+ 3:3 5:5
+     4: O: O5 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O8 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O9 (empty)
+ EMPTY(5)
+ 3:0 5:0
+     7: O: O13 (fill)
+ FILL(5)
+ 3:0 5:5
+     8: O: O14 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     9: O: O16 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    10: O: O22 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    11: O: O25 (fill)
+ FILL(3)
+ 3:3 5:0
+    12: O: O26 (fill)
+ FILL(5)
+ 3:3 5:5
+    13: O: O30 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    14: O: O32 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    15: O: O33 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    16: O: O37 (fill)
+ FILL(5)
+ 3:0 5:5
+    17: O: O38 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    18: O: O40 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    19: O: O42 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    20: O: O47 (fill)
+ FILL(5)
+ 3:0 5:5
+    21: O: O45 (fill)
+ FILL(3)
+ 3:3 5:5
+    22: O: O49 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    23: O: O50 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    24: O: O53 (fill)
+ FILL(3)
+ 3:3 5:0
+    25: O: O51 (fill)
+ FILL(5)
+ 3:3 5:5
+    26: O: O55 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    27: O: O56 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    28: O: O59 (fill)
+ FILL(5)
+ 3:0 5:5
+    29: O: O57 (fill)
+ FILL(3)
+ 3:3 5:5
+    30: O: O61 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    31: O: O64 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    32: O: O67 (fill)
+ FILL(3)
+ 3:3 5:3
+    33: O: O66 (fill)
+ FILL(5)
+ 3:3 5:5
+    34: O: O70 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    35: O: O71 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    36: O: O72 (fill)
+ FILL(3)
+ 3:3 5:0
+    37: O: O74 (fill)
+ FILL(5)
+ 3:3 5:5
+    38: O: O76 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    39: O: O77 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    40: O: O80 (fill)
+ FILL(5)
+ 3:0 5:5
+    41: O: O81 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    42: O: O86 (fill)
+ FILL(5)
+ 3:3 5:5
+    43: O: O88 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    44: O: O83 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    45: O: O89 (fill)
+ FILL(5)
+ 3:0 5:5
+    46: O: O92 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    47: O: O96 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    48: O: O100 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    49: O: O101 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    50: O: O105 (fill)
+ FILL(5)
+ 3:0 5:5
+    51: O: O106 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    52: O: O111 (fill)
+ FILL(5)
+ 3:3 5:5
+    53: O: O113 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    54: O: O108 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    55: O: O114 (fill)
+ FILL(5)
+ 3:0 5:5
+    56: O: O116 (fill)
+ FILL(3)
+ 3:3 5:5
+    57: O: O118 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    58: O: O121 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    59: O: O123 (fill)
+ FILL(5)
+ 3:0 5:5
+    60: O: O124 (fill)
+ FILL(3)
+ 3:3 5:5
+    61: O: O128 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    62: O: O130 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    63: O: O134 (fill)
+ FILL(5)
+ 3:3 5:5
+    64: O: O136 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    65: O: O131 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    66: O: O137 (fill)
+ FILL(5)
+ 3:0 5:5
+    67: O: O139 (fill)
+ FILL(3)
+ 3:3 5:5
+    68: O: O142 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    69: O: O141 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    70: O: O145 (fill)
+ FILL(5)
+ 3:0 5:5
+    71: O: O143 (fill)
+ FILL(3)
+ 3:3 5:5
+    72: O: O147 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    73: O: O150 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    74: O: O152 (fill)
+ FILL(5)
+ 3:0 5:5
+    75: O: O153 (fill)
+ FILL(3)
+ 3:3 5:5
+    76: O: O156 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    77: O: O157 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    78: O: O160 (fill)
+ FILL(3)
+ 3:3 5:0
+    79: O: O161 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    80: O: O164 (fill)
+ FILL(5)
+ 3:0 5:5
+    81: O: O167 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    82: O: O172 (fill)
+ FILL(5)
+ 3:3 5:5
+    83: O: O169 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    84: O: O174 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    85: O: O177 (fill)
+ FILL(5)
+ 3:0 5:5
+    86: O: O178 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    87: O: O183 (fill)
+ FILL(5)
+ 3:3 5:5
+    88: O: O180 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    89: O: O187 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    90: O: O188 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    91: O: O190 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    92: O: O195 (fill)
+ FILL(5)
+ 3:0 5:5
+    93: O: O196 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    94: O: O200 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    95: O: O198 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    96: O: O203 (fill)
+ FILL(5)
+ 3:0 5:5
+    97: O: O206 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    98: O: O210 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    99: O: O214 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   100: O: O217 (fill)
+ FILL(3)
+ 3:3 5:3
+   101: O: O216 (fill)
+ FILL(5)
+ 3:3 5:5
+   102: O: O221 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   103: O: O223 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   104: O: O226 (fill)
+ FILL(3)
+ 3:3 5:3
+   105: O: O228 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O3 (fill)
+ FILL(3)
+ 3:3 5:5
+     4: O: O5 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:0
+     6: O: O7 (fill)
+ FILL(5)
+ 3:0 5:5
+     7: O: O9 (fill)
+ FILL(3)
+ 3:3 5:5
+     8: O: O12 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     9: O: O11 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    10: O: O15 (fill)
+ FILL(5)
+ 3:0 5:5
+    11: O: O13 (fill)
+ FILL(3)
+ 3:3 5:5
+    12: O: O18 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    13: O: O20 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    14: O: O24 (fill)
+ FILL(5)
+ 3:3 5:5
+    15: O: O21 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    16: O: O26 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    17: O: O29 (fill)
+ FILL(5)
+ 3:0 5:5
+    18: O: O27 (fill)
+ FILL(3)
+ 3:3 5:5
+    19: O: O31 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    20: O: O34 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    21: O: O36 (fill)
+ FILL(5)
+ 3:0 5:5
+    22: O: O39 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    23: O: O43 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    24: O: O47 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    25: O: O49 (fill)
+ FILL(5)
+ 3:0 5:5
+    26: O: O52 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    27: O: O56 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    28: O: O60 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    29: O: O62 (fill)
+ FILL(5)
+ 3:0 5:5
+    30: O: O63 (fill)
+ FILL(3)
+ 3:3 5:5
+    31: O: O67 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    32: O: O66 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    33: O: O68 (fill)
+ FILL(3)
+ 3:3 5:0
+    34: O: O71 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    35: O: O73 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    36: O: O77 (fill)
+ FILL(5)
+ 3:0 5:5
+    37: O: O78 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    38: O: O80 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    39: O: O86 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    40: O: O89 (fill)
+ FILL(3)
+ 3:3 5:0
+    41: O: O92 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    42: O: O94 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    43: O: O96 (fill)
+ FILL(3)
+ 3:3 5:0
+    44: O: O98 (fill)
+ FILL(5)
+ 3:3 5:5
+    45: O: O100 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    46: O: O103 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    47: O: O107 (fill)
+ FILL(5)
+ 3:3 5:5
+    48: O: O104 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    49: O: O109 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    50: O: O112 (fill)
+ FILL(5)
+ 3:0 5:5
+    51: O: O110 (fill)
+ FILL(3)
+ 3:3 5:5
+    52: O: O114 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    53: O: O115 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    54: O: O116 (fill)
+ FILL(5)
+ 3:0 5:5
+    55: O: O118 (fill)
+ FILL(3)
+ 3:3 5:5
+    56: O: O121 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    57: O: O120 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    58: O: O122 (fill)
+ FILL(3)
+ 3:3 5:0
+    59: O: O125 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    60: O: O129 (fill)
+ FILL(3)
+ 3:3 5:3
+    61: O: O128 (fill)
+ FILL(5)
+ 3:3 5:5
+    62: O: O132 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    63: O: O133 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    64: O: O136 (fill)
+ FILL(5)
+ 3:0 5:5
+    65: O: O134 (fill)
+ FILL(3)
+ 3:3 5:5
+    66: O: O139 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    67: O: O138 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    68: O: O142 (fill)
+ FILL(5)
+ 3:0 5:5
+    69: O: O143 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    70: O: O145 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    71: O: O147 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    72: O: O152 (fill)
+ FILL(5)
+ 3:0 5:5
+    73: O: O150 (fill)
+ FILL(3)
+ 3:3 5:5
+    74: O: O154 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    75: O: O157 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    76: O: O160 (fill)
+ FILL(3)
+ 3:3 5:3
+    77: O: O162 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.

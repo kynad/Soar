@@ -1,0 +1,479 @@
+source {/home/dany/Study/Soar/ex2/WaterJug.soar}
+**
+*
+****
+*
+*
+**********
+**
+Warning: On the LHS of production water-jug*propose*pour, identifier <jug_2> is not connected to any goal or impasse.
+*
+*****
+**
+Total: 29 productions sourced.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O4 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:2
+     5: O: O12 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+     6: O: O16 (fill)
+ FILL(5)
+ 3:2 5:5
+     7: O: O18 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+     8: O: O22 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     9: O: O26 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    10: O: O28 (fill)
+ FILL(5)
+ 3:0 5:5
+    11: O: O31 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    12: O: O35 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    13: O: O39 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    14: O: O41 (fill)
+ FILL(5)
+ 3:0 5:5
+    15: O: O44 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    16: O: O46 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    17: O: O52 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    18: O: O56 (fill)
+ FILL(5)
+ 3:2 5:5
+    19: O: O58 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+    20: O: O60 (empty)
+ EMPTY(3)
+ 3:0 5:4
+    21: O: O66 (pour)
+ POUR(5:4,3:0) POUR(5:1,3:3)
+ 3:3 5:1
+    22: O: O70 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    23: O: O74 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    24: O: O77 (fill)
+ FILL(3)
+ 3:3 5:3
+    25: O: O79 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O4 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O8 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O12 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O14 (fill)
+ FILL(5)
+ 3:0 5:5
+     7: O: O17 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     8: O: O19 (empty)
+ EMPTY(3)
+ 3:0 5:2
+     9: O: O25 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    10: O: O29 (fill)
+ FILL(5)
+ 3:2 5:5
+    11: O: O31 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+    12: O: O33 (empty)
+ EMPTY(3)
+ 3:0 5:4
+    13: O: O39 (pour)
+ POUR(5:4,3:0) POUR(5:1,3:3)
+ 3:3 5:1
+    14: O: O41 (empty)
+ EMPTY(3)
+ 3:0 5:1
+    15: O: O47 (pour)
+ POUR(5:1,3:0)
+The problem has been solved. POUR(5:0,3:1)
+ 3:1 5:0
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O4 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O8 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O12 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O15 (fill)
+ FILL(3)
+ 3:3 5:3
+     7: O: O17 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O4 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O8 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O12 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O15 (fill)
+ FILL(3)
+ 3:3 5:3
+     7: O: O17 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O3 (fill)
+ FILL(3)
+ 3:3 5:0
+     3: O: O4 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     4: O: O8 (fill)
+ FILL(3)
+ 3:3 5:3
+     5: O: O10 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O4 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:2
+     5: O: O12 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+     6: O: O15 (fill)
+ FILL(3)
+ 3:3 5:0
+     7: O: O18 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     8: O: O22 (fill)
+ FILL(3)
+ 3:3 5:3
+     9: O: O24 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O3 (fill)
+ FILL(3)
+ 3:3 5:0
+     3: O: O4 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     4: O: O8 (fill)
+ FILL(3)
+ 3:3 5:3
+     5: O: O10 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O4 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O8 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O12 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O14 (fill)
+ FILL(5)
+ 3:0 5:5
+     7: O: O17 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     8: O: O21 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     9: O: O25 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    10: O: O27 (fill)
+ FILL(5)
+ 3:0 5:5
+    11: O: O30 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    12: O: O32 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    13: O: O38 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    14: O: O41 (fill)
+ FILL(3)
+ 3:3 5:0
+    15: O: O44 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    16: O: O47 (fill)
+ FILL(5)
+ 3:0 5:5
+    17: O: O50 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    18: O: O54 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    19: O: O58 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    20: O: O61 (fill)
+ FILL(3)
+ 3:3 5:3
+    21: O: O63 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O3 (fill)
+ FILL(3)
+ 3:3 5:0
+     3: O: O4 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     4: O: O8 (fill)
+ FILL(3)
+ 3:3 5:3
+     5: O: O10 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O3 (fill)
+ FILL(3)
+ 3:3 5:0
+     3: O: O4 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     4: O: O7 (fill)
+ FILL(5)
+ 3:0 5:5
+     5: O: O10 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     6: O: O14 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     7: O: O18 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     8: O: O21 (fill)
+ FILL(3)
+ 3:3 5:3
+     9: O: O23 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O3 (fill)
+ FILL(3)
+ 3:3 5:0
+     3: O: O4 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     4: O: O7 (fill)
+ FILL(5)
+ 3:0 5:5
+     5: O: O10 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     6: O: O14 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     7: O: O18 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     8: O: O21 (fill)
+ FILL(3)
+ 3:3 5:3
+     9: O: O23 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:0 5:0
+     2: O: O2 (fill)
+ FILL(5)
+ 3:0 5:5
+     3: O: O4 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O8 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O12 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O15 (fill)
+ FILL(3)
+ 3:3 5:3
+     7: O: O17 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+

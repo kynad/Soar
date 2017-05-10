@@ -1,0 +1,11277 @@
+source {/home/dany/Study/Soar/ex2/WaterJug.soar}
+**
+*
+****
+*
+*
+**********
+**
+Warning: On the LHS of production water-jug*propose*pour, identifier <jug_2> is not connected to any goal or impasse.
+*
+***
+**
+Total: 27 productions sourced.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O3 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     3: O: O5 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O8 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     5: O: O12 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     6: O: O14 (fill)
+ FILL(5)
+ 3:0 5:5
+     7: O: O17 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     8: O: O21 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     9: O: O19 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    10: O: O24 (fill)
+ FILL(5)
+ 3:0 5:5
+    11: O: O26 (fill)
+ FILL(3)
+ 3:3 5:5
+    12: O: O29 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    13: O: O28 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    14: O: O32 (fill)
+ FILL(5)
+ 3:0 5:5
+    15: O: O33 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    16: O: O38 (fill)
+ FILL(5)
+ 3:3 5:5
+    17: O: O40 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    18: O: O42 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    19: O: O43 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    20: O: O47 (fill)
+ FILL(5)
+ 3:0 5:5
+    21: O: O45 (fill)
+ FILL(3)
+ 3:3 5:5
+    22: O: O50 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    23: O: O49 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    24: O: O53 (fill)
+ FILL(5)
+ 3:0 5:5
+    25: O: O54 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    26: O: O59 (fill)
+ FILL(5)
+ 3:3 5:5
+    27: O: O56 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    28: O: O61 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    29: O: O62 (fill)
+ FILL(3)
+ 3:3 5:0
+    30: O: O65 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    31: O: O69 (fill)
+ FILL(3)
+ 3:3 5:3
+    32: O: O68 (fill)
+ FILL(5)
+ 3:3 5:5
+    33: O: O72 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    34: O: O75 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    35: O: O79 (fill)
+ FILL(5)
+ 3:3 5:5
+    36: O: O81 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    37: O: O76 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    38: O: O84 (fill)
+ FILL(3)
+ 3:3 5:0
+    39: O: O85 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    40: O: O89 (fill)
+ FILL(3)
+ 3:3 5:3
+    41: O: O91 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    42: O: O93 (empty)
+ EMPTY(5)
+ 3:1 5:0
+    43: O: O95 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    44: O: O98 (fill)
+ FILL(5)
+ 3:0 5:5
+    45: O: O100 (fill)
+ FILL(3)
+ 3:3 5:5
+    46: O: O102 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    47: O: O103 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    48: O: O104 (fill)
+ FILL(5)
+ 3:0 5:5
+    49: O: O106 (fill)
+ FILL(3)
+ 3:3 5:5
+    50: O: O109 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    51: O: O111 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    52: O: O114 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    53: O: O118 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    54: O: O121 (fill)
+ FILL(3)
+ 3:3 5:3
+    55: O: O120 (fill)
+ FILL(5)
+ 3:3 5:5
+    56: O: O125 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    57: O: O124 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    58: O: O128 (fill)
+ FILL(3)
+ 3:3 5:0
+    59: O: O126 (fill)
+ FILL(5)
+ 3:3 5:5
+    60: O: O130 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    61: O: O133 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    62: O: O134 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    63: O: O140 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    64: O: O144 (fill)
+ FILL(5)
+ 3:2 5:5
+    65: O: O146 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O3 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     3: O: O5 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O9 (fill)
+ FILL(5)
+ 3:3 5:5
+     5: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     6: O: O11 (empty)
+ EMPTY(5)
+ 3:0 5:0
+     7: O: O14 (fill)
+ FILL(5)
+ 3:0 5:5
+     8: O: O15 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     9: O: O17 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    10: O: O23 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    11: O: O25 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    12: O: O27 (fill)
+ FILL(5)
+ 3:0 5:5
+    13: O: O30 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    14: O: O35 (fill)
+ FILL(5)
+ 3:3 5:5
+    15: O: O37 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    16: O: O32 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    17: O: O38 (fill)
+ FILL(5)
+ 3:0 5:5
+    18: O: O41 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    19: O: O46 (fill)
+ FILL(5)
+ 3:3 5:5
+    20: O: O48 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    21: O: O43 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    22: O: O51 (fill)
+ FILL(3)
+ 3:3 5:0
+    23: O: O52 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    24: O: O55 (fill)
+ FILL(5)
+ 3:0 5:5
+    25: O: O56 (fill)
+ FILL(3)
+ 3:3 5:5
+    26: O: O60 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    27: O: O59 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    28: O: O63 (fill)
+ FILL(5)
+ 3:0 5:5
+    29: O: O64 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    30: O: O66 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    31: O: O72 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    32: O: O75 (fill)
+ FILL(3)
+ 3:3 5:0
+    33: O: O76 (fill)
+ FILL(5)
+ 3:3 5:5
+    34: O: O80 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    35: O: O82 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    36: O: O84 (fill)
+ FILL(5)
+ 3:0 5:5
+    37: O: O85 (fill)
+ FILL(3)
+ 3:3 5:5
+    38: O: O89 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    39: O: O91 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    40: O: O92 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    41: O: O98 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    42: O: O101 (fill)
+ FILL(3)
+ 3:3 5:0
+    43: O: O102 (fill)
+ FILL(5)
+ 3:3 5:5
+    44: O: O106 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    45: O: O108 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    46: O: O109 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    47: O: O111 (fill)
+ FILL(3)
+ 3:3 5:0
+    48: O: O113 (fill)
+ FILL(5)
+ 3:3 5:5
+    49: O: O115 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    50: O: O116 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    51: O: O117 (fill)
+ FILL(3)
+ 3:3 5:0
+    52: O: O120 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    53: O: O124 (fill)
+ FILL(3)
+ 3:3 5:3
+    54: O: O123 (fill)
+ FILL(5)
+ 3:3 5:5
+    55: O: O128 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    56: O: O127 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    57: O: O129 (fill)
+ FILL(5)
+ 3:0 5:5
+    58: O: O131 (fill)
+ FILL(3)
+ 3:3 5:5
+    59: O: O133 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    60: O: O134 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    61: O: O137 (fill)
+ FILL(3)
+ 3:3 5:0
+    62: O: O138 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    63: O: O141 (fill)
+ FILL(5)
+ 3:0 5:5
+    64: O: O142 (fill)
+ FILL(3)
+ 3:3 5:5
+    65: O: O145 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    66: O: O146 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    67: O: O147 (fill)
+ FILL(5)
+ 3:0 5:5
+    68: O: O149 (fill)
+ FILL(3)
+ 3:3 5:5
+    69: O: O152 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    70: O: O151 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    71: O: O153 (fill)
+ FILL(3)
+ 3:3 5:0
+    72: O: O156 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    73: O: O159 (fill)
+ FILL(5)
+ 3:0 5:5
+    74: O: O160 (fill)
+ FILL(3)
+ 3:3 5:5
+    75: O: O164 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    76: O: O166 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    77: O: O170 (fill)
+ FILL(5)
+ 3:3 5:5
+    78: O: O172 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    79: O: O167 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    80: O: O175 (fill)
+ FILL(3)
+ 3:3 5:0
+    81: O: O173 (fill)
+ FILL(5)
+ 3:3 5:5
+    82: O: O177 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    83: O: O180 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    84: O: O184 (fill)
+ FILL(5)
+ 3:3 5:5
+    85: O: O186 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    86: O: O181 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    87: O: O189 (fill)
+ FILL(3)
+ 3:3 5:0
+    88: O: O190 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    89: O: O194 (fill)
+ FILL(3)
+ 3:3 5:3
+    90: O: O193 (fill)
+ FILL(5)
+ 3:3 5:5
+    91: O: O197 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    92: O: O198 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    93: O: O201 (fill)
+ FILL(5)
+ 3:0 5:5
+    94: O: O202 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    95: O: O204 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    96: O: O206 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    97: O: O209 (fill)
+ FILL(3)
+ 3:3 5:0
+    98: O: O211 (fill)
+ FILL(5)
+ 3:3 5:5
+    99: O: O213 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   100: O: O214 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   101: O: O215 (fill)
+ FILL(3)
+ 3:3 5:0
+   102: O: O217 (fill)
+ FILL(5)
+ 3:3 5:5
+   103: O: O220 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   104: O: O219 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   105: O: O223 (fill)
+ FILL(3)
+ 3:3 5:0
+   106: O: O221 (fill)
+ FILL(5)
+ 3:3 5:5
+   107: O: O226 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   108: O: O228 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   109: O: O231 (fill)
+ FILL(3)
+ 3:3 5:3
+   110: O: O230 (fill)
+ FILL(5)
+ 3:3 5:5
+   111: O: O234 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   112: O: O235 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   113: O: O238 (fill)
+ FILL(5)
+ 3:0 5:5
+   114: O: O239 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   115: O: O244 (fill)
+ FILL(5)
+ 3:3 5:5
+   116: O: O241 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   117: O: O246 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   118: O: O249 (fill)
+ FILL(5)
+ 3:0 5:5
+   119: O: O250 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   120: O: O252 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   121: O: O258 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   122: O: O262 (fill)
+ FILL(5)
+ 3:2 5:5
+   123: O: O264 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O3 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     3: O: O5 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:2
+     5: O: O12 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+     6: O: O16 (fill)
+ FILL(5)
+ 3:2 5:5
+     7: O: O15 (fill)
+ FILL(3)
+ 3:3 5:5
+     8: O: O20 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     9: O: O22 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    10: O: O23 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    11: O: O25 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    12: O: O28 (fill)
+ FILL(3)
+ 3:3 5:0
+    13: O: O31 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    14: O: O33 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    15: O: O37 (fill)
+ FILL(5)
+ 3:0 5:5
+    16: O: O35 (fill)
+ FILL(3)
+ 3:3 5:5
+    17: O: O39 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    18: O: O40 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    19: O: O43 (fill)
+ FILL(3)
+ 3:3 5:0
+    20: O: O41 (fill)
+ FILL(5)
+ 3:3 5:5
+    21: O: O45 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    22: O: O46 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    23: O: O47 (fill)
+ FILL(3)
+ 3:3 5:0
+    24: O: O49 (fill)
+ FILL(5)
+ 3:3 5:5
+    25: O: O52 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    26: O: O54 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    27: O: O56 (fill)
+ FILL(5)
+ 3:0 5:5
+    28: O: O57 (fill)
+ FILL(3)
+ 3:3 5:5
+    29: O: O61 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    30: O: O60 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    31: O: O64 (fill)
+ FILL(5)
+ 3:0 5:5
+    32: O: O62 (fill)
+ FILL(3)
+ 3:3 5:5
+    33: O: O67 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    34: O: O69 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    35: O: O73 (fill)
+ FILL(5)
+ 3:3 5:5
+    36: O: O70 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    37: O: O77 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    38: O: O78 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    39: O: O80 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    40: O: O85 (fill)
+ FILL(5)
+ 3:0 5:5
+    41: O: O83 (fill)
+ FILL(3)
+ 3:3 5:5
+    42: O: O88 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    43: O: O87 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    44: O: O89 (fill)
+ FILL(3)
+ 3:3 5:0
+    45: O: O91 (fill)
+ FILL(5)
+ 3:3 5:5
+    46: O: O94 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    47: O: O96 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    48: O: O99 (fill)
+ FILL(3)
+ 3:3 5:3
+    49: O: O101 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    50: O: O105 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    51: O: O103 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    52: O: O108 (fill)
+ FILL(3)
+ 3:3 5:0
+    53: O: O110 (fill)
+ FILL(5)
+ 3:3 5:5
+    54: O: O112 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    55: O: O115 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    56: O: O119 (fill)
+ FILL(5)
+ 3:3 5:5
+    57: O: O121 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    58: O: O123 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    59: O: O124 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    60: O: O128 (fill)
+ FILL(5)
+ 3:0 5:5
+    61: O: O129 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    62: O: O133 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    63: O: O137 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    64: O: O138 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    65: O: O140 (fill)
+ FILL(3)
+ 3:3 5:0
+    66: O: O142 (fill)
+ FILL(5)
+ 3:3 5:5
+    67: O: O145 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    68: O: O147 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    69: O: O148 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    70: O: O152 (fill)
+ FILL(5)
+ 3:0 5:5
+    71: O: O153 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    72: O: O157 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    73: O: O155 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    74: O: O162 (fill)
+ FILL(3)
+ 3:3 5:0
+    75: O: O160 (fill)
+ FILL(5)
+ 3:3 5:5
+    76: O: O164 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    77: O: O167 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    78: O: O170 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    79: O: O174 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    80: O: O175 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    81: O: O179 (fill)
+ FILL(5)
+ 3:0 5:5
+    82: O: O177 (fill)
+ FILL(3)
+ 3:3 5:5
+    83: O: O182 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    84: O: O181 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    85: O: O185 (fill)
+ FILL(5)
+ 3:0 5:5
+    86: O: O183 (fill)
+ FILL(3)
+ 3:3 5:5
+    87: O: O187 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    88: O: O190 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    89: O: O192 (fill)
+ FILL(5)
+ 3:0 5:5
+    90: O: O193 (fill)
+ FILL(3)
+ 3:3 5:5
+    91: O: O197 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    92: O: O196 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    93: O: O200 (fill)
+ FILL(5)
+ 3:0 5:5
+    94: O: O198 (fill)
+ FILL(3)
+ 3:3 5:5
+    95: O: O202 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    96: O: O205 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    97: O: O208 (fill)
+ FILL(3)
+ 3:3 5:3
+    98: O: O207 (fill)
+ FILL(5)
+ 3:3 5:5
+    99: O: O211 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   100: O: O214 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   101: O: O215 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   102: O: O221 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   103: O: O223 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   104: O: O225 (fill)
+ FILL(5)
+ 3:0 5:5
+   105: O: O227 (fill)
+ FILL(3)
+ 3:3 5:5
+   106: O: O230 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   107: O: O229 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   108: O: O231 (fill)
+ FILL(3)
+ 3:3 5:0
+   109: O: O234 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   110: O: O237 (fill)
+ FILL(5)
+ 3:0 5:5
+   111: O: O240 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   112: O: O242 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   113: O: O248 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   114: O: O251 (fill)
+ FILL(3)
+ 3:3 5:0
+   115: O: O252 (fill)
+ FILL(5)
+ 3:3 5:5
+   116: O: O256 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   117: O: O258 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   118: O: O260 (fill)
+ FILL(5)
+ 3:0 5:5
+   119: O: O263 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   120: O: O265 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   121: O: O267 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   122: O: O270 (fill)
+ FILL(3)
+ 3:3 5:0
+   123: O: O272 (fill)
+ FILL(5)
+ 3:3 5:5
+   124: O: O275 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   125: O: O274 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   126: O: O276 (fill)
+ FILL(5)
+ 3:0 5:5
+   127: O: O279 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   128: O: O284 (fill)
+ FILL(5)
+ 3:3 5:5
+   129: O: O286 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   130: O: O281 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   131: O: O289 (fill)
+ FILL(3)
+ 3:3 5:0
+   132: O: O290 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   133: O: O293 (fill)
+ FILL(5)
+ 3:0 5:5
+   134: O: O294 (fill)
+ FILL(3)
+ 3:3 5:5
+   135: O: O298 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   136: O: O300 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   137: O: O301 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   138: O: O303 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   139: O: O306 (fill)
+ FILL(3)
+ 3:3 5:0
+   140: O: O308 (fill)
+ FILL(5)
+ 3:3 5:5
+   141: O: O311 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   142: O: O313 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   143: O: O315 (fill)
+ FILL(5)
+ 3:0 5:5
+   144: O: O318 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   145: O: O323 (fill)
+ FILL(5)
+ 3:3 5:5
+   146: O: O325 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   147: O: O320 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   148: O: O326 (fill)
+ FILL(5)
+ 3:0 5:5
+   149: O: O328 (fill)
+ FILL(3)
+ 3:3 5:5
+   150: O: O331 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   151: O: O330 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   152: O: O334 (fill)
+ FILL(5)
+ 3:0 5:5
+   153: O: O332 (fill)
+ FILL(3)
+ 3:3 5:5
+   154: O: O336 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   155: O: O339 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   156: O: O342 (fill)
+ FILL(3)
+ 3:3 5:3
+   157: O: O341 (fill)
+ FILL(5)
+ 3:3 5:5
+   158: O: O345 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   159: O: O346 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   160: O: O349 (fill)
+ FILL(5)
+ 3:0 5:5
+   161: O: O347 (fill)
+ FILL(3)
+ 3:3 5:5
+   162: O: O352 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   163: O: O354 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   164: O: O355 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   165: O: O361 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   166: O: O364 (fill)
+ FILL(3)
+ 3:3 5:0
+   167: O: O365 (fill)
+ FILL(5)
+ 3:3 5:5
+   168: O: O368 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   169: O: O369 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   170: O: O370 (fill)
+ FILL(3)
+ 3:3 5:0
+   171: O: O373 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   172: O: O377 (fill)
+ FILL(3)
+ 3:3 5:3
+   173: O: O376 (fill)
+ FILL(5)
+ 3:3 5:5
+   174: O: O380 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   175: O: O381 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   176: O: O382 (fill)
+ FILL(3)
+ 3:3 5:0
+   177: O: O385 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   178: O: O387 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   179: O: O389 (fill)
+ FILL(3)
+ 3:3 5:0
+   180: O: O392 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   181: O: O396 (fill)
+ FILL(3)
+ 3:3 5:3
+   182: O: O398 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   183: O: O402 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   184: O: O400 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   185: O: O407 (fill)
+ FILL(5)
+ 3:0 5:5
+   186: O: O405 (fill)
+ FILL(3)
+ 3:3 5:5
+   187: O: O409 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   188: O: O410 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   189: O: O411 (fill)
+ FILL(5)
+ 3:0 5:5
+   190: O: O413 (fill)
+ FILL(3)
+ 3:3 5:5
+   191: O: O416 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   192: O: O418 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   193: O: O419 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   194: O: O425 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   195: O: O427 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   196: O: O429 (fill)
+ FILL(5)
+ 3:0 5:5
+   197: O: O431 (fill)
+ FILL(3)
+ 3:3 5:5
+   198: O: O434 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   199: O: O436 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   200: O: O439 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   201: O: O437 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   202: O: O444 (fill)
+ FILL(3)
+ 3:3 5:0
+   203: O: O445 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   204: O: O449 (fill)
+ FILL(3)
+ 3:3 5:3
+   205: O: O451 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   206: O: O456 (fill)
+ FILL(3)
+ 3:3 5:5
+   207: O: O458 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   208: O: O460 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   209: O: O464 (fill)
+ FILL(5)
+ 3:3 5:5
+   210: O: O466 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   211: O: O461 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   212: O: O467 (fill)
+ FILL(5)
+ 3:0 5:5
+   213: O: O470 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   214: O: O472 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   215: O: O478 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   216: O: O481 (fill)
+ FILL(3)
+ 3:3 5:0
+   217: O: O484 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   218: O: O486 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   219: O: O488 (fill)
+ FILL(3)
+ 3:3 5:0
+   220: O: O490 (fill)
+ FILL(5)
+ 3:3 5:5
+   221: O: O492 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   222: O: O493 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   223: O: O496 (fill)
+ FILL(5)
+ 3:0 5:5
+   224: O: O497 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   225: O: O501 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   226: O: O499 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   227: O: O504 (fill)
+ FILL(5)
+ 3:0 5:5
+   228: O: O507 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   229: O: O512 (fill)
+ FILL(5)
+ 3:3 5:5
+   230: O: O509 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   231: O: O516 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   232: O: O520 (fill)
+ FILL(5)
+ 3:3 5:5
+   233: O: O517 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   234: O: O522 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   235: O: O525 (fill)
+ FILL(5)
+ 3:0 5:5
+   236: O: O523 (fill)
+ FILL(3)
+ 3:3 5:5
+   237: O: O528 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   238: O: O530 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   239: O: O531 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   240: O: O537 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   241: O: O540 (fill)
+ FILL(3)
+ 3:3 5:0
+   242: O: O541 (fill)
+ FILL(5)
+ 3:3 5:5
+   243: O: O545 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   244: O: O547 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   245: O: O548 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   246: O: O552 (fill)
+ FILL(5)
+ 3:0 5:5
+   247: O: O553 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   248: O: O555 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   249: O: O557 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   250: O: O560 (fill)
+ FILL(3)
+ 3:3 5:0
+   251: O: O562 (fill)
+ FILL(5)
+ 3:3 5:5
+   252: O: O565 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   253: O: O564 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   254: O: O566 (fill)
+ FILL(5)
+ 3:0 5:5
+   255: O: O568 (fill)
+ FILL(3)
+ 3:3 5:5
+   256: O: O571 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   257: O: O573 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   258: O: O576 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   259: O: O580 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   260: O: O581 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   261: O: O585 (fill)
+ FILL(5)
+ 3:0 5:5
+   262: O: O583 (fill)
+ FILL(3)
+ 3:3 5:5
+   263: O: O587 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   264: O: O590 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   265: O: O591 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   266: O: O593 (fill)
+ FILL(3)
+ 3:3 5:0
+   267: O: O595 (fill)
+ FILL(5)
+ 3:3 5:5
+   268: O: O597 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   269: O: O600 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   270: O: O604 (fill)
+ FILL(5)
+ 3:3 5:5
+   271: O: O601 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   272: O: O606 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   273: O: O607 (fill)
+ FILL(3)
+ 3:3 5:0
+   274: O: O609 (fill)
+ FILL(5)
+ 3:3 5:5
+   275: O: O611 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   276: O: O614 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   277: O: O615 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   278: O: O621 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   279: O: O624 (fill)
+ FILL(3)
+ 3:3 5:0
+   280: O: O625 (fill)
+ FILL(5)
+ 3:3 5:5
+   281: O: O629 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   282: O: O631 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   283: O: O632 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   284: O: O634 (fill)
+ FILL(3)
+ 3:3 5:0
+   285: O: O637 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   286: O: O640 (fill)
+ FILL(5)
+ 3:0 5:5
+   287: O: O643 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   288: O: O645 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   289: O: O647 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   290: O: O650 (fill)
+ FILL(3)
+ 3:3 5:0
+   291: O: O653 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   292: O: O656 (fill)
+ FILL(5)
+ 3:0 5:5
+   293: O: O657 (fill)
+ FILL(3)
+ 3:3 5:5
+   294: O: O660 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   295: O: O663 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   296: O: O666 (fill)
+ FILL(3)
+ 3:3 5:3
+   297: O: O665 (fill)
+ FILL(5)
+ 3:3 5:5
+   298: O: O669 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   299: O: O670 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   300: O: O671 (fill)
+ FILL(3)
+ 3:3 5:0
+   301: O: O673 (fill)
+ FILL(5)
+ 3:3 5:5
+   302: O: O676 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   303: O: O675 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   304: O: O677 (fill)
+ FILL(5)
+ 3:0 5:5
+   305: O: O680 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   306: O: O682 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   307: O: O688 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   308: O: O692 (fill)
+ FILL(5)
+ 3:2 5:5
+   309: O: O694 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O3 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     3: O: O5 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O9 (fill)
+ FILL(5)
+ 3:3 5:5
+     5: O: O11 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     6: O: O13 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     7: O: O15 (fill)
+ FILL(5)
+ 3:0 5:5
+     8: O: O16 (fill)
+ FILL(3)
+ 3:3 5:5
+     9: O: O20 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    10: O: O22 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    11: O: O26 (fill)
+ FILL(5)
+ 3:3 5:5
+    12: O: O23 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    13: O: O30 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    14: O: O33 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    15: O: O37 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    16: O: O39 (fill)
+ FILL(5)
+ 3:0 5:5
+    17: O: O40 (fill)
+ FILL(3)
+ 3:3 5:5
+    18: O: O44 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    19: O: O46 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    20: O: O50 (fill)
+ FILL(5)
+ 3:3 5:5
+    21: O: O47 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    22: O: O54 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    23: O: O57 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    24: O: O55 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    25: O: O60 (fill)
+ FILL(5)
+ 3:0 5:5
+    26: O: O62 (fill)
+ FILL(3)
+ 3:3 5:5
+    27: O: O64 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    28: O: O65 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    29: O: O66 (fill)
+ FILL(5)
+ 3:0 5:5
+    30: O: O69 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    31: O: O73 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    32: O: O71 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    33: O: O76 (fill)
+ FILL(5)
+ 3:0 5:5
+    34: O: O79 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    35: O: O81 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    36: O: O83 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    37: O: O88 (fill)
+ FILL(5)
+ 3:0 5:5
+    38: O: O86 (fill)
+ FILL(3)
+ 3:3 5:5
+    39: O: O91 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    40: O: O90 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    41: O: O92 (fill)
+ FILL(3)
+ 3:3 5:0
+    42: O: O95 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    43: O: O99 (fill)
+ FILL(3)
+ 3:3 5:3
+    44: O: O101 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    45: O: O106 (fill)
+ FILL(3)
+ 3:3 5:5
+    46: O: O103 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    47: O: O110 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    48: O: O111 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    49: O: O115 (fill)
+ FILL(5)
+ 3:0 5:5
+    50: O: O116 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    51: O: O121 (fill)
+ FILL(5)
+ 3:3 5:5
+    52: O: O118 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    53: O: O123 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    54: O: O126 (fill)
+ FILL(5)
+ 3:0 5:5
+    55: O: O127 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    56: O: O132 (fill)
+ FILL(5)
+ 3:3 5:5
+    57: O: O129 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    58: O: O134 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    59: O: O137 (fill)
+ FILL(5)
+ 3:0 5:5
+    60: O: O135 (fill)
+ FILL(3)
+ 3:3 5:5
+    61: O: O139 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    62: O: O142 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    63: O: O144 (fill)
+ FILL(5)
+ 3:0 5:5
+    64: O: O147 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    65: O: O149 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    66: O: O155 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    67: O: O157 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    68: O: O161 (fill)
+ FILL(3)
+ 3:3 5:0
+    69: O: O162 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    70: O: O164 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    71: O: O168 (fill)
+ FILL(5)
+ 3:0 5:5
+    72: O: O169 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    73: O: O171 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    74: O: O177 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    75: O: O180 (fill)
+ FILL(3)
+ 3:3 5:0
+    76: O: O183 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    77: O: O186 (fill)
+ FILL(5)
+ 3:0 5:5
+    78: O: O189 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    79: O: O194 (fill)
+ FILL(5)
+ 3:3 5:5
+    80: O: O196 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    81: O: O198 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    82: O: O201 (fill)
+ FILL(3)
+ 3:3 5:3
+    83: O: O203 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    84: O: O208 (fill)
+ FILL(3)
+ 3:3 5:5
+    85: O: O205 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    86: O: O210 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    87: O: O213 (fill)
+ FILL(3)
+ 3:3 5:0
+    88: O: O211 (fill)
+ FILL(5)
+ 3:3 5:5
+    89: O: O216 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    90: O: O218 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    91: O: O221 (fill)
+ FILL(3)
+ 3:3 5:3
+    92: O: O223 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    93: O: O228 (fill)
+ FILL(3)
+ 3:3 5:5
+    94: O: O225 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    95: O: O232 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    96: O: O233 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    97: O: O235 (fill)
+ FILL(3)
+ 3:3 5:0
+    98: O: O238 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    99: O: O241 (fill)
+ FILL(5)
+ 3:0 5:5
+   100: O: O244 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   101: O: O249 (fill)
+ FILL(5)
+ 3:3 5:5
+   102: O: O246 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   103: O: O253 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   104: O: O256 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   105: O: O254 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   106: O: O261 (fill)
+ FILL(3)
+ 3:3 5:0
+   107: O: O259 (fill)
+ FILL(5)
+ 3:3 5:5
+   108: O: O264 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   109: O: O266 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   110: O: O269 (fill)
+ FILL(3)
+ 3:3 5:3
+   111: O: O271 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   112: O: O276 (fill)
+ FILL(3)
+ 3:3 5:5
+   113: O: O273 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   114: O: O278 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   115: O: O279 (fill)
+ FILL(5)
+ 3:0 5:5
+   116: O: O281 (fill)
+ FILL(3)
+ 3:3 5:5
+   117: O: O284 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   118: O: O286 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   119: O: O289 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   120: O: O293 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   121: O: O295 (fill)
+ FILL(5)
+ 3:0 5:5
+   122: O: O298 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   123: O: O300 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   124: O: O306 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   125: O: O310 (fill)
+ FILL(5)
+ 3:2 5:5
+   126: O: O309 (fill)
+ FILL(3)
+ 3:3 5:5
+   127: O: O313 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   128: O: O316 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   129: O: O318 (fill)
+ FILL(5)
+ 3:0 5:5
+   130: O: O321 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   131: O: O326 (fill)
+ FILL(5)
+ 3:3 5:5
+   132: O: O323 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   133: O: O328 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   134: O: O331 (fill)
+ FILL(5)
+ 3:0 5:5
+   135: O: O329 (fill)
+ FILL(3)
+ 3:3 5:5
+   136: O: O334 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   137: O: O333 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   138: O: O337 (fill)
+ FILL(5)
+ 3:0 5:5
+   139: O: O338 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   140: O: O342 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   141: O: O346 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   142: O: O347 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   143: O: O351 (fill)
+ FILL(5)
+ 3:0 5:5
+   144: O: O352 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   145: O: O354 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   146: O: O356 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   147: O: O359 (fill)
+ FILL(3)
+ 3:3 5:0
+   148: O: O362 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   149: O: O364 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   150: O: O366 (fill)
+ FILL(3)
+ 3:3 5:0
+   151: O: O368 (fill)
+ FILL(5)
+ 3:3 5:5
+   152: O: O371 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   153: O: O370 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   154: O: O372 (fill)
+ FILL(5)
+ 3:0 5:5
+   155: O: O374 (fill)
+ FILL(3)
+ 3:3 5:5
+   156: O: O376 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   157: O: O379 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   158: O: O380 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   159: O: O382 (fill)
+ FILL(3)
+ 3:3 5:0
+   160: O: O385 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   161: O: O389 (fill)
+ FILL(3)
+ 3:3 5:3
+   162: O: O388 (fill)
+ FILL(5)
+ 3:3 5:5
+   163: O: O393 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   164: O: O395 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   165: O: O398 (fill)
+ FILL(3)
+ 3:3 5:3
+   166: O: O397 (fill)
+ FILL(5)
+ 3:3 5:5
+   167: O: O402 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   168: O: O401 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   169: O: O405 (fill)
+ FILL(3)
+ 3:3 5:0
+   170: O: O406 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   171: O: O408 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   172: O: O412 (fill)
+ FILL(5)
+ 3:0 5:5
+   173: O: O410 (fill)
+ FILL(3)
+ 3:3 5:5
+   174: O: O415 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   175: O: O417 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   176: O: O421 (fill)
+ FILL(5)
+ 3:3 5:5
+   177: O: O418 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   178: O: O425 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   179: O: O426 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   180: O: O432 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   181: O: O434 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   182: O: O436 (fill)
+ FILL(5)
+ 3:0 5:5
+   183: O: O439 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   184: O: O443 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   185: O: O447 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   186: O: O450 (fill)
+ FILL(3)
+ 3:3 5:3
+   187: O: O452 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   188: O: O456 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   189: O: O454 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   190: O: O461 (fill)
+ FILL(5)
+ 3:0 5:5
+   191: O: O462 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   192: O: O466 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   193: O: O464 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   194: O: O471 (fill)
+ FILL(3)
+ 3:3 5:0
+   195: O: O472 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   196: O: O476 (fill)
+ FILL(3)
+ 3:3 5:3
+   197: O: O478 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   198: O: O482 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   199: O: O486 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   200: O: O490 (fill)
+ FILL(5)
+ 3:3 5:5
+   201: O: O492 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   202: O: O494 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   203: O: O496 (fill)
+ FILL(5)
+ 3:0 5:5
+   204: O: O497 (fill)
+ FILL(3)
+ 3:3 5:5
+   205: O: O500 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   206: O: O503 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   207: O: O506 (fill)
+ FILL(3)
+ 3:3 5:3
+   208: O: O505 (fill)
+ FILL(5)
+ 3:3 5:5
+   209: O: O510 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   210: O: O512 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   211: O: O514 (fill)
+ FILL(5)
+ 3:0 5:5
+   212: O: O515 (fill)
+ FILL(3)
+ 3:3 5:5
+   213: O: O518 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   214: O: O521 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   215: O: O524 (fill)
+ FILL(3)
+ 3:3 5:3
+   216: O: O526 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   217: O: O531 (fill)
+ FILL(3)
+ 3:3 5:5
+   218: O: O528 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   219: O: O535 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   220: O: O537 (fill)
+ FILL(5)
+ 3:0 5:5
+   221: O: O540 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   222: O: O544 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   223: O: O548 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   224: O: O550 (fill)
+ FILL(5)
+ 3:0 5:5
+   225: O: O551 (fill)
+ FILL(3)
+ 3:3 5:5
+   226: O: O555 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   227: O: O554 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   228: O: O556 (fill)
+ FILL(3)
+ 3:3 5:0
+   229: O: O559 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   230: O: O562 (fill)
+ FILL(5)
+ 3:0 5:5
+   231: O: O565 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   232: O: O569 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   233: O: O567 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   234: O: O572 (fill)
+ FILL(5)
+ 3:0 5:5
+   235: O: O575 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   236: O: O579 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   237: O: O583 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   238: O: O584 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   239: O: O586 (fill)
+ FILL(3)
+ 3:3 5:0
+   240: O: O588 (fill)
+ FILL(5)
+ 3:3 5:5
+   241: O: O590 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   242: O: O593 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   243: O: O596 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   244: O: O600 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   245: O: O601 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   246: O: O605 (fill)
+ FILL(5)
+ 3:0 5:5
+   247: O: O606 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   248: O: O608 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   249: O: O610 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   250: O: O613 (fill)
+ FILL(3)
+ 3:3 5:0
+   251: O: O615 (fill)
+ FILL(5)
+ 3:3 5:5
+   252: O: O617 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   253: O: O620 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   254: O: O623 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   255: O: O627 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   256: O: O630 (fill)
+ FILL(3)
+ 3:3 5:3
+   257: O: O629 (fill)
+ FILL(5)
+ 3:3 5:5
+   258: O: O634 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   259: O: O633 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   260: O: O635 (fill)
+ FILL(5)
+ 3:0 5:5
+   261: O: O637 (fill)
+ FILL(3)
+ 3:3 5:5
+   262: O: O639 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   263: O: O640 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   264: O: O641 (fill)
+ FILL(5)
+ 3:0 5:5
+   265: O: O644 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   266: O: O649 (fill)
+ FILL(5)
+ 3:3 5:5
+   267: O: O651 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   268: O: O653 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   269: O: O655 (fill)
+ FILL(5)
+ 3:0 5:5
+   270: O: O656 (fill)
+ FILL(3)
+ 3:3 5:5
+   271: O: O660 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   272: O: O659 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   273: O: O663 (fill)
+ FILL(5)
+ 3:0 5:5
+   274: O: O664 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   275: O: O668 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   276: O: O666 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   277: O: O671 (fill)
+ FILL(5)
+ 3:0 5:5
+   278: O: O674 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   279: O: O678 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   280: O: O676 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   281: O: O683 (fill)
+ FILL(3)
+ 3:3 5:0
+   282: O: O681 (fill)
+ FILL(5)
+ 3:3 5:5
+   283: O: O686 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   284: O: O688 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   285: O: O691 (fill)
+ FILL(3)
+ 3:3 5:3
+   286: O: O690 (fill)
+ FILL(5)
+ 3:3 5:5
+   287: O: O694 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   288: O: O695 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   289: O: O696 (fill)
+ FILL(3)
+ 3:3 5:0
+   290: O: O698 (fill)
+ FILL(5)
+ 3:3 5:5
+   291: O: O700 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   292: O: O703 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   293: O: O706 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   294: O: O704 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   295: O: O709 (fill)
+ FILL(5)
+ 3:0 5:5
+   296: O: O712 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   297: O: O714 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   298: O: O720 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   299: O: O724 (fill)
+ FILL(5)
+ 3:2 5:5
+   300: O: O726 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O2 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     3: O: O5 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     4: O: O6 (empty)
+ EMPTY(5)
+ 3:0 5:0
+     5: O: O10 (fill)
+ FILL(5)
+ 3:0 5:5
+     6: O: O8 (fill)
+ FILL(3)
+ 3:3 5:5
+     7: O: O12 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     8: O: O13 (empty)
+ EMPTY(3)
+ 3:0 5:0
+     9: O: O14 (fill)
+ FILL(5)
+ 3:0 5:5
+    10: O: O17 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    11: O: O22 (fill)
+ FILL(5)
+ 3:3 5:5
+    12: O: O19 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    13: O: O26 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    14: O: O29 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    15: O: O27 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    16: O: O32 (fill)
+ FILL(5)
+ 3:0 5:5
+    17: O: O35 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    18: O: O37 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    19: O: O43 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    20: O: O47 (fill)
+ FILL(5)
+ 3:2 5:5
+    21: O: O49 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O3 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     3: O: O2 (empty)
+ EMPTY(5)
+ 3:0 5:0
+     4: O: O6 (fill)
+ FILL(5)
+ 3:0 5:5
+     5: O: O7 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     6: O: O9 (empty)
+ EMPTY(3)
+ 3:0 5:2
+     7: O: O11 (empty)
+ EMPTY(5)
+ 3:0 5:0
+     8: O: O14 (fill)
+ FILL(3)
+ 3:3 5:0
+     9: O: O17 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    10: O: O21 (fill)
+ FILL(3)
+ 3:3 5:3
+    11: O: O23 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    12: O: O27 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    13: O: O25 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    14: O: O30 (fill)
+ FILL(3)
+ 3:3 5:0
+    15: O: O33 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    16: O: O35 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    17: O: O39 (fill)
+ FILL(5)
+ 3:0 5:5
+    18: O: O40 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    19: O: O44 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    20: O: O48 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    21: O: O50 (fill)
+ FILL(5)
+ 3:0 5:5
+    22: O: O51 (fill)
+ FILL(3)
+ 3:3 5:5
+    23: O: O54 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    24: O: O55 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    25: O: O58 (fill)
+ FILL(3)
+ 3:3 5:0
+    26: O: O56 (fill)
+ FILL(5)
+ 3:3 5:5
+    27: O: O60 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    28: O: O63 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    29: O: O67 (fill)
+ FILL(5)
+ 3:3 5:5
+    30: O: O69 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    31: O: O71 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    32: O: O73 (fill)
+ FILL(5)
+ 3:0 5:5
+    33: O: O76 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    34: O: O78 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    35: O: O84 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    36: O: O87 (fill)
+ FILL(3)
+ 3:3 5:0
+    37: O: O90 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    38: O: O93 (fill)
+ FILL(5)
+ 3:0 5:5
+    39: O: O96 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    40: O: O100 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    41: O: O98 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    42: O: O103 (fill)
+ FILL(5)
+ 3:0 5:5
+    43: O: O105 (fill)
+ FILL(3)
+ 3:3 5:5
+    44: O: O107 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    45: O: O108 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    46: O: O109 (fill)
+ FILL(5)
+ 3:0 5:5
+    47: O: O111 (fill)
+ FILL(3)
+ 3:3 5:5
+    48: O: O114 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    49: O: O116 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    50: O: O117 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    51: O: O119 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    52: O: O122 (fill)
+ FILL(3)
+ 3:3 5:0
+    53: O: O124 (fill)
+ FILL(5)
+ 3:3 5:5
+    54: O: O127 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    55: O: O126 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    56: O: O128 (fill)
+ FILL(5)
+ 3:0 5:5
+    57: O: O130 (fill)
+ FILL(3)
+ 3:3 5:5
+    58: O: O133 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    59: O: O132 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    60: O: O134 (fill)
+ FILL(3)
+ 3:3 5:0
+    61: O: O136 (fill)
+ FILL(5)
+ 3:3 5:5
+    62: O: O139 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    63: O: O141 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    64: O: O142 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    65: O: O146 (fill)
+ FILL(5)
+ 3:0 5:5
+    66: O: O144 (fill)
+ FILL(3)
+ 3:3 5:5
+    67: O: O149 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    68: O: O148 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    69: O: O152 (fill)
+ FILL(5)
+ 3:0 5:5
+    70: O: O153 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    71: O: O157 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    72: O: O155 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    73: O: O162 (fill)
+ FILL(3)
+ 3:3 5:0
+    74: O: O163 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    75: O: O165 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    76: O: O169 (fill)
+ FILL(5)
+ 3:0 5:5
+    77: O: O167 (fill)
+ FILL(3)
+ 3:3 5:5
+    78: O: O172 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    79: O: O171 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    80: O: O175 (fill)
+ FILL(5)
+ 3:0 5:5
+    81: O: O176 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    82: O: O178 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    83: O: O184 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    84: O: O186 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    85: O: O188 (fill)
+ FILL(5)
+ 3:0 5:5
+    86: O: O190 (fill)
+ FILL(3)
+ 3:3 5:5
+    87: O: O193 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    88: O: O195 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    89: O: O199 (fill)
+ FILL(5)
+ 3:3 5:5
+    90: O: O196 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    91: O: O203 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    92: O: O207 (fill)
+ FILL(5)
+ 3:3 5:5
+    93: O: O209 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    94: O: O204 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    95: O: O210 (fill)
+ FILL(5)
+ 3:0 5:5
+    96: O: O213 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    97: O: O217 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    98: O: O215 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    99: O: O220 (fill)
+ FILL(5)
+ 3:0 5:5
+   100: O: O223 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   101: O: O225 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   102: O: O231 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   103: O: O233 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   104: O: O235 (fill)
+ FILL(5)
+ 3:0 5:5
+   105: O: O237 (fill)
+ FILL(3)
+ 3:3 5:5
+   106: O: O240 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   107: O: O242 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   108: O: O245 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   109: O: O249 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   110: O: O250 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   111: O: O252 (fill)
+ FILL(3)
+ 3:3 5:0
+   112: O: O255 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   113: O: O257 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   114: O: O261 (fill)
+ FILL(5)
+ 3:0 5:5
+   115: O: O259 (fill)
+ FILL(3)
+ 3:3 5:5
+   116: O: O264 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   117: O: O263 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   118: O: O267 (fill)
+ FILL(5)
+ 3:0 5:5
+   119: O: O265 (fill)
+ FILL(3)
+ 3:3 5:5
+   120: O: O270 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   121: O: O272 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   122: O: O276 (fill)
+ FILL(5)
+ 3:3 5:5
+   123: O: O278 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   124: O: O273 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   125: O: O281 (fill)
+ FILL(3)
+ 3:3 5:0
+   126: O: O282 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   127: O: O286 (fill)
+ FILL(3)
+ 3:3 5:3
+   128: O: O285 (fill)
+ FILL(5)
+ 3:3 5:5
+   129: O: O290 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   130: O: O292 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   131: O: O295 (fill)
+ FILL(3)
+ 3:3 5:3
+   132: O: O297 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   133: O: O301 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   134: O: O299 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   135: O: O306 (fill)
+ FILL(5)
+ 3:0 5:5
+   136: O: O307 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   137: O: O312 (fill)
+ FILL(5)
+ 3:3 5:5
+   138: O: O309 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   139: O: O316 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   140: O: O320 (fill)
+ FILL(5)
+ 3:3 5:5
+   141: O: O317 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   142: O: O324 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   143: O: O328 (fill)
+ FILL(5)
+ 3:3 5:5
+   144: O: O330 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   145: O: O325 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   146: O: O333 (fill)
+ FILL(3)
+ 3:3 5:0
+   147: O: O334 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   148: O: O337 (fill)
+ FILL(5)
+ 3:0 5:5
+   149: O: O340 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   150: O: O345 (fill)
+ FILL(5)
+ 3:3 5:5
+   151: O: O342 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   152: O: O349 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   153: O: O352 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   154: O: O356 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   155: O: O357 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   156: O: O361 (fill)
+ FILL(5)
+ 3:0 5:5
+   157: O: O359 (fill)
+ FILL(3)
+ 3:3 5:5
+   158: O: O364 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   159: O: O366 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   160: O: O369 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   161: O: O373 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   162: O: O375 (fill)
+ FILL(5)
+ 3:0 5:5
+   163: O: O378 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   164: O: O380 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   165: O: O386 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   166: O: O389 (fill)
+ FILL(3)
+ 3:3 5:0
+   167: O: O392 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   168: O: O395 (fill)
+ FILL(5)
+ 3:0 5:5
+   169: O: O398 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   170: O: O400 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   171: O: O402 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   172: O: O407 (fill)
+ FILL(5)
+ 3:0 5:5
+   173: O: O408 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   174: O: O413 (fill)
+ FILL(5)
+ 3:3 5:5
+   175: O: O415 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   176: O: O417 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   177: O: O420 (fill)
+ FILL(3)
+ 3:3 5:3
+   178: O: O419 (fill)
+ FILL(5)
+ 3:3 5:5
+   179: O: O424 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   180: O: O426 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   181: O: O428 (fill)
+ FILL(5)
+ 3:0 5:5
+   182: O: O429 (fill)
+ FILL(3)
+ 3:3 5:5
+   183: O: O432 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   184: O: O433 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   185: O: O436 (fill)
+ FILL(3)
+ 3:3 5:0
+   186: O: O434 (fill)
+ FILL(5)
+ 3:3 5:5
+   187: O: O439 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   188: O: O438 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   189: O: O442 (fill)
+ FILL(3)
+ 3:3 5:0
+   190: O: O443 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   191: O: O445 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   192: O: O449 (fill)
+ FILL(5)
+ 3:0 5:5
+   193: O: O447 (fill)
+ FILL(3)
+ 3:3 5:5
+   194: O: O451 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   195: O: O452 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   196: O: O453 (fill)
+ FILL(5)
+ 3:0 5:5
+   197: O: O455 (fill)
+ FILL(3)
+ 3:3 5:5
+   198: O: O458 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   199: O: O460 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   200: O: O464 (fill)
+ FILL(5)
+ 3:3 5:5
+   201: O: O466 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   202: O: O461 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   203: O: O467 (fill)
+ FILL(5)
+ 3:0 5:5
+   204: O: O469 (fill)
+ FILL(3)
+ 3:3 5:5
+   205: O: O471 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   206: O: O472 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   207: O: O475 (fill)
+ FILL(3)
+ 3:3 5:0
+   208: O: O473 (fill)
+ FILL(5)
+ 3:3 5:5
+   209: O: O477 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   210: O: O478 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   211: O: O481 (fill)
+ FILL(5)
+ 3:0 5:5
+   212: O: O482 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   213: O: O484 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   214: O: O486 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   215: O: O489 (fill)
+ FILL(3)
+ 3:3 5:0
+   216: O: O491 (fill)
+ FILL(5)
+ 3:3 5:5
+   217: O: O493 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   218: O: O496 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   219: O: O497 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   220: O: O503 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   221: O: O507 (fill)
+ FILL(5)
+ 3:2 5:5
+   222: O: O509 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O2 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     3: O: O5 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     4: O: O7 (fill)
+ FILL(5)
+ 3:0 5:5
+     5: O: O10 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     6: O: O15 (fill)
+ FILL(5)
+ 3:3 5:5
+     7: O: O17 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     8: O: O19 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     9: O: O22 (fill)
+ FILL(3)
+ 3:3 5:3
+    10: O: O24 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    11: O: O26 (empty)
+ EMPTY(5)
+ 3:1 5:0
+    12: O: O28 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    13: O: O33 (fill)
+ FILL(3)
+ 3:3 5:0
+    14: O: O34 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    15: O: O36 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    16: O: O38 (fill)
+ FILL(3)
+ 3:3 5:0
+    17: O: O40 (fill)
+ FILL(5)
+ 3:3 5:5
+    18: O: O43 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    19: O: O45 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    20: O: O47 (fill)
+ FILL(5)
+ 3:0 5:5
+    21: O: O50 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    22: O: O55 (fill)
+ FILL(5)
+ 3:3 5:5
+    23: O: O57 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    24: O: O52 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    25: O: O60 (fill)
+ FILL(3)
+ 3:3 5:0
+    26: O: O58 (fill)
+ FILL(5)
+ 3:3 5:5
+    27: O: O62 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    28: O: O63 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    29: O: O64 (fill)
+ FILL(3)
+ 3:3 5:0
+    30: O: O67 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    31: O: O71 (fill)
+ FILL(3)
+ 3:3 5:3
+    32: O: O73 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    33: O: O78 (fill)
+ FILL(3)
+ 3:3 5:5
+    34: O: O75 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    35: O: O82 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    36: O: O85 (fill)
+ FILL(3)
+ 3:3 5:3
+    37: O: O84 (fill)
+ FILL(5)
+ 3:3 5:5
+    38: O: O89 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    39: O: O91 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    40: O: O94 (fill)
+ FILL(3)
+ 3:3 5:3
+    41: O: O93 (fill)
+ FILL(5)
+ 3:3 5:5
+    42: O: O97 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    43: O: O98 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    44: O: O101 (fill)
+ FILL(5)
+ 3:0 5:5
+    45: O: O99 (fill)
+ FILL(3)
+ 3:3 5:5
+    46: O: O103 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    47: O: O106 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    48: O: O109 (fill)
+ FILL(3)
+ 3:3 5:3
+    49: O: O111 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    50: O: O115 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    51: O: O119 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    52: O: O122 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    53: O: O120 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    54: O: O125 (fill)
+ FILL(5)
+ 3:0 5:5
+    55: O: O127 (fill)
+ FILL(3)
+ 3:3 5:5
+    56: O: O130 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    57: O: O132 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    58: O: O135 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    59: O: O133 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    60: O: O138 (fill)
+ FILL(5)
+ 3:0 5:5
+    61: O: O141 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    62: O: O145 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    63: O: O143 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    64: O: O150 (fill)
+ FILL(3)
+ 3:3 5:0
+    65: O: O148 (fill)
+ FILL(5)
+ 3:3 5:5
+    66: O: O152 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    67: O: O155 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    68: O: O156 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    69: O: O162 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    70: O: O165 (fill)
+ FILL(3)
+ 3:3 5:0
+    71: O: O166 (fill)
+ FILL(5)
+ 3:3 5:5
+    72: O: O170 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    73: O: O172 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    74: O: O174 (fill)
+ FILL(5)
+ 3:0 5:5
+    75: O: O175 (fill)
+ FILL(3)
+ 3:3 5:5
+    76: O: O179 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    77: O: O181 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    78: O: O182 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    79: O: O184 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    80: O: O187 (fill)
+ FILL(3)
+ 3:3 5:0
+    81: O: O190 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    82: O: O193 (fill)
+ FILL(5)
+ 3:0 5:5
+    83: O: O196 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    84: O: O200 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    85: O: O204 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    86: O: O207 (fill)
+ FILL(3)
+ 3:3 5:3
+    87: O: O209 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    88: O: O214 (fill)
+ FILL(3)
+ 3:3 5:5
+    89: O: O211 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    90: O: O216 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    91: O: O217 (fill)
+ FILL(5)
+ 3:0 5:5
+    92: O: O220 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    93: O: O225 (fill)
+ FILL(5)
+ 3:3 5:5
+    94: O: O222 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    95: O: O227 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    96: O: O228 (fill)
+ FILL(3)
+ 3:3 5:0
+    97: O: O230 (fill)
+ FILL(5)
+ 3:3 5:5
+    98: O: O233 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    99: O: O232 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   100: O: O236 (fill)
+ FILL(3)
+ 3:3 5:0
+   101: O: O237 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   102: O: O241 (fill)
+ FILL(3)
+ 3:3 5:3
+   103: O: O243 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   104: O: O247 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   105: O: O245 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   106: O: O252 (fill)
+ FILL(5)
+ 3:0 5:5
+   107: O: O253 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   108: O: O257 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   109: O: O255 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   110: O: O260 (fill)
+ FILL(5)
+ 3:0 5:5
+   111: O: O262 (fill)
+ FILL(3)
+ 3:3 5:5
+   112: O: O264 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   113: O: O265 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   114: O: O266 (fill)
+ FILL(5)
+ 3:0 5:5
+   115: O: O269 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   116: O: O274 (fill)
+ FILL(5)
+ 3:3 5:5
+   117: O: O276 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   118: O: O278 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   119: O: O279 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   120: O: O283 (fill)
+ FILL(5)
+ 3:0 5:5
+   121: O: O284 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   122: O: O286 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   123: O: O288 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   124: O: O291 (fill)
+ FILL(3)
+ 3:3 5:0
+   125: O: O294 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   126: O: O297 (fill)
+ FILL(5)
+ 3:0 5:5
+   127: O: O298 (fill)
+ FILL(3)
+ 3:3 5:5
+   128: O: O301 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   129: O: O302 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   130: O: O305 (fill)
+ FILL(3)
+ 3:3 5:0
+   131: O: O303 (fill)
+ FILL(5)
+ 3:3 5:5
+   132: O: O307 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   133: O: O308 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   134: O: O309 (fill)
+ FILL(3)
+ 3:3 5:0
+   135: O: O311 (fill)
+ FILL(5)
+ 3:3 5:5
+   136: O: O314 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   137: O: O316 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   138: O: O319 (fill)
+ FILL(3)
+ 3:3 5:3
+   139: O: O321 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   140: O: O325 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   141: O: O323 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   142: O: O328 (fill)
+ FILL(3)
+ 3:3 5:0
+   143: O: O331 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   144: O: O333 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   145: O: O335 (fill)
+ FILL(3)
+ 3:3 5:0
+   146: O: O338 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   147: O: O340 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   148: O: O342 (fill)
+ FILL(3)
+ 3:3 5:0
+   149: O: O344 (fill)
+ FILL(5)
+ 3:3 5:5
+   150: O: O346 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   151: O: O349 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   152: O: O353 (fill)
+ FILL(5)
+ 3:3 5:5
+   153: O: O355 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   154: O: O350 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   155: O: O356 (fill)
+ FILL(5)
+ 3:0 5:5
+   156: O: O358 (fill)
+ FILL(3)
+ 3:3 5:5
+   157: O: O361 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   158: O: O360 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   159: O: O362 (fill)
+ FILL(3)
+ 3:3 5:0
+   160: O: O365 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   161: O: O367 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   162: O: O369 (fill)
+ FILL(3)
+ 3:3 5:0
+   163: O: O372 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   164: O: O376 (fill)
+ FILL(3)
+ 3:3 5:3
+   165: O: O375 (fill)
+ FILL(5)
+ 3:3 5:5
+   166: O: O380 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   167: O: O379 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   168: O: O381 (fill)
+ FILL(5)
+ 3:0 5:5
+   169: O: O383 (fill)
+ FILL(3)
+ 3:3 5:5
+   170: O: O385 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   171: O: O388 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   172: O: O390 (fill)
+ FILL(5)
+ 3:0 5:5
+   173: O: O391 (fill)
+ FILL(3)
+ 3:3 5:5
+   174: O: O395 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   175: O: O397 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   176: O: O400 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   177: O: O404 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   178: O: O407 (fill)
+ FILL(3)
+ 3:3 5:3
+   179: O: O406 (fill)
+ FILL(5)
+ 3:3 5:5
+   180: O: O411 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   181: O: O410 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   182: O: O412 (fill)
+ FILL(5)
+ 3:0 5:5
+   183: O: O414 (fill)
+ FILL(3)
+ 3:3 5:5
+   184: O: O416 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   185: O: O417 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   186: O: O420 (fill)
+ FILL(3)
+ 3:3 5:0
+   187: O: O421 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   188: O: O425 (fill)
+ FILL(3)
+ 3:3 5:3
+   189: O: O424 (fill)
+ FILL(5)
+ 3:3 5:5
+   190: O: O429 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   191: O: O428 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   192: O: O430 (fill)
+ FILL(5)
+ 3:0 5:5
+   193: O: O432 (fill)
+ FILL(3)
+ 3:3 5:5
+   194: O: O435 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   195: O: O434 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   196: O: O438 (fill)
+ FILL(5)
+ 3:0 5:5
+   197: O: O436 (fill)
+ FILL(3)
+ 3:3 5:5
+   198: O: O441 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   199: O: O440 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   200: O: O444 (fill)
+ FILL(5)
+ 3:0 5:5
+   201: O: O442 (fill)
+ FILL(3)
+ 3:3 5:5
+   202: O: O446 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   203: O: O447 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   204: O: O450 (fill)
+ FILL(3)
+ 3:3 5:0
+   205: O: O448 (fill)
+ FILL(5)
+ 3:3 5:5
+   206: O: O453 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   207: O: O455 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   208: O: O456 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   209: O: O458 (fill)
+ FILL(3)
+ 3:3 5:0
+   210: O: O460 (fill)
+ FILL(5)
+ 3:3 5:5
+   211: O: O462 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   212: O: O463 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   213: O: O466 (fill)
+ FILL(5)
+ 3:0 5:5
+   214: O: O464 (fill)
+ FILL(3)
+ 3:3 5:5
+   215: O: O469 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   216: O: O471 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   217: O: O474 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   218: O: O472 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   219: O: O479 (fill)
+ FILL(3)
+ 3:3 5:0
+   220: O: O477 (fill)
+ FILL(5)
+ 3:3 5:5
+   221: O: O481 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   222: O: O482 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   223: O: O483 (fill)
+ FILL(3)
+ 3:3 5:0
+   224: O: O485 (fill)
+ FILL(5)
+ 3:3 5:5
+   225: O: O487 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   226: O: O488 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   227: O: O489 (fill)
+ FILL(3)
+ 3:3 5:0
+   228: O: O492 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   229: O: O494 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   230: O: O496 (fill)
+ FILL(3)
+ 3:3 5:0
+   231: O: O498 (fill)
+ FILL(5)
+ 3:3 5:5
+   232: O: O500 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   233: O: O503 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   234: O: O506 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   235: O: O510 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   236: O: O513 (fill)
+ FILL(3)
+ 3:3 5:3
+   237: O: O512 (fill)
+ FILL(5)
+ 3:3 5:5
+   238: O: O516 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   239: O: O519 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   240: O: O522 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   241: O: O526 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   242: O: O529 (fill)
+ FILL(3)
+ 3:3 5:3
+   243: O: O531 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   244: O: O535 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   245: O: O533 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   246: O: O540 (fill)
+ FILL(5)
+ 3:0 5:5
+   247: O: O541 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   248: O: O543 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   249: O: O545 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   250: O: O548 (fill)
+ FILL(3)
+ 3:3 5:0
+   251: O: O550 (fill)
+ FILL(5)
+ 3:3 5:5
+   252: O: O552 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   253: O: O555 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   254: O: O556 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   255: O: O558 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   256: O: O561 (fill)
+ FILL(3)
+ 3:3 5:0
+   257: O: O563 (fill)
+ FILL(5)
+ 3:3 5:5
+   258: O: O565 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   259: O: O568 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   260: O: O569 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   261: O: O575 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   262: O: O577 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   263: O: O581 (fill)
+ FILL(3)
+ 3:3 5:0
+   264: O: O582 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   265: O: O586 (fill)
+ FILL(3)
+ 3:3 5:3
+   266: O: O585 (fill)
+ FILL(5)
+ 3:3 5:5
+   267: O: O590 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   268: O: O592 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   269: O: O595 (fill)
+ FILL(3)
+ 3:3 5:3
+   270: O: O594 (fill)
+ FILL(5)
+ 3:3 5:5
+   271: O: O598 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   272: O: O599 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   273: O: O600 (fill)
+ FILL(3)
+ 3:3 5:0
+   274: O: O602 (fill)
+ FILL(5)
+ 3:3 5:5
+   275: O: O605 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   276: O: O604 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   277: O: O606 (fill)
+ FILL(5)
+ 3:0 5:5
+   278: O: O609 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   279: O: O613 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   280: O: O617 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   281: O: O620 (fill)
+ FILL(3)
+ 3:3 5:3
+   282: O: O619 (fill)
+ FILL(5)
+ 3:3 5:5
+   283: O: O624 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   284: O: O626 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   285: O: O628 (fill)
+ FILL(5)
+ 3:0 5:5
+   286: O: O631 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   287: O: O636 (fill)
+ FILL(5)
+ 3:3 5:5
+   288: O: O638 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   289: O: O640 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   290: O: O643 (fill)
+ FILL(3)
+ 3:3 5:3
+   291: O: O645 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   292: O: O647 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   293: O: O649 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   294: O: O654 (fill)
+ FILL(3)
+ 3:3 5:0
+   295: O: O655 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   296: O: O657 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   297: O: O659 (fill)
+ FILL(3)
+ 3:3 5:0
+   298: O: O662 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   299: O: O666 (fill)
+ FILL(3)
+ 3:3 5:3
+   300: O: O668 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   301: O: O673 (fill)
+ FILL(3)
+ 3:3 5:5
+   302: O: O675 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   303: O: O670 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   304: O: O678 (fill)
+ FILL(5)
+ 3:0 5:5
+   305: O: O679 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   306: O: O681 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   307: O: O687 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   308: O: O691 (fill)
+ FILL(5)
+ 3:2 5:5
+   309: O: O690 (fill)
+ FILL(3)
+ 3:3 5:5
+   310: O: O695 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   311: O: O697 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   312: O: O700 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   313: O: O698 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   314: O: O703 (fill)
+ FILL(5)
+ 3:0 5:5
+   315: O: O706 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   316: O: O711 (fill)
+ FILL(5)
+ 3:3 5:5
+   317: O: O713 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   318: O: O708 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   319: O: O714 (fill)
+ FILL(5)
+ 3:0 5:5
+   320: O: O717 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   321: O: O719 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   322: O: O721 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   323: O: O724 (fill)
+ FILL(3)
+ 3:3 5:0
+   324: O: O727 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   325: O: O731 (fill)
+ FILL(3)
+ 3:3 5:3
+   326: O: O733 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   327: O: O738 (fill)
+ FILL(3)
+ 3:3 5:5
+   328: O: O735 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   329: O: O740 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   330: O: O741 (fill)
+ FILL(5)
+ 3:0 5:5
+   331: O: O743 (fill)
+ FILL(3)
+ 3:3 5:5
+   332: O: O745 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   333: O: O746 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   334: O: O747 (fill)
+ FILL(5)
+ 3:0 5:5
+   335: O: O749 (fill)
+ FILL(3)
+ 3:3 5:5
+   336: O: O751 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   337: O: O752 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   338: O: O755 (fill)
+ FILL(3)
+ 3:3 5:0
+   339: O: O753 (fill)
+ FILL(5)
+ 3:3 5:5
+   340: O: O757 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   341: O: O760 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   342: O: O761 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   343: O: O763 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   344: O: O766 (fill)
+ FILL(3)
+ 3:3 5:0
+   345: O: O768 (fill)
+ FILL(5)
+ 3:3 5:5
+   346: O: O771 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   347: O: O773 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   348: O: O776 (fill)
+ FILL(3)
+ 3:3 5:3
+   349: O: O778 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   350: O: O783 (fill)
+ FILL(3)
+ 3:3 5:5
+   351: O: O780 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   352: O: O787 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   353: O: O790 (fill)
+ FILL(3)
+ 3:3 5:3
+   354: O: O792 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   355: O: O797 (fill)
+ FILL(3)
+ 3:3 5:5
+   356: O: O799 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   357: O: O794 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   358: O: O800 (fill)
+ FILL(3)
+ 3:3 5:0
+   359: O: O803 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   360: O: O806 (fill)
+ FILL(5)
+ 3:0 5:5
+   361: O: O809 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   362: O: O813 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   363: O: O817 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   364: O: O818 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   365: O: O820 (fill)
+ FILL(3)
+ 3:3 5:0
+   366: O: O822 (fill)
+ FILL(5)
+ 3:3 5:5
+   367: O: O825 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   368: O: O824 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   369: O: O828 (fill)
+ FILL(3)
+ 3:3 5:0
+   370: O: O826 (fill)
+ FILL(5)
+ 3:3 5:5
+   371: O: O830 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   372: O: O833 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   373: O: O837 (fill)
+ FILL(5)
+ 3:3 5:5
+   374: O: O839 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   375: O: O841 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   376: O: O844 (fill)
+ FILL(3)
+ 3:3 5:3
+   377: O: O846 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   378: O: O850 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   379: O: O848 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   380: O: O855 (fill)
+ FILL(5)
+ 3:0 5:5
+   381: O: O856 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   382: O: O860 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   383: O: O864 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   384: O: O867 (fill)
+ FILL(3)
+ 3:3 5:3
+   385: O: O869 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   386: O: O874 (fill)
+ FILL(3)
+ 3:3 5:5
+   387: O: O876 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   388: O: O871 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   389: O: O877 (fill)
+ FILL(3)
+ 3:3 5:0
+   390: O: O879 (fill)
+ FILL(5)
+ 3:3 5:5
+   391: O: O881 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   392: O: O884 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   393: O: O887 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   394: O: O885 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   395: O: O890 (fill)
+ FILL(5)
+ 3:0 5:5
+   396: O: O893 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   397: O: O897 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   398: O: O895 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   399: O: O902 (fill)
+ FILL(3)
+ 3:3 5:0
+   400: O: O903 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   401: O: O907 (fill)
+ FILL(3)
+ 3:3 5:3
+   402: O: O909 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   403: O: O911 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   404: O: O917 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+   405: O: O921 (fill)
+ FILL(3)
+ 3:3 5:1
+   406: O: O920 (fill)
+ FILL(5)
+ 3:3 5:5
+   407: O: O924 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   408: O: O925 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   409: O: O926 (fill)
+ FILL(3)
+ 3:3 5:0
+   410: O: O928 (fill)
+ FILL(5)
+ 3:3 5:5
+   411: O: O931 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   412: O: O933 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   413: O: O936 (fill)
+ FILL(3)
+ 3:3 5:3
+   414: O: O938 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   415: O: O943 (fill)
+ FILL(3)
+ 3:3 5:5
+   416: O: O945 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   417: O: O947 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   418: O: O951 (fill)
+ FILL(5)
+ 3:3 5:5
+   419: O: O953 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   420: O: O955 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   421: O: O956 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   422: O: O958 (fill)
+ FILL(3)
+ 3:3 5:0
+   423: O: O961 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   424: O: O964 (fill)
+ FILL(5)
+ 3:0 5:5
+   425: O: O967 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   426: O: O971 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   427: O: O975 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   428: O: O976 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   429: O: O978 (fill)
+ FILL(3)
+ 3:3 5:0
+   430: O: O980 (fill)
+ FILL(5)
+ 3:3 5:5
+   431: O: O983 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   432: O: O982 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   433: O: O986 (fill)
+ FILL(3)
+ 3:3 5:0
+   434: O: O987 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   435: O: O990 (fill)
+ FILL(5)
+ 3:0 5:5
+   436: O: O991 (fill)
+ FILL(3)
+ 3:3 5:5
+   437: O: O994 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   438: O: O997 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   439: O: O999 (fill)
+ FILL(5)
+ 3:0 5:5
+   440: O: O1002 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   441: O: O1006 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   442: O: O1010 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   443: O: O1013 (fill)
+ FILL(3)
+ 3:3 5:3
+   444: O: O1012 (fill)
+ FILL(5)
+ 3:3 5:5
+   445: O: O1017 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   446: O: O1016 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   447: O: O1020 (fill)
+ FILL(3)
+ 3:3 5:0
+   448: O: O1018 (fill)
+ FILL(5)
+ 3:3 5:5
+   449: O: O1022 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   450: O: O1025 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   451: O: O1028 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   452: O: O1032 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   453: O: O1035 (fill)
+ FILL(3)
+ 3:3 5:3
+   454: O: O1037 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   455: O: O1041 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   456: O: O1045 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   457: O: O1046 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   458: O: O1048 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   459: O: O1051 (fill)
+ FILL(3)
+ 3:3 5:0
+   460: O: O1053 (fill)
+ FILL(5)
+ 3:3 5:5
+   461: O: O1055 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   462: O: O1058 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   463: O: O1059 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   464: O: O1065 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   465: O: O1067 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   466: O: O1071 (fill)
+ FILL(3)
+ 3:3 5:0
+   467: O: O1069 (fill)
+ FILL(5)
+ 3:3 5:5
+   468: O: O1074 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   469: O: O1076 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   470: O: O1077 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   471: O: O1079 (fill)
+ FILL(3)
+ 3:3 5:0
+   472: O: O1081 (fill)
+ FILL(5)
+ 3:3 5:5
+   473: O: O1084 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   474: O: O1086 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   475: O: O1088 (fill)
+ FILL(5)
+ 3:0 5:5
+   476: O: O1091 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   477: O: O1096 (fill)
+ FILL(5)
+ 3:3 5:5
+   478: O: O1093 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   479: O: O1100 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   480: O: O1101 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   481: O: O1107 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   482: O: O1111 (fill)
+ FILL(5)
+ 3:2 5:5
+   483: O: O1110 (fill)
+ FILL(3)
+ 3:3 5:5
+   484: O: O1114 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   485: O: O1115 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   486: O: O1118 (fill)
+ FILL(3)
+ 3:3 5:0
+   487: O: O1119 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   488: O: O1122 (fill)
+ FILL(5)
+ 3:0 5:5
+   489: O: O1123 (fill)
+ FILL(3)
+ 3:3 5:5
+   490: O: O1126 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   491: O: O1127 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   492: O: O1128 (fill)
+ FILL(5)
+ 3:0 5:5
+   493: O: O1130 (fill)
+ FILL(3)
+ 3:3 5:5
+   494: O: O1132 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   495: O: O1135 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   496: O: O1138 (fill)
+ FILL(3)
+ 3:3 5:3
+   497: O: O1140 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   498: O: O1145 (fill)
+ FILL(3)
+ 3:3 5:5
+   499: O: O1142 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   500: O: O1149 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   501: O: O1151 (fill)
+ FILL(5)
+ 3:0 5:5
+   502: O: O1154 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   503: O: O1156 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   504: O: O1162 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   505: O: O1165 (fill)
+ FILL(3)
+ 3:3 5:0
+   506: O: O1168 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   507: O: O1171 (fill)
+ FILL(5)
+ 3:0 5:5
+   508: O: O1172 (fill)
+ FILL(3)
+ 3:3 5:5
+   509: O: O1175 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   510: O: O1176 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   511: O: O1177 (fill)
+ FILL(5)
+ 3:0 5:5
+   512: O: O1179 (fill)
+ FILL(3)
+ 3:3 5:5
+   513: O: O1182 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   514: O: O1184 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   515: O: O1185 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   516: O: O1187 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   517: O: O1190 (fill)
+ FILL(3)
+ 3:3 5:0
+   518: O: O1192 (fill)
+ FILL(5)
+ 3:3 5:5
+   519: O: O1195 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   520: O: O1194 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   521: O: O1198 (fill)
+ FILL(3)
+ 3:3 5:0
+   522: O: O1199 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   523: O: O1202 (fill)
+ FILL(5)
+ 3:0 5:5
+   524: O: O1203 (fill)
+ FILL(3)
+ 3:3 5:5
+   525: O: O1206 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   526: O: O1207 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   527: O: O1210 (fill)
+ FILL(3)
+ 3:3 5:0
+   528: O: O1211 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   529: O: O1213 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   530: O: O1215 (fill)
+ FILL(3)
+ 3:3 5:0
+   531: O: O1218 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   532: O: O1220 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   533: O: O1224 (fill)
+ FILL(5)
+ 3:0 5:5
+   534: O: O1222 (fill)
+ FILL(3)
+ 3:3 5:5
+   535: O: O1226 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   536: O: O1229 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   537: O: O1232 (fill)
+ FILL(3)
+ 3:3 5:3
+   538: O: O1231 (fill)
+ FILL(5)
+ 3:3 5:5
+   539: O: O1236 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   540: O: O1235 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   541: O: O1239 (fill)
+ FILL(3)
+ 3:3 5:0
+   542: O: O1237 (fill)
+ FILL(5)
+ 3:3 5:5
+   543: O: O1241 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   544: O: O1244 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   545: O: O1248 (fill)
+ FILL(5)
+ 3:3 5:5
+   546: O: O1250 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   547: O: O1245 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   548: O: O1253 (fill)
+ FILL(3)
+ 3:3 5:0
+   549: O: O1254 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   550: O: O1258 (fill)
+ FILL(3)
+ 3:3 5:3
+   551: O: O1260 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   552: O: O1265 (fill)
+ FILL(3)
+ 3:3 5:5
+   553: O: O1267 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   554: O: O1262 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   555: O: O1268 (fill)
+ FILL(3)
+ 3:3 5:0
+   556: O: O1271 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   557: O: O1274 (fill)
+ FILL(5)
+ 3:0 5:5
+   558: O: O1277 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   559: O: O1279 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   560: O: O1281 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   561: O: O1284 (fill)
+ FILL(3)
+ 3:3 5:0
+   562: O: O1287 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   563: O: O1291 (fill)
+ FILL(3)
+ 3:3 5:3
+   564: O: O1290 (fill)
+ FILL(5)
+ 3:3 5:5
+   565: O: O1295 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   566: O: O1297 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   567: O: O1299 (fill)
+ FILL(5)
+ 3:0 5:5
+   568: O: O1302 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   569: O: O1304 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   570: O: O1310 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   571: O: O1314 (fill)
+ FILL(5)
+ 3:2 5:5
+   572: O: O1313 (fill)
+ FILL(3)
+ 3:3 5:5
+   573: O: O1318 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   574: O: O1317 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   575: O: O1319 (fill)
+ FILL(3)
+ 3:3 5:0
+   576: O: O1322 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   577: O: O1326 (fill)
+ FILL(3)
+ 3:3 5:3
+   578: O: O1328 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   579: O: O1330 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   580: O: O1332 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   581: O: O1335 (fill)
+ FILL(5)
+ 3:0 5:5
+   582: O: O1338 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   583: O: O1340 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   584: O: O1346 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   585: O: O1349 (fill)
+ FILL(3)
+ 3:3 5:0
+   586: O: O1352 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   587: O: O1355 (fill)
+ FILL(5)
+ 3:0 5:5
+   588: O: O1358 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   589: O: O1363 (fill)
+ FILL(5)
+ 3:3 5:5
+   590: O: O1360 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   591: O: O1365 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   592: O: O1366 (fill)
+ FILL(3)
+ 3:3 5:0
+   593: O: O1369 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   594: O: O1372 (fill)
+ FILL(5)
+ 3:0 5:5
+   595: O: O1373 (fill)
+ FILL(3)
+ 3:3 5:5
+   596: O: O1376 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   597: O: O1379 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   598: O: O1381 (fill)
+ FILL(5)
+ 3:0 5:5
+   599: O: O1384 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   600: O: O1386 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   601: O: O1392 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   602: O: O1394 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   603: O: O1398 (fill)
+ FILL(3)
+ 3:3 5:0
+   604: O: O1399 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   605: O: O1401 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   606: O: O1403 (fill)
+ FILL(3)
+ 3:3 5:0
+   607: O: O1406 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   608: O: O1409 (fill)
+ FILL(5)
+ 3:0 5:5
+   609: O: O1412 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   610: O: O1416 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   611: O: O1420 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   612: O: O1423 (fill)
+ FILL(3)
+ 3:3 5:3
+   613: O: O1425 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   614: O: O1427 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   615: O: O1429 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   616: O: O1432 (fill)
+ FILL(5)
+ 3:0 5:5
+   617: O: O1435 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   618: O: O1440 (fill)
+ FILL(5)
+ 3:3 5:5
+   619: O: O1442 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   620: O: O1437 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   621: O: O1443 (fill)
+ FILL(5)
+ 3:0 5:5
+   622: O: O1445 (fill)
+ FILL(3)
+ 3:3 5:5
+   623: O: O1447 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   624: O: O1450 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   625: O: O1453 (fill)
+ FILL(3)
+ 3:3 5:3
+   626: O: O1455 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   627: O: O1460 (fill)
+ FILL(3)
+ 3:3 5:5
+   628: O: O1462 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   629: O: O1457 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   630: O: O1465 (fill)
+ FILL(5)
+ 3:0 5:5
+   631: O: O1466 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   632: O: O1470 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   633: O: O1474 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   634: O: O1477 (fill)
+ FILL(3)
+ 3:3 5:3
+   635: O: O1479 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   636: O: O1481 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   637: O: O1483 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   638: O: O1486 (fill)
+ FILL(5)
+ 3:0 5:5
+   639: O: O1488 (fill)
+ FILL(3)
+ 3:3 5:5
+   640: O: O1490 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   641: O: O1491 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   642: O: O1492 (fill)
+ FILL(5)
+ 3:0 5:5
+   643: O: O1495 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   644: O: O1500 (fill)
+ FILL(5)
+ 3:3 5:5
+   645: O: O1497 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   646: O: O1502 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   647: O: O1503 (fill)
+ FILL(3)
+ 3:3 5:0
+   648: O: O1506 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   649: O: O1510 (fill)
+ FILL(3)
+ 3:3 5:3
+   650: O: O1512 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   651: O: O1517 (fill)
+ FILL(3)
+ 3:3 5:5
+   652: O: O1519 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   653: O: O1521 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   654: O: O1524 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   655: O: O1522 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   656: O: O1529 (fill)
+ FILL(3)
+ 3:3 5:0
+   657: O: O1527 (fill)
+ FILL(5)
+ 3:3 5:5
+   658: O: O1532 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   659: O: O1531 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   660: O: O1535 (fill)
+ FILL(3)
+ 3:3 5:0
+   661: O: O1536 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   662: O: O1538 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   663: O: O1542 (fill)
+ FILL(5)
+ 3:0 5:5
+   664: O: O1543 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   665: O: O1545 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   666: O: O1551 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   667: O: O1554 (fill)
+ FILL(3)
+ 3:3 5:0
+   668: O: O1555 (fill)
+ FILL(5)
+ 3:3 5:5
+   669: O: O1558 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   670: O: O1561 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   671: O: O1565 (fill)
+ FILL(5)
+ 3:3 5:5
+   672: O: O1567 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   673: O: O1562 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   674: O: O1570 (fill)
+ FILL(3)
+ 3:3 5:0
+   675: O: O1568 (fill)
+ FILL(5)
+ 3:3 5:5
+   676: O: O1573 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   677: O: O1572 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   678: O: O1574 (fill)
+ FILL(5)
+ 3:0 5:5
+   679: O: O1577 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   680: O: O1581 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   681: O: O1579 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   682: O: O1586 (fill)
+ FILL(3)
+ 3:3 5:0
+   683: O: O1587 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   684: O: O1590 (fill)
+ FILL(5)
+ 3:0 5:5
+   685: O: O1593 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   686: O: O1597 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   687: O: O1601 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   688: O: O1602 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   689: O: O1606 (fill)
+ FILL(5)
+ 3:0 5:5
+   690: O: O1604 (fill)
+ FILL(3)
+ 3:3 5:5
+   691: O: O1608 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   692: O: O1609 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   693: O: O1610 (fill)
+ FILL(5)
+ 3:0 5:5
+   694: O: O1612 (fill)
+ FILL(3)
+ 3:3 5:5
+   695: O: O1614 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   696: O: O1617 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   697: O: O1619 (fill)
+ FILL(5)
+ 3:0 5:5
+   698: O: O1622 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   699: O: O1627 (fill)
+ FILL(5)
+ 3:3 5:5
+   700: O: O1624 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   701: O: O1629 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   702: O: O1632 (fill)
+ FILL(5)
+ 3:0 5:5
+   703: O: O1633 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   704: O: O1635 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   705: O: O1637 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   706: O: O1640 (fill)
+ FILL(3)
+ 3:3 5:0
+   707: O: O1643 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   708: O: O1645 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   709: O: O1647 (fill)
+ FILL(3)
+ 3:3 5:0
+   710: O: O1650 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   711: O: O1654 (fill)
+ FILL(3)
+ 3:3 5:3
+   712: O: O1656 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   713: O: O1658 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   714: O: O1664 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+   715: O: O1666 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   716: O: O1668 (fill)
+ FILL(3)
+ 3:3 5:0
+   717: O: O1670 (fill)
+ FILL(5)
+ 3:3 5:5
+   718: O: O1672 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   719: O: O1673 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   720: O: O1674 (fill)
+ FILL(3)
+ 3:3 5:0
+   721: O: O1676 (fill)
+ FILL(5)
+ 3:3 5:5
+   722: O: O1678 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   723: O: O1679 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   724: O: O1682 (fill)
+ FILL(5)
+ 3:0 5:5
+   725: O: O1680 (fill)
+ FILL(3)
+ 3:3 5:5
+   726: O: O1684 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   727: O: O1685 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   728: O: O1686 (fill)
+ FILL(5)
+ 3:0 5:5
+   729: O: O1688 (fill)
+ FILL(3)
+ 3:3 5:5
+   730: O: O1691 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   731: O: O1690 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   732: O: O1694 (fill)
+ FILL(5)
+ 3:0 5:5
+   733: O: O1692 (fill)
+ FILL(3)
+ 3:3 5:5
+   734: O: O1696 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   735: O: O1699 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   736: O: O1700 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   737: O: O1704 (fill)
+ FILL(5)
+ 3:0 5:5
+   738: O: O1702 (fill)
+ FILL(3)
+ 3:3 5:5
+   739: O: O1707 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   740: O: O1706 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   741: O: O1710 (fill)
+ FILL(5)
+ 3:0 5:5
+   742: O: O1711 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   743: O: O1715 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   744: O: O1719 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   745: O: O1722 (fill)
+ FILL(3)
+ 3:3 5:3
+   746: O: O1724 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   747: O: O1726 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   748: O: O1732 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+   749: O: O1735 (fill)
+ FILL(5)
+ 3:0 5:5
+   750: O: O1738 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   751: O: O1740 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   752: O: O1742 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   753: O: O1745 (fill)
+ FILL(3)
+ 3:3 5:0
+   754: O: O1748 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   755: O: O1752 (fill)
+ FILL(3)
+ 3:3 5:3
+   756: O: O1751 (fill)
+ FILL(5)
+ 3:3 5:5
+   757: O: O1756 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   758: O: O1755 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   759: O: O1759 (fill)
+ FILL(3)
+ 3:3 5:0
+   760: O: O1760 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   761: O: O1764 (fill)
+ FILL(3)
+ 3:3 5:3
+   762: O: O1766 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   763: O: O1768 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   764: O: O1770 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   765: O: O1775 (fill)
+ FILL(3)
+ 3:3 5:0
+   766: O: O1773 (fill)
+ FILL(5)
+ 3:3 5:5
+   767: O: O1777 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   768: O: O1780 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   769: O: O1784 (fill)
+ FILL(5)
+ 3:3 5:5
+   770: O: O1781 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   771: O: O1788 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   772: O: O1792 (fill)
+ FILL(5)
+ 3:3 5:5
+   773: O: O1789 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   774: O: O1794 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   775: O: O1797 (fill)
+ FILL(5)
+ 3:0 5:5
+   776: O: O1795 (fill)
+ FILL(3)
+ 3:3 5:5
+   777: O: O1799 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   778: O: O1800 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   779: O: O1801 (fill)
+ FILL(5)
+ 3:0 5:5
+   780: O: O1804 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   781: O: O1809 (fill)
+ FILL(5)
+ 3:3 5:5
+   782: O: O1806 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   783: O: O1811 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   784: O: O1812 (fill)
+ FILL(3)
+ 3:3 5:0
+   785: O: O1814 (fill)
+ FILL(5)
+ 3:3 5:5
+   786: O: O1816 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   787: O: O1817 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   788: O: O1818 (fill)
+ FILL(3)
+ 3:3 5:0
+   789: O: O1820 (fill)
+ FILL(5)
+ 3:3 5:5
+   790: O: O1823 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   791: O: O1822 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   792: O: O1826 (fill)
+ FILL(3)
+ 3:3 5:0
+   793: O: O1827 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   794: O: O1830 (fill)
+ FILL(5)
+ 3:0 5:5
+   795: O: O1833 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   796: O: O1838 (fill)
+ FILL(5)
+ 3:3 5:5
+   797: O: O1835 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   798: O: O1842 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   799: O: O1843 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   800: O: O1849 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   801: O: O1851 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   802: O: O1855 (fill)
+ FILL(3)
+ 3:3 5:0
+   803: O: O1856 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   804: O: O1859 (fill)
+ FILL(5)
+ 3:0 5:5
+   805: O: O1862 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   806: O: O1867 (fill)
+ FILL(5)
+ 3:3 5:5
+   807: O: O1864 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   808: O: O1871 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   809: O: O1872 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   810: O: O1878 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   811: O: O1881 (fill)
+ FILL(3)
+ 3:3 5:0
+   812: O: O1884 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   813: O: O1887 (fill)
+ FILL(5)
+ 3:0 5:5
+   814: O: O1890 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   815: O: O1895 (fill)
+ FILL(5)
+ 3:3 5:5
+   816: O: O1897 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   817: O: O1899 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   818: O: O1900 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   819: O: O1902 (fill)
+ FILL(3)
+ 3:3 5:0
+   820: O: O1905 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   821: O: O1909 (fill)
+ FILL(3)
+ 3:3 5:3
+   822: O: O1908 (fill)
+ FILL(5)
+ 3:3 5:5
+   823: O: O1912 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   824: O: O1913 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   825: O: O1914 (fill)
+ FILL(3)
+ 3:3 5:0
+   826: O: O1916 (fill)
+ FILL(5)
+ 3:3 5:5
+   827: O: O1918 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   828: O: O1921 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   829: O: O1922 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   830: O: O1928 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   831: O: O1931 (fill)
+ FILL(3)
+ 3:3 5:0
+   832: O: O1934 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   833: O: O1936 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   834: O: O1940 (fill)
+ FILL(5)
+ 3:0 5:5
+   835: O: O1938 (fill)
+ FILL(3)
+ 3:3 5:5
+   836: O: O1943 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   837: O: O1945 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   838: O: O1948 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   839: O: O1952 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   840: O: O1955 (fill)
+ FILL(3)
+ 3:3 5:3
+   841: O: O1957 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   842: O: O1961 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   843: O: O1965 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   844: O: O1966 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   845: O: O1972 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   846: O: O1975 (fill)
+ FILL(3)
+ 3:3 5:0
+   847: O: O1976 (fill)
+ FILL(5)
+ 3:3 5:5
+   848: O: O1980 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   849: O: O1979 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   850: O: O1983 (fill)
+ FILL(3)
+ 3:3 5:0
+   851: O: O1984 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   852: O: O1986 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   853: O: O1988 (fill)
+ FILL(3)
+ 3:3 5:0
+   854: O: O1990 (fill)
+ FILL(5)
+ 3:3 5:5
+   855: O: O1993 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   856: O: O1992 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   857: O: O1996 (fill)
+ FILL(3)
+ 3:3 5:0
+   858: O: O1997 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   859: O: O2000 (fill)
+ FILL(5)
+ 3:0 5:5
+   860: O: O2003 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   861: O: O2005 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   862: O: O2011 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   863: O: O2014 (fill)
+ FILL(3)
+ 3:3 5:0
+   864: O: O2017 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   865: O: O2021 (fill)
+ FILL(3)
+ 3:3 5:3
+   866: O: O2023 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   867: O: O2027 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   868: O: O2031 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   869: O: O2032 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   870: O: O2034 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   871: O: O2037 (fill)
+ FILL(3)
+ 3:3 5:0
+   872: O: O2039 (fill)
+ FILL(5)
+ 3:3 5:5
+   873: O: O2041 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   874: O: O2042 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   875: O: O2043 (fill)
+ FILL(3)
+ 3:3 5:0
+   876: O: O2046 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   877: O: O2048 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   878: O: O2050 (fill)
+ FILL(3)
+ 3:3 5:0
+   879: O: O2052 (fill)
+ FILL(5)
+ 3:3 5:5
+   880: O: O2054 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   881: O: O2055 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   882: O: O2058 (fill)
+ FILL(5)
+ 3:0 5:5
+   883: O: O2059 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   884: O: O2063 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   885: O: O2061 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   886: O: O2066 (fill)
+ FILL(5)
+ 3:0 5:5
+   887: O: O2069 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   888: O: O2071 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   889: O: O2077 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   890: O: O2079 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   891: O: O2081 (fill)
+ FILL(5)
+ 3:0 5:5
+   892: O: O2083 (fill)
+ FILL(3)
+ 3:3 5:5
+   893: O: O2085 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   894: O: O2088 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   895: O: O2089 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   896: O: O2091 (fill)
+ FILL(3)
+ 3:3 5:0
+   897: O: O2094 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   898: O: O2097 (fill)
+ FILL(5)
+ 3:0 5:5
+   899: O: O2100 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   900: O: O2104 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   901: O: O2102 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   902: O: O2109 (fill)
+ FILL(3)
+ 3:3 5:0
+   903: O: O2110 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   904: O: O2112 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   905: O: O2116 (fill)
+ FILL(5)
+ 3:0 5:5
+   906: O: O2117 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   907: O: O2119 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   908: O: O2125 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   909: O: O2129 (fill)
+ FILL(5)
+ 3:2 5:5
+   910: O: O2128 (fill)
+ FILL(3)
+ 3:3 5:5
+   911: O: O2132 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   912: O: O2133 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   913: O: O2136 (fill)
+ FILL(3)
+ 3:3 5:0
+   914: O: O2137 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   915: O: O2141 (fill)
+ FILL(3)
+ 3:3 5:3
+   916: O: O2143 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   917: O: O2147 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   918: O: O2151 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   919: O: O2152 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   920: O: O2154 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   921: O: O2159 (fill)
+ FILL(5)
+ 3:0 5:5
+   922: O: O2157 (fill)
+ FILL(3)
+ 3:3 5:5
+   923: O: O2162 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   924: O: O2161 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   925: O: O2163 (fill)
+ FILL(3)
+ 3:3 5:0
+   926: O: O2165 (fill)
+ FILL(5)
+ 3:3 5:5
+   927: O: O2168 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   928: O: O2167 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   929: O: O2169 (fill)
+ FILL(5)
+ 3:0 5:5
+   930: O: O2172 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   931: O: O2176 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   932: O: O2180 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   933: O: O2181 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   934: O: O2183 (fill)
+ FILL(3)
+ 3:3 5:0
+   935: O: O2185 (fill)
+ FILL(5)
+ 3:3 5:5
+   936: O: O2188 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   937: O: O2190 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   938: O: O2193 (fill)
+ FILL(3)
+ 3:3 5:3
+   939: O: O2195 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   940: O: O2199 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   941: O: O2203 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   942: O: O2206 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   943: O: O2210 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   944: O: O2211 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   945: O: O2213 (fill)
+ FILL(3)
+ 3:3 5:0
+   946: O: O2216 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   947: O: O2220 (fill)
+ FILL(3)
+ 3:3 5:3
+   948: O: O2222 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   949: O: O2224 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   950: O: O2230 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+   951: O: O2234 (fill)
+ FILL(3)
+ 3:3 5:1
+   952: O: O2233 (fill)
+ FILL(5)
+ 3:3 5:5
+   953: O: O2238 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   954: O: O2240 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   955: O: O2243 (fill)
+ FILL(3)
+ 3:3 5:3
+   956: O: O2245 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   957: O: O2247 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   958: O: O2249 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   959: O: O2254 (fill)
+ FILL(3)
+ 3:3 5:0
+   960: O: O2252 (fill)
+ FILL(5)
+ 3:3 5:5
+   961: O: O2256 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   962: O: O2257 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   963: O: O2260 (fill)
+ FILL(5)
+ 3:0 5:5
+   964: O: O2261 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   965: O: O2266 (fill)
+ FILL(5)
+ 3:3 5:5
+   966: O: O2268 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   967: O: O2263 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   968: O: O2271 (fill)
+ FILL(3)
+ 3:3 5:0
+   969: O: O2272 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   970: O: O2275 (fill)
+ FILL(5)
+ 3:0 5:5
+   971: O: O2278 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   972: O: O2280 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   973: O: O2282 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   974: O: O2287 (fill)
+ FILL(5)
+ 3:0 5:5
+   975: O: O2288 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   976: O: O2293 (fill)
+ FILL(5)
+ 3:3 5:5
+   977: O: O2295 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   978: O: O2290 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   979: O: O2296 (fill)
+ FILL(5)
+ 3:0 5:5
+   980: O: O2298 (fill)
+ FILL(3)
+ 3:3 5:5
+   981: O: O2301 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   982: O: O2300 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   983: O: O2304 (fill)
+ FILL(5)
+ 3:0 5:5
+   984: O: O2305 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   985: O: O2310 (fill)
+ FILL(5)
+ 3:3 5:5
+   986: O: O2312 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   987: O: O2307 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   988: O: O2313 (fill)
+ FILL(5)
+ 3:0 5:5
+   989: O: O2316 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   990: O: O2318 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   991: O: O2320 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   992: O: O2325 (fill)
+ FILL(5)
+ 3:0 5:5
+   993: O: O2323 (fill)
+ FILL(3)
+ 3:3 5:5
+   994: O: O2327 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   995: O: O2328 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   996: O: O2331 (fill)
+ FILL(3)
+ 3:3 5:0
+   997: O: O2329 (fill)
+ FILL(5)
+ 3:3 5:5
+   998: O: O2333 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   999: O: O2334 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1000: O: O2337 (fill)
+ FILL(5)
+ 3:0 5:5
+  1001: O: O2335 (fill)
+ FILL(3)
+ 3:3 5:5
+  1002: O: O2340 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1003: O: O2342 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1004: O: O2345 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1005: O: O2349 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1006: O: O2351 (fill)
+ FILL(5)
+ 3:0 5:5
+  1007: O: O2354 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1008: O: O2358 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1009: O: O2362 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1010: O: O2364 (fill)
+ FILL(5)
+ 3:0 5:5
+  1011: O: O2365 (fill)
+ FILL(3)
+ 3:3 5:5
+  1012: O: O2369 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1013: O: O2368 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1014: O: O2370 (fill)
+ FILL(3)
+ 3:3 5:0
+  1015: O: O2372 (fill)
+ FILL(5)
+ 3:3 5:5
+  1016: O: O2374 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1017: O: O2377 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1018: O: O2378 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1019: O: O2384 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+  1020: O: O2388 (fill)
+ FILL(5)
+ 3:2 5:5
+  1021: O: O2387 (fill)
+ FILL(3)
+ 3:3 5:5
+  1022: O: O2391 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1023: O: O2394 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1024: O: O2395 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1025: O: O2397 (fill)
+ FILL(3)
+ 3:3 5:0
+  1026: O: O2400 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1027: O: O2404 (fill)
+ FILL(3)
+ 3:3 5:3
+  1028: O: O2403 (fill)
+ FILL(5)
+ 3:3 5:5
+  1029: O: O2408 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1030: O: O2410 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1031: O: O2412 (fill)
+ FILL(5)
+ 3:0 5:5
+  1032: O: O2413 (fill)
+ FILL(3)
+ 3:3 5:5
+  1033: O: O2416 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1034: O: O2419 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1035: O: O2421 (fill)
+ FILL(5)
+ 3:0 5:5
+  1036: O: O2422 (fill)
+ FILL(3)
+ 3:3 5:5
+  1037: O: O2426 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1038: O: O2425 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1039: O: O2427 (fill)
+ FILL(3)
+ 3:3 5:0
+  1040: O: O2429 (fill)
+ FILL(5)
+ 3:3 5:5
+  1041: O: O2431 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1042: O: O2432 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1043: O: O2433 (fill)
+ FILL(3)
+ 3:3 5:0
+  1044: O: O2435 (fill)
+ FILL(5)
+ 3:3 5:5
+  1045: O: O2438 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1046: O: O2437 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1047: O: O2439 (fill)
+ FILL(5)
+ 3:0 5:5
+  1048: O: O2441 (fill)
+ FILL(3)
+ 3:3 5:5
+  1049: O: O2444 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1050: O: O2446 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1051: O: O2449 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1052: O: O2453 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1053: O: O2455 (fill)
+ FILL(5)
+ 3:0 5:5
+  1054: O: O2456 (fill)
+ FILL(3)
+ 3:3 5:5
+  1055: O: O2459 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1056: O: O2460 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1057: O: O2463 (fill)
+ FILL(3)
+ 3:3 5:0
+  1058: O: O2461 (fill)
+ FILL(5)
+ 3:3 5:5
+  1059: O: O2465 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1060: O: O2468 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1061: O: O2471 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1062: O: O2475 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1063: O: O2476 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1064: O: O2480 (fill)
+ FILL(5)
+ 3:0 5:5
+  1065: O: O2481 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1066: O: O2485 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1067: O: O2483 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1068: O: O2488 (fill)
+ FILL(5)
+ 3:0 5:5
+  1069: O: O2491 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1070: O: O2496 (fill)
+ FILL(5)
+ 3:3 5:5
+  1071: O: O2493 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1072: O: O2498 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1073: O: O2501 (fill)
+ FILL(5)
+ 3:0 5:5
+  1074: O: O2499 (fill)
+ FILL(3)
+ 3:3 5:5
+  1075: O: O2504 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1076: O: O2506 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1077: O: O2510 (fill)
+ FILL(5)
+ 3:3 5:5
+  1078: O: O2512 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1079: O: O2514 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1080: O: O2517 (fill)
+ FILL(3)
+ 3:3 5:3
+  1081: O: O2519 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+  1082: O: O2524 (fill)
+ FILL(3)
+ 3:3 5:5
+  1083: O: O2526 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1084: O: O2528 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1085: O: O2532 (fill)
+ FILL(5)
+ 3:3 5:5
+  1086: O: O2529 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1087: O: O2534 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1088: O: O2537 (fill)
+ FILL(5)
+ 3:0 5:5
+  1089: O: O2535 (fill)
+ FILL(3)
+ 3:3 5:5
+  1090: O: O2539 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1091: O: O2540 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1092: O: O2541 (fill)
+ FILL(5)
+ 3:0 5:5
+  1093: O: O2544 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1094: O: O2548 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1095: O: O2546 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1096: O: O2553 (fill)
+ FILL(3)
+ 3:3 5:0
+  1097: O: O2551 (fill)
+ FILL(5)
+ 3:3 5:5
+  1098: O: O2556 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1099: O: O2558 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1100: O: O2560 (fill)
+ FILL(5)
+ 3:0 5:5
+  1101: O: O2561 (fill)
+ FILL(3)
+ 3:3 5:5
+  1102: O: O2565 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1103: O: O2564 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1104: O: O2566 (fill)
+ FILL(3)
+ 3:3 5:0
+  1105: O: O2569 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1106: O: O2571 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1107: O: O2575 (fill)
+ FILL(5)
+ 3:0 5:5
+  1108: O: O2573 (fill)
+ FILL(3)
+ 3:3 5:5
+  1109: O: O2577 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1110: O: O2580 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1111: O: O2582 (fill)
+ FILL(5)
+ 3:0 5:5
+  1112: O: O2585 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1113: O: O2590 (fill)
+ FILL(5)
+ 3:3 5:5
+  1114: O: O2587 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1115: O: O2592 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1116: O: O2595 (fill)
+ FILL(5)
+ 3:0 5:5
+  1117: O: O2596 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1118: O: O2601 (fill)
+ FILL(5)
+ 3:3 5:5
+  1119: O: O2603 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1120: O: O2605 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1121: O: O2607 (fill)
+ FILL(5)
+ 3:0 5:5
+  1122: O: O2608 (fill)
+ FILL(3)
+ 3:3 5:5
+  1123: O: O2611 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1124: O: O2612 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1125: O: O2613 (fill)
+ FILL(5)
+ 3:0 5:5
+  1126: O: O2616 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1127: O: O2620 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1128: O: O2624 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1129: O: O2625 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1130: O: O2627 (fill)
+ FILL(3)
+ 3:3 5:0
+  1131: O: O2629 (fill)
+ FILL(5)
+ 3:3 5:5
+  1132: O: O2631 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1133: O: O2634 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1134: O: O2635 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1135: O: O2641 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+  1136: O: O2644 (fill)
+ FILL(3)
+ 3:3 5:0
+  1137: O: O2645 (fill)
+ FILL(5)
+ 3:3 5:5
+  1138: O: O2648 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1139: O: O2651 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1140: O: O2654 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1141: O: O2658 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1142: O: O2659 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1143: O: O2661 (fill)
+ FILL(3)
+ 3:3 5:0
+  1144: O: O2664 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1145: O: O2668 (fill)
+ FILL(3)
+ 3:3 5:3
+  1146: O: O2670 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+  1147: O: O2672 (empty)
+ EMPTY(5)
+ 3:1 5:0
+  1148: O: O2678 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+  1149: O: O2682 (fill)
+ FILL(3)
+ 3:3 5:1
+  1150: O: O2681 (fill)
+ FILL(5)
+ 3:3 5:5
+  1151: O: O2685 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1152: O: O2686 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1153: O: O2689 (fill)
+ FILL(5)
+ 3:0 5:5
+  1154: O: O2687 (fill)
+ FILL(3)
+ 3:3 5:5
+  1155: O: O2692 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1156: O: O2691 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1157: O: O2695 (fill)
+ FILL(5)
+ 3:0 5:5
+  1158: O: O2696 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1159: O: O2701 (fill)
+ FILL(5)
+ 3:3 5:5
+  1160: O: O2698 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1161: O: O2703 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1162: O: O2706 (fill)
+ FILL(5)
+ 3:0 5:5
+  1163: O: O2704 (fill)
+ FILL(3)
+ 3:3 5:5
+  1164: O: O2708 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1165: O: O2709 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1166: O: O2712 (fill)
+ FILL(3)
+ 3:3 5:0
+  1167: O: O2713 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1168: O: O2717 (fill)
+ FILL(3)
+ 3:3 5:3
+  1169: O: O2716 (fill)
+ FILL(5)
+ 3:3 5:5
+  1170: O: O2720 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1171: O: O2723 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1172: O: O2726 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1173: O: O2724 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1174: O: O2731 (fill)
+ FILL(3)
+ 3:3 5:0
+  1175: O: O2729 (fill)
+ FILL(5)
+ 3:3 5:5
+  1176: O: O2733 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1177: O: O2734 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1178: O: O2735 (fill)
+ FILL(3)
+ 3:3 5:0
+  1179: O: O2737 (fill)
+ FILL(5)
+ 3:3 5:5
+  1180: O: O2739 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1181: O: O2740 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1182: O: O2743 (fill)
+ FILL(5)
+ 3:0 5:5
+  1183: O: O2744 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1184: O: O2748 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1185: O: O2752 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1186: O: O2754 (fill)
+ FILL(5)
+ 3:0 5:5
+  1187: O: O2757 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1188: O: O2759 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1189: O: O2765 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+  1190: O: O2768 (fill)
+ FILL(3)
+ 3:3 5:0
+  1191: O: O2769 (fill)
+ FILL(5)
+ 3:3 5:5
+  1192: O: O2772 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1193: O: O2775 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1194: O: O2778 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1195: O: O2782 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1196: O: O2784 (fill)
+ FILL(5)
+ 3:0 5:5
+  1197: O: O2785 (fill)
+ FILL(3)
+ 3:3 5:5
+  1198: O: O2789 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1199: O: O2791 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1200: O: O2795 (fill)
+ FILL(5)
+ 3:3 5:5
+  1201: O: O2792 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1202: O: O2797 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1203: O: O2800 (fill)
+ FILL(5)
+ 3:0 5:5
+  1204: O: O2801 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1205: O: O2806 (fill)
+ FILL(5)
+ 3:3 5:5
+  1206: O: O2808 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1207: O: O2803 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1208: O: O2811 (fill)
+ FILL(3)
+ 3:3 5:0
+  1209: O: O2812 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1210: O: O2815 (fill)
+ FILL(5)
+ 3:0 5:5
+  1211: O: O2816 (fill)
+ FILL(3)
+ 3:3 5:5
+  1212: O: O2820 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1213: O: O2819 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1214: O: O2823 (fill)
+ FILL(5)
+ 3:0 5:5
+  1215: O: O2821 (fill)
+ FILL(3)
+ 3:3 5:5
+  1216: O: O2825 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1217: O: O2828 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1218: O: O2830 (fill)
+ FILL(5)
+ 3:0 5:5
+  1219: O: O2831 (fill)
+ FILL(3)
+ 3:3 5:5
+  1220: O: O2835 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1221: O: O2834 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1222: O: O2838 (fill)
+ FILL(5)
+ 3:0 5:5
+  1223: O: O2836 (fill)
+ FILL(3)
+ 3:3 5:5
+  1224: O: O2841 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1225: O: O2840 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1226: O: O2844 (fill)
+ FILL(5)
+ 3:0 5:5
+  1227: O: O2845 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1228: O: O2850 (fill)
+ FILL(5)
+ 3:3 5:5
+  1229: O: O2847 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1230: O: O2854 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1231: O: O2858 (fill)
+ FILL(5)
+ 3:3 5:5
+  1232: O: O2855 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1233: O: O2860 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1234: O: O2863 (fill)
+ FILL(5)
+ 3:0 5:5
+  1235: O: O2864 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1236: O: O2869 (fill)
+ FILL(5)
+ 3:3 5:5
+  1237: O: O2871 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1238: O: O2873 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1239: O: O2874 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1240: O: O2876 (fill)
+ FILL(3)
+ 3:3 5:0
+  1241: O: O2879 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1242: O: O2881 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1243: O: O2883 (fill)
+ FILL(3)
+ 3:3 5:0
+  1244: O: O2885 (fill)
+ FILL(5)
+ 3:3 5:5
+  1245: O: O2888 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1246: O: O2887 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1247: O: O2889 (fill)
+ FILL(5)
+ 3:0 5:5
+  1248: O: O2891 (fill)
+ FILL(3)
+ 3:3 5:5
+  1249: O: O2893 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1250: O: O2896 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1251: O: O2899 (fill)
+ FILL(3)
+ 3:3 5:3
+  1252: O: O2898 (fill)
+ FILL(5)
+ 3:3 5:5
+  1253: O: O2902 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1254: O: O2903 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1255: O: O2904 (fill)
+ FILL(3)
+ 3:3 5:0
+  1256: O: O2907 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1257: O: O2910 (fill)
+ FILL(5)
+ 3:0 5:5
+  1258: O: O2913 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1259: O: O2918 (fill)
+ FILL(5)
+ 3:3 5:5
+  1260: O: O2915 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1261: O: O2922 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1262: O: O2926 (fill)
+ FILL(5)
+ 3:3 5:5
+  1263: O: O2928 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1264: O: O2923 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1265: O: O2931 (fill)
+ FILL(3)
+ 3:3 5:0
+  1266: O: O2929 (fill)
+ FILL(5)
+ 3:3 5:5
+  1267: O: O2934 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1268: O: O2936 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1269: O: O2939 (fill)
+ FILL(3)
+ 3:3 5:3
+  1270: O: O2941 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+  1271: O: O2946 (fill)
+ FILL(3)
+ 3:3 5:5
+  1272: O: O2948 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1273: O: O2950 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1274: O: O2951 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1275: O: O2953 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1276: O: O2958 (fill)
+ FILL(5)
+ 3:0 5:5
+  1277: O: O2959 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1278: O: O2963 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1279: O: O2967 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1280: O: O2970 (fill)
+ FILL(3)
+ 3:3 5:3
+  1281: O: O2972 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+  1282: O: O2977 (fill)
+ FILL(3)
+ 3:3 5:5
+  1283: O: O2974 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1284: O: O2979 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1285: O: O2980 (fill)
+ FILL(5)
+ 3:0 5:5
+  1286: O: O2982 (fill)
+ FILL(3)
+ 3:3 5:5
+  1287: O: O2984 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1288: O: O2985 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1289: O: O2986 (fill)
+ FILL(5)
+ 3:0 5:5
+  1290: O: O2988 (fill)
+ FILL(3)
+ 3:3 5:5
+  1291: O: O2991 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1292: O: O2990 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1293: O: O2992 (fill)
+ FILL(3)
+ 3:3 5:0
+  1294: O: O2995 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1295: O: O2997 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1296: O: O3001 (fill)
+ FILL(5)
+ 3:0 5:5
+  1297: O: O2999 (fill)
+ FILL(3)
+ 3:3 5:5
+  1298: O: O3004 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1299: O: O3006 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1300: O: O3009 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1301: O: O3007 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1302: O: O3012 (fill)
+ FILL(5)
+ 3:0 5:5
+  1303: O: O3014 (fill)
+ FILL(3)
+ 3:3 5:5
+  1304: O: O3016 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1305: O: O3019 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1306: O: O3022 (fill)
+ FILL(3)
+ 3:3 5:3
+  1307: O: O3021 (fill)
+ FILL(5)
+ 3:3 5:5
+  1308: O: O3026 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1309: O: O3028 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1310: O: O3031 (fill)
+ FILL(3)
+ 3:3 5:3
+  1311: O: O3030 (fill)
+ FILL(5)
+ 3:3 5:5
+  1312: O: O3035 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1313: O: O3034 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1314: O: O3038 (fill)
+ FILL(3)
+ 3:3 5:0
+  1315: O: O3039 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1316: O: O3042 (fill)
+ FILL(5)
+ 3:0 5:5
+  1317: O: O3045 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1318: O: O3049 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1319: O: O3053 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1320: O: O3056 (fill)
+ FILL(3)
+ 3:3 5:3
+  1321: O: O3058 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+  1322: O: O3063 (fill)
+ FILL(3)
+ 3:3 5:5
+  1323: O: O3060 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1324: O: O3065 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1325: O: O3068 (fill)
+ FILL(3)
+ 3:3 5:0
+  1326: O: O3066 (fill)
+ FILL(5)
+ 3:3 5:5
+  1327: O: O3070 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1328: O: O3073 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1329: O: O3077 (fill)
+ FILL(5)
+ 3:3 5:5
+  1330: O: O3074 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1331: O: O3079 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1332: O: O3080 (fill)
+ FILL(3)
+ 3:3 5:0
+  1333: O: O3082 (fill)
+ FILL(5)
+ 3:3 5:5
+  1334: O: O3084 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1335: O: O3085 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1336: O: O3086 (fill)
+ FILL(3)
+ 3:3 5:0
+  1337: O: O3088 (fill)
+ FILL(5)
+ 3:3 5:5
+  1338: O: O3091 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1339: O: O3090 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1340: O: O3094 (fill)
+ FILL(3)
+ 3:3 5:0
+  1341: O: O3092 (fill)
+ FILL(5)
+ 3:3 5:5
+  1342: O: O3096 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1343: O: O3099 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1344: O: O3103 (fill)
+ FILL(5)
+ 3:3 5:5
+  1345: O: O3100 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1346: O: O3107 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1347: O: O3108 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1348: O: O3114 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+  1349: O: O3117 (fill)
+ FILL(3)
+ 3:3 5:0
+  1350: O: O3120 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1351: O: O3123 (fill)
+ FILL(5)
+ 3:0 5:5
+  1352: O: O3124 (fill)
+ FILL(3)
+ 3:3 5:5
+  1353: O: O3128 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1354: O: O3130 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1355: O: O3133 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1356: O: O3131 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1357: O: O3136 (fill)
+ FILL(5)
+ 3:0 5:5
+  1358: O: O3138 (fill)
+ FILL(3)
+ 3:3 5:5
+  1359: O: O3140 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1360: O: O3143 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1361: O: O3145 (fill)
+ FILL(5)
+ 3:0 5:5
+  1362: O: O3148 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1363: O: O3153 (fill)
+ FILL(5)
+ 3:3 5:5
+  1364: O: O3155 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1365: O: O3157 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1366: O: O3158 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1367: O: O3162 (fill)
+ FILL(5)
+ 3:0 5:5
+  1368: O: O3163 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1369: O: O3167 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1370: O: O3171 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1371: O: O3174 (fill)
+ FILL(3)
+ 3:3 5:3
+  1372: O: O3173 (fill)
+ FILL(5)
+ 3:3 5:5
+  1373: O: O3178 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1374: O: O3180 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1375: O: O3182 (fill)
+ FILL(5)
+ 3:0 5:5
+  1376: O: O3183 (fill)
+ FILL(3)
+ 3:3 5:5
+  1377: O: O3186 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1378: O: O3189 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1379: O: O3190 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1380: O: O3194 (fill)
+ FILL(5)
+ 3:0 5:5
+  1381: O: O3192 (fill)
+ FILL(3)
+ 3:3 5:5
+  1382: O: O3197 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1383: O: O3199 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1384: O: O3203 (fill)
+ FILL(5)
+ 3:3 5:5
+  1385: O: O3200 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1386: O: O3205 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1387: O: O3206 (fill)
+ FILL(3)
+ 3:3 5:0
+  1388: O: O3209 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1389: O: O3211 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1390: O: O3215 (fill)
+ FILL(5)
+ 3:0 5:5
+  1391: O: O3216 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1392: O: O3220 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1393: O: O3224 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1394: O: O3225 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1395: O: O3227 (fill)
+ FILL(3)
+ 3:3 5:0
+  1396: O: O3229 (fill)
+ FILL(5)
+ 3:3 5:5
+  1397: O: O3231 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1398: O: O3232 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1399: O: O3235 (fill)
+ FILL(5)
+ 3:0 5:5
+  1400: O: O3236 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1401: O: O3238 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1402: O: O3240 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1403: O: O3243 (fill)
+ FILL(3)
+ 3:3 5:0
+  1404: O: O3245 (fill)
+ FILL(5)
+ 3:3 5:5
+  1405: O: O3248 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1406: O: O3250 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1407: O: O3253 (fill)
+ FILL(3)
+ 3:3 5:3
+  1408: O: O3252 (fill)
+ FILL(5)
+ 3:3 5:5
+  1409: O: O3256 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1410: O: O3257 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1411: O: O3260 (fill)
+ FILL(5)
+ 3:0 5:5
+  1412: O: O3261 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1413: O: O3265 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1414: O: O3263 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1415: O: O3268 (fill)
+ FILL(5)
+ 3:0 5:5
+  1416: O: O3270 (fill)
+ FILL(3)
+ 3:3 5:5
+  1417: O: O3272 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1418: O: O3273 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1419: O: O3274 (fill)
+ FILL(5)
+ 3:0 5:5
+  1420: O: O3276 (fill)
+ FILL(3)
+ 3:3 5:5
+  1421: O: O3278 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1422: O: O3281 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1423: O: O3282 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1424: O: O3284 (fill)
+ FILL(3)
+ 3:3 5:0
+  1425: O: O3287 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1426: O: O3289 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1427: O: O3291 (fill)
+ FILL(3)
+ 3:3 5:0
+  1428: O: O3293 (fill)
+ FILL(5)
+ 3:3 5:5
+  1429: O: O3296 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1430: O: O3295 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1431: O: O3297 (fill)
+ FILL(5)
+ 3:0 5:5
+  1432: O: O3300 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1433: O: O3305 (fill)
+ FILL(5)
+ 3:3 5:5
+  1434: O: O3302 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1435: O: O3309 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1436: O: O3313 (fill)
+ FILL(5)
+ 3:3 5:5
+  1437: O: O3315 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1438: O: O3317 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1439: O: O3318 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1440: O: O3320 (fill)
+ FILL(3)
+ 3:3 5:0
+  1441: O: O3323 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1442: O: O3327 (fill)
+ FILL(3)
+ 3:3 5:3
+  1443: O: O3329 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+  1444: O: O3331 (empty)
+ EMPTY(5)
+ 3:1 5:0
+  1445: O: O3337 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+  1446: O: O3340 (fill)
+ FILL(5)
+ 3:0 5:5
+  1447: O: O3343 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1448: O: O3347 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1449: O: O3345 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1450: O: O3352 (fill)
+ FILL(3)
+ 3:3 5:0
+  1451: O: O3350 (fill)
+ FILL(5)
+ 3:3 5:5
+  1452: O: O3354 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1453: O: O3355 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1454: O: O3356 (fill)
+ FILL(3)
+ 3:3 5:0
+  1455: O: O3358 (fill)
+ FILL(5)
+ 3:3 5:5
+  1456: O: O3360 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1457: O: O3363 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1458: O: O3364 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1459: O: O3366 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1460: O: O3369 (fill)
+ FILL(3)
+ 3:3 5:0
+  1461: O: O3372 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1462: O: O3375 (fill)
+ FILL(5)
+ 3:0 5:5
+  1463: O: O3378 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1464: O: O3380 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1465: O: O3386 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+  1466: O: O3389 (fill)
+ FILL(3)
+ 3:3 5:0
+  1467: O: O3390 (fill)
+ FILL(5)
+ 3:3 5:5
+  1468: O: O3394 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1469: O: O3393 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1470: O: O3397 (fill)
+ FILL(3)
+ 3:3 5:0
+  1471: O: O3398 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1472: O: O3402 (fill)
+ FILL(3)
+ 3:3 5:3
+  1473: O: O3404 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+  1474: O: O3409 (fill)
+ FILL(3)
+ 3:3 5:5
+  1475: O: O3406 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1476: O: O3413 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1477: O: O3414 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1478: O: O3418 (fill)
+ FILL(5)
+ 3:0 5:5
+  1479: O: O3419 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1480: O: O3424 (fill)
+ FILL(5)
+ 3:3 5:5
+  1481: O: O3426 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1482: O: O3428 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1483: O: O3429 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1484: O: O3431 (fill)
+ FILL(3)
+ 3:3 5:0
+  1485: O: O3433 (fill)
+ FILL(5)
+ 3:3 5:5
+  1486: O: O3436 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1487: O: O3435 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1488: O: O3439 (fill)
+ FILL(3)
+ 3:3 5:0
+  1489: O: O3440 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1490: O: O3442 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1491: O: O3446 (fill)
+ FILL(5)
+ 3:0 5:5
+  1492: O: O3444 (fill)
+ FILL(3)
+ 3:3 5:5
+  1493: O: O3449 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1494: O: O3448 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1495: O: O3450 (fill)
+ FILL(3)
+ 3:3 5:0
+  1496: O: O3453 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1497: O: O3457 (fill)
+ FILL(3)
+ 3:3 5:3
+  1498: O: O3456 (fill)
+ FILL(5)
+ 3:3 5:5
+  1499: O: O3461 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1500: O: O3463 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1501: O: O3466 (fill)
+ FILL(3)
+ 3:3 5:3
+  1502: O: O3468 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+  1503: O: O3473 (fill)
+ FILL(3)
+ 3:3 5:5
+  1504: O: O3470 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1505: O: O3477 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1506: O: O3480 (fill)
+ FILL(3)
+ 3:3 5:3
+  1507: O: O3479 (fill)
+ FILL(5)
+ 3:3 5:5
+  1508: O: O3483 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1509: O: O3484 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1510: O: O3485 (fill)
+ FILL(3)
+ 3:3 5:0
+  1511: O: O3488 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1512: O: O3490 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1513: O: O3494 (fill)
+ FILL(5)
+ 3:0 5:5
+  1514: O: O3495 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1515: O: O3500 (fill)
+ FILL(5)
+ 3:3 5:5
+  1516: O: O3502 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1517: O: O3504 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1518: O: O3505 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1519: O: O3509 (fill)
+ FILL(5)
+ 3:0 5:5
+  1520: O: O3507 (fill)
+ FILL(3)
+ 3:3 5:5
+  1521: O: O3512 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1522: O: O3514 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1523: O: O3515 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1524: O: O3521 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+  1525: O: O3523 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1526: O: O3527 (fill)
+ FILL(3)
+ 3:3 5:0
+  1527: O: O3528 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1528: O: O3532 (fill)
+ FILL(3)
+ 3:3 5:3
+  1529: O: O3531 (fill)
+ FILL(5)
+ 3:3 5:5
+  1530: O: O3536 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1531: O: O3538 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1532: O: O3541 (fill)
+ FILL(3)
+ 3:3 5:3
+  1533: O: O3540 (fill)
+ FILL(5)
+ 3:3 5:5
+  1534: O: O3545 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1535: O: O3544 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1536: O: O3546 (fill)
+ FILL(5)
+ 3:0 5:5
+  1537: O: O3548 (fill)
+ FILL(3)
+ 3:3 5:5
+  1538: O: O3550 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1539: O: O3553 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1540: O: O3554 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1541: O: O3558 (fill)
+ FILL(5)
+ 3:0 5:5
+  1542: O: O3559 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1543: O: O3564 (fill)
+ FILL(5)
+ 3:3 5:5
+  1544: O: O3566 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1545: O: O3561 (empty)
+ EMPTY(3)
+ 3:0 5:0
+  1546: O: O3569 (fill)
+ FILL(3)
+ 3:3 5:0
+  1547: O: O3570 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1548: O: O3572 (empty)
+ EMPTY(5)
+ 3:0 5:0
+  1549: O: O3576 (fill)
+ FILL(5)
+ 3:0 5:5
+  1550: O: O3574 (fill)
+ FILL(3)
+ 3:3 5:5
+  1551: O: O3578 (empty)
+ EMPTY(5)
+ 3:3 5:0
+  1552: O: O3581 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+  1553: O: O3584 (fill)
+ FILL(3)
+ 3:3 5:3
+  1554: O: O3583 (fill)
+ FILL(5)
+ 3:3 5:5
+  1555: O: O3587 (empty)
+ EMPTY(3)
+ 3:0 5:5
+  1556: O: O3590 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+  1557: O: O3591 (empty)
+ EMPTY(3)
+ 3:0 5:2
+  1558: O: O3597 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+  1559: O: O3601 (fill)
+ FILL(5)
+ 3:2 5:5
+  1560: O: O3603 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O3 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     3: O: O2 (empty)
+ EMPTY(5)
+ 3:0 5:0
+     4: O: O6 (fill)
+ FILL(5)
+ 3:0 5:5
+     5: O: O7 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     6: O: O12 (fill)
+ FILL(5)
+ 3:3 5:5
+     7: O: O9 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     8: O: O16 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     9: O: O19 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    10: O: O23 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    11: O: O26 (fill)
+ FILL(3)
+ 3:3 5:3
+    12: O: O28 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    13: O: O30 (empty)
+ EMPTY(5)
+ 3:1 5:0
+    14: O: O36 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+    15: O: O38 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    16: O: O42 (fill)
+ FILL(5)
+ 3:0 5:5
+    17: O: O43 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    18: O: O47 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    19: O: O51 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    20: O: O53 (fill)
+ FILL(5)
+ 3:0 5:5
+    21: O: O54 (fill)
+ FILL(3)
+ 3:3 5:5
+    22: O: O57 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    23: O: O60 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    24: O: O61 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    25: O: O63 (fill)
+ FILL(3)
+ 3:3 5:0
+    26: O: O66 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    27: O: O68 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    28: O: O72 (fill)
+ FILL(5)
+ 3:0 5:5
+    29: O: O73 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    30: O: O78 (fill)
+ FILL(5)
+ 3:3 5:5
+    31: O: O75 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    32: O: O80 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    33: O: O81 (fill)
+ FILL(3)
+ 3:3 5:0
+    34: O: O84 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    35: O: O88 (fill)
+ FILL(3)
+ 3:3 5:3
+    36: O: O87 (fill)
+ FILL(5)
+ 3:3 5:5
+    37: O: O92 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    38: O: O94 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    39: O: O96 (fill)
+ FILL(5)
+ 3:0 5:5
+    40: O: O99 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    41: O: O104 (fill)
+ FILL(5)
+ 3:3 5:5
+    42: O: O101 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    43: O: O108 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    44: O: O111 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    45: O: O115 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    46: O: O118 (fill)
+ FILL(3)
+ 3:3 5:3
+    47: O: O120 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    48: O: O124 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    49: O: O122 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    50: O: O127 (fill)
+ FILL(3)
+ 3:3 5:0
+    51: O: O129 (fill)
+ FILL(5)
+ 3:3 5:5
+    52: O: O131 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    53: O: O132 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    54: O: O135 (fill)
+ FILL(5)
+ 3:0 5:5
+    55: O: O136 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    56: O: O141 (fill)
+ FILL(5)
+ 3:3 5:5
+    57: O: O143 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    58: O: O138 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    59: O: O144 (fill)
+ FILL(5)
+ 3:0 5:5
+    60: O: O147 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    61: O: O152 (fill)
+ FILL(5)
+ 3:3 5:5
+    62: O: O154 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    63: O: O156 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    64: O: O157 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    65: O: O161 (fill)
+ FILL(5)
+ 3:0 5:5
+    66: O: O162 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    67: O: O164 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    68: O: O170 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    69: O: O173 (fill)
+ FILL(3)
+ 3:3 5:0
+    70: O: O174 (fill)
+ FILL(5)
+ 3:3 5:5
+    71: O: O178 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    72: O: O177 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    73: O: O181 (fill)
+ FILL(3)
+ 3:3 5:0
+    74: O: O182 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    75: O: O185 (fill)
+ FILL(5)
+ 3:0 5:5
+    76: O: O186 (fill)
+ FILL(3)
+ 3:3 5:5
+    77: O: O189 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    78: O: O190 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    79: O: O191 (fill)
+ FILL(5)
+ 3:0 5:5
+    80: O: O193 (fill)
+ FILL(3)
+ 3:3 5:5
+    81: O: O195 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    82: O: O196 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    83: O: O197 (fill)
+ FILL(5)
+ 3:0 5:5
+    84: O: O199 (fill)
+ FILL(3)
+ 3:3 5:5
+    85: O: O202 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    86: O: O201 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    87: O: O205 (fill)
+ FILL(5)
+ 3:0 5:5
+    88: O: O203 (fill)
+ FILL(3)
+ 3:3 5:5
+    89: O: O207 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    90: O: O208 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    91: O: O211 (fill)
+ FILL(3)
+ 3:3 5:0
+    92: O: O209 (fill)
+ FILL(5)
+ 3:3 5:5
+    93: O: O214 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    94: O: O213 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    95: O: O217 (fill)
+ FILL(3)
+ 3:3 5:0
+    96: O: O218 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    97: O: O222 (fill)
+ FILL(3)
+ 3:3 5:3
+    98: O: O224 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    99: O: O228 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   100: O: O226 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   101: O: O231 (fill)
+ FILL(3)
+ 3:3 5:0
+   102: O: O233 (fill)
+ FILL(5)
+ 3:3 5:5
+   103: O: O235 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   104: O: O236 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   105: O: O237 (fill)
+ FILL(3)
+ 3:3 5:0
+   106: O: O239 (fill)
+ FILL(5)
+ 3:3 5:5
+   107: O: O241 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   108: O: O242 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   109: O: O243 (fill)
+ FILL(3)
+ 3:3 5:0
+   110: O: O245 (fill)
+ FILL(5)
+ 3:3 5:5
+   111: O: O247 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   112: O: O250 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   113: O: O253 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   114: O: O257 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   115: O: O259 (fill)
+ FILL(5)
+ 3:0 5:5
+   116: O: O260 (fill)
+ FILL(3)
+ 3:3 5:5
+   117: O: O264 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   118: O: O263 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   119: O: O267 (fill)
+ FILL(5)
+ 3:0 5:5
+   120: O: O265 (fill)
+ FILL(3)
+ 3:3 5:5
+   121: O: O270 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   122: O: O269 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   123: O: O271 (fill)
+ FILL(3)
+ 3:3 5:0
+   124: O: O273 (fill)
+ FILL(5)
+ 3:3 5:5
+   125: O: O276 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   126: O: O275 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   127: O: O279 (fill)
+ FILL(3)
+ 3:3 5:0
+   128: O: O280 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   129: O: O284 (fill)
+ FILL(3)
+ 3:3 5:3
+   130: O: O283 (fill)
+ FILL(5)
+ 3:3 5:5
+   131: O: O288 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   132: O: O287 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   133: O: O289 (fill)
+ FILL(5)
+ 3:0 5:5
+   134: O: O291 (fill)
+ FILL(3)
+ 3:3 5:5
+   135: O: O294 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   136: O: O296 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   137: O: O299 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   138: O: O297 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   139: O: O302 (fill)
+ FILL(5)
+ 3:0 5:5
+   140: O: O305 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   141: O: O307 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   142: O: O309 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   143: O: O312 (fill)
+ FILL(3)
+ 3:3 5:0
+   144: O: O314 (fill)
+ FILL(5)
+ 3:3 5:5
+   145: O: O316 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   146: O: O317 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   147: O: O320 (fill)
+ FILL(5)
+ 3:0 5:5
+   148: O: O321 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   149: O: O323 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   150: O: O325 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   151: O: O328 (fill)
+ FILL(3)
+ 3:3 5:0
+   152: O: O331 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   153: O: O334 (fill)
+ FILL(5)
+ 3:0 5:5
+   154: O: O337 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   155: O: O341 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   156: O: O345 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   157: O: O346 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   158: O: O348 (fill)
+ FILL(3)
+ 3:3 5:0
+   159: O: O351 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   160: O: O354 (fill)
+ FILL(5)
+ 3:0 5:5
+   161: O: O355 (fill)
+ FILL(3)
+ 3:3 5:5
+   162: O: O359 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   163: O: O358 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   164: O: O362 (fill)
+ FILL(5)
+ 3:0 5:5
+   165: O: O363 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   166: O: O367 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   167: O: O371 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   168: O: O374 (fill)
+ FILL(3)
+ 3:3 5:3
+   169: O: O373 (fill)
+ FILL(5)
+ 3:3 5:5
+   170: O: O377 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   171: O: O378 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   172: O: O381 (fill)
+ FILL(5)
+ 3:0 5:5
+   173: O: O379 (fill)
+ FILL(3)
+ 3:3 5:5
+   174: O: O383 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   175: O: O384 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   176: O: O387 (fill)
+ FILL(3)
+ 3:3 5:0
+   177: O: O385 (fill)
+ FILL(5)
+ 3:3 5:5
+   178: O: O390 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   179: O: O389 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   180: O: O393 (fill)
+ FILL(3)
+ 3:3 5:0
+   181: O: O394 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   182: O: O396 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   183: O: O398 (fill)
+ FILL(3)
+ 3:3 5:0
+   184: O: O400 (fill)
+ FILL(5)
+ 3:3 5:5
+   185: O: O402 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   186: O: O403 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   187: O: O406 (fill)
+ FILL(5)
+ 3:0 5:5
+   188: O: O404 (fill)
+ FILL(3)
+ 3:3 5:5
+   189: O: O408 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   190: O: O409 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   191: O: O410 (fill)
+ FILL(5)
+ 3:0 5:5
+   192: O: O413 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   193: O: O417 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   194: O: O421 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   195: O: O423 (fill)
+ FILL(5)
+ 3:0 5:5
+   196: O: O426 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   197: O: O428 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   198: O: O434 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   199: O: O436 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   200: O: O438 (fill)
+ FILL(5)
+ 3:0 5:5
+   201: O: O441 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   202: O: O443 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   203: O: O449 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   204: O: O453 (fill)
+ FILL(5)
+ 3:2 5:5
+   205: O: O455 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O2 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     3: O: O5 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     4: O: O7 (fill)
+ FILL(5)
+ 3:0 5:5
+     5: O: O10 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     6: O: O15 (fill)
+ FILL(5)
+ 3:3 5:5
+     7: O: O17 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     8: O: O12 (empty)
+ EMPTY(3)
+ 3:0 5:0
+     9: O: O20 (fill)
+ FILL(3)
+ 3:3 5:0
+    10: O: O18 (fill)
+ FILL(5)
+ 3:3 5:5
+    11: O: O22 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    12: O: O23 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    13: O: O26 (fill)
+ FILL(5)
+ 3:0 5:5
+    14: O: O24 (fill)
+ FILL(3)
+ 3:3 5:5
+    15: O: O29 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    16: O: O28 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    17: O: O30 (fill)
+ FILL(3)
+ 3:3 5:0
+    18: O: O33 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    19: O: O36 (fill)
+ FILL(5)
+ 3:0 5:5
+    20: O: O37 (fill)
+ FILL(3)
+ 3:3 5:5
+    21: O: O41 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    22: O: O43 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    23: O: O47 (fill)
+ FILL(5)
+ 3:3 5:5
+    24: O: O44 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    25: O: O49 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    26: O: O50 (fill)
+ FILL(3)
+ 3:3 5:0
+    27: O: O53 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    28: O: O55 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    29: O: O59 (fill)
+ FILL(5)
+ 3:0 5:5
+    30: O: O60 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    31: O: O65 (fill)
+ FILL(5)
+ 3:3 5:5
+    32: O: O62 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    33: O: O69 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    34: O: O73 (fill)
+ FILL(5)
+ 3:3 5:5
+    35: O: O70 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    36: O: O77 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    37: O: O78 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    38: O: O80 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    39: O: O83 (fill)
+ FILL(3)
+ 3:3 5:0
+    40: O: O85 (fill)
+ FILL(5)
+ 3:3 5:5
+    41: O: O88 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    42: O: O87 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    43: O: O89 (fill)
+ FILL(5)
+ 3:0 5:5
+    44: O: O91 (fill)
+ FILL(3)
+ 3:3 5:5
+    45: O: O93 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    46: O: O94 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    47: O: O97 (fill)
+ FILL(3)
+ 3:3 5:0
+    48: O: O95 (fill)
+ FILL(5)
+ 3:3 5:5
+    49: O: O100 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    50: O: O102 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    51: O: O105 (fill)
+ FILL(3)
+ 3:3 5:3
+    52: O: O104 (fill)
+ FILL(5)
+ 3:3 5:5
+    53: O: O108 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    54: O: O111 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    55: O: O114 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    56: O: O112 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    57: O: O117 (fill)
+ FILL(5)
+ 3:0 5:5
+    58: O: O119 (fill)
+ FILL(3)
+ 3:3 5:5
+    59: O: O121 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    60: O: O122 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    61: O: O123 (fill)
+ FILL(5)
+ 3:0 5:5
+    62: O: O126 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    63: O: O128 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    64: O: O134 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    65: O: O137 (fill)
+ FILL(3)
+ 3:3 5:0
+    66: O: O140 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    67: O: O142 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    68: O: O144 (fill)
+ FILL(3)
+ 3:3 5:0
+    69: O: O147 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    70: O: O151 (fill)
+ FILL(3)
+ 3:3 5:3
+    71: O: O153 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    72: O: O155 (empty)
+ EMPTY(5)
+ 3:1 5:0
+    73: O: O161 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+    74: O: O163 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    75: O: O167 (fill)
+ FILL(5)
+ 3:0 5:5
+    76: O: O168 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    77: O: O170 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    78: O: O176 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+    79: O: O180 (fill)
+ FILL(5)
+ 3:2 5:5
+    80: O: O182 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O3 (empty)
+ EMPTY(3)
+ 3:0 5:5
+     3: O: O5 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+     4: O: O9 (fill)
+ FILL(5)
+ 3:3 5:5
+     5: O: O11 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     6: O: O6 (empty)
+ EMPTY(3)
+ 3:0 5:0
+     7: O: O14 (fill)
+ FILL(3)
+ 3:3 5:0
+     8: O: O12 (fill)
+ FILL(5)
+ 3:3 5:5
+     9: O: O17 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    10: O: O16 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    11: O: O20 (fill)
+ FILL(3)
+ 3:3 5:0
+    12: O: O21 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    13: O: O25 (fill)
+ FILL(3)
+ 3:3 5:3
+    14: O: O27 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    15: O: O29 (empty)
+ EMPTY(5)
+ 3:1 5:0
+    16: O: O35 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+    17: O: O37 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    18: O: O41 (fill)
+ FILL(5)
+ 3:0 5:5
+    19: O: O39 (fill)
+ FILL(3)
+ 3:3 5:5
+    20: O: O43 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    21: O: O46 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    22: O: O47 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    23: O: O51 (fill)
+ FILL(5)
+ 3:0 5:5
+    24: O: O52 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    25: O: O54 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    26: O: O56 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    27: O: O61 (fill)
+ FILL(5)
+ 3:0 5:5
+    28: O: O59 (fill)
+ FILL(3)
+ 3:3 5:5
+    29: O: O64 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    30: O: O63 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    31: O: O65 (fill)
+ FILL(3)
+ 3:3 5:0
+    32: O: O67 (fill)
+ FILL(5)
+ 3:3 5:5
+    33: O: O69 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    34: O: O72 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    35: O: O75 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    36: O: O73 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    37: O: O78 (fill)
+ FILL(5)
+ 3:0 5:5
+    38: O: O80 (fill)
+ FILL(3)
+ 3:3 5:5
+    39: O: O82 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    40: O: O83 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    41: O: O86 (fill)
+ FILL(3)
+ 3:3 5:0
+    42: O: O87 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    43: O: O89 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    44: O: O91 (fill)
+ FILL(3)
+ 3:3 5:0
+    45: O: O94 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    46: O: O97 (fill)
+ FILL(5)
+ 3:0 5:5
+    47: O: O98 (fill)
+ FILL(3)
+ 3:3 5:5
+    48: O: O101 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    49: O: O104 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    50: O: O106 (fill)
+ FILL(5)
+ 3:0 5:5
+    51: O: O109 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    52: O: O113 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    53: O: O111 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    54: O: O118 (fill)
+ FILL(3)
+ 3:3 5:0
+    55: O: O116 (fill)
+ FILL(5)
+ 3:3 5:5
+    56: O: O120 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    57: O: O121 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    58: O: O122 (fill)
+ FILL(3)
+ 3:3 5:0
+    59: O: O125 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    60: O: O128 (fill)
+ FILL(5)
+ 3:0 5:5
+    61: O: O129 (fill)
+ FILL(3)
+ 3:3 5:5
+    62: O: O133 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    63: O: O135 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    64: O: O139 (fill)
+ FILL(5)
+ 3:3 5:5
+    65: O: O136 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    66: O: O143 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    67: O: O147 (fill)
+ FILL(5)
+ 3:3 5:5
+    68: O: O149 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    69: O: O151 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    70: O: O153 (fill)
+ FILL(5)
+ 3:0 5:5
+    71: O: O154 (fill)
+ FILL(3)
+ 3:3 5:5
+    72: O: O158 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    73: O: O157 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    74: O: O161 (fill)
+ FILL(5)
+ 3:0 5:5
+    75: O: O159 (fill)
+ FILL(3)
+ 3:3 5:5
+    76: O: O164 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    77: O: O163 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    78: O: O167 (fill)
+ FILL(5)
+ 3:0 5:5
+    79: O: O165 (fill)
+ FILL(3)
+ 3:3 5:5
+    80: O: O170 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    81: O: O169 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    82: O: O173 (fill)
+ FILL(5)
+ 3:0 5:5
+    83: O: O174 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    84: O: O178 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    85: O: O182 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    86: O: O185 (fill)
+ FILL(3)
+ 3:3 5:3
+    87: O: O187 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    88: O: O191 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    89: O: O195 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    90: O: O196 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    91: O: O198 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    92: O: O201 (fill)
+ FILL(3)
+ 3:3 5:0
+    93: O: O204 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    94: O: O208 (fill)
+ FILL(3)
+ 3:3 5:3
+    95: O: O210 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    96: O: O215 (fill)
+ FILL(3)
+ 3:3 5:5
+    97: O: O217 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    98: O: O212 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    99: O: O220 (fill)
+ FILL(5)
+ 3:0 5:5
+   100: O: O218 (fill)
+ FILL(3)
+ 3:3 5:5
+   101: O: O223 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   102: O: O222 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   103: O: O226 (fill)
+ FILL(5)
+ 3:0 5:5
+   104: O: O224 (fill)
+ FILL(3)
+ 3:3 5:5
+   105: O: O229 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   106: O: O231 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   107: O: O235 (fill)
+ FILL(5)
+ 3:3 5:5
+   108: O: O237 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   109: O: O239 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   110: O: O242 (fill)
+ FILL(3)
+ 3:3 5:3
+   111: O: O244 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   112: O: O248 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   113: O: O252 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   114: O: O256 (fill)
+ FILL(5)
+ 3:3 5:5
+   115: O: O258 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   116: O: O260 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   117: O: O262 (fill)
+ FILL(5)
+ 3:0 5:5
+   118: O: O265 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   119: O: O269 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   120: O: O267 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   121: O: O272 (fill)
+ FILL(5)
+ 3:0 5:5
+   122: O: O274 (fill)
+ FILL(3)
+ 3:3 5:5
+   123: O: O276 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   124: O: O277 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   125: O: O280 (fill)
+ FILL(3)
+ 3:3 5:0
+   126: O: O281 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   127: O: O284 (fill)
+ FILL(5)
+ 3:0 5:5
+   128: O: O285 (fill)
+ FILL(3)
+ 3:3 5:5
+   129: O: O289 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   130: O: O288 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   131: O: O292 (fill)
+ FILL(5)
+ 3:0 5:5
+   132: O: O293 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   133: O: O295 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   134: O: O297 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   135: O: O300 (fill)
+ FILL(3)
+ 3:3 5:0
+   136: O: O302 (fill)
+ FILL(5)
+ 3:3 5:5
+   137: O: O304 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   138: O: O307 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   139: O: O311 (fill)
+ FILL(5)
+ 3:3 5:5
+   140: O: O308 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   141: O: O313 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   142: O: O316 (fill)
+ FILL(5)
+ 3:0 5:5
+   143: O: O317 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   144: O: O321 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   145: O: O325 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   146: O: O326 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   147: O: O328 (fill)
+ FILL(3)
+ 3:3 5:0
+   148: O: O330 (fill)
+ FILL(5)
+ 3:3 5:5
+   149: O: O333 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   150: O: O332 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   151: O: O334 (fill)
+ FILL(5)
+ 3:0 5:5
+   152: O: O337 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   153: O: O342 (fill)
+ FILL(5)
+ 3:3 5:5
+   154: O: O339 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   155: O: O346 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   156: O: O350 (fill)
+ FILL(5)
+ 3:3 5:5
+   157: O: O347 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   158: O: O354 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   159: O: O357 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   160: O: O361 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   161: O: O364 (fill)
+ FILL(3)
+ 3:3 5:3
+   162: O: O363 (fill)
+ FILL(5)
+ 3:3 5:5
+   163: O: O367 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   164: O: O368 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   165: O: O371 (fill)
+ FILL(5)
+ 3:0 5:5
+   166: O: O372 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   167: O: O374 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   168: O: O380 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   169: O: O382 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   170: O: O384 (fill)
+ FILL(5)
+ 3:0 5:5
+   171: O: O387 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   172: O: O391 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   173: O: O389 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   174: O: O396 (fill)
+ FILL(3)
+ 3:3 5:0
+   175: O: O397 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   176: O: O399 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   177: O: O403 (fill)
+ FILL(5)
+ 3:0 5:5
+   178: O: O404 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   179: O: O406 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   180: O: O408 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   181: O: O411 (fill)
+ FILL(3)
+ 3:3 5:0
+   182: O: O413 (fill)
+ FILL(5)
+ 3:3 5:5
+   183: O: O416 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   184: O: O415 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   185: O: O419 (fill)
+ FILL(3)
+ 3:3 5:0
+   186: O: O420 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   187: O: O423 (fill)
+ FILL(5)
+ 3:0 5:5
+   188: O: O426 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   189: O: O430 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   190: O: O434 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   191: O: O435 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   192: O: O439 (fill)
+ FILL(5)
+ 3:0 5:5
+   193: O: O440 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   194: O: O442 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   195: O: O444 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   196: O: O449 (fill)
+ FILL(5)
+ 3:0 5:5
+   197: O: O450 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   198: O: O455 (fill)
+ FILL(5)
+ 3:3 5:5
+   199: O: O452 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   200: O: O459 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   201: O: O460 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   202: O: O466 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   203: O: O469 (fill)
+ FILL(3)
+ 3:3 5:0
+   204: O: O472 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   205: O: O475 (fill)
+ FILL(5)
+ 3:0 5:5
+   206: O: O476 (fill)
+ FILL(3)
+ 3:3 5:5
+   207: O: O479 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   208: O: O482 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   209: O: O485 (fill)
+ FILL(3)
+ 3:3 5:3
+   210: O: O487 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   211: O: O491 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   212: O: O495 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   213: O: O496 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   214: O: O498 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   215: O: O503 (fill)
+ FILL(5)
+ 3:0 5:5
+   216: O: O501 (fill)
+ FILL(3)
+ 3:3 5:5
+   217: O: O506 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   218: O: O505 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   219: O: O507 (fill)
+ FILL(3)
+ 3:3 5:0
+   220: O: O510 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   221: O: O514 (fill)
+ FILL(3)
+ 3:3 5:3
+   222: O: O516 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   223: O: O521 (fill)
+ FILL(3)
+ 3:3 5:5
+   224: O: O523 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   225: O: O525 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   226: O: O526 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   227: O: O528 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   228: O: O531 (fill)
+ FILL(3)
+ 3:3 5:0
+   229: O: O534 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   230: O: O537 (fill)
+ FILL(5)
+ 3:0 5:5
+   231: O: O540 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   232: O: O545 (fill)
+ FILL(5)
+ 3:3 5:5
+   233: O: O542 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   234: O: O549 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   235: O: O553 (fill)
+ FILL(5)
+ 3:3 5:5
+   236: O: O550 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   237: O: O557 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   238: O: O558 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   239: O: O560 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   240: O: O565 (fill)
+ FILL(5)
+ 3:0 5:5
+   241: O: O563 (fill)
+ FILL(3)
+ 3:3 5:5
+   242: O: O568 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   243: O: O570 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   244: O: O574 (fill)
+ FILL(5)
+ 3:3 5:5
+   245: O: O576 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   246: O: O578 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   247: O: O579 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   248: O: O583 (fill)
+ FILL(5)
+ 3:0 5:5
+   249: O: O584 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   250: O: O589 (fill)
+ FILL(5)
+ 3:3 5:5
+   251: O: O586 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   252: O: O591 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   253: O: O592 (fill)
+ FILL(3)
+ 3:3 5:0
+   254: O: O595 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   255: O: O599 (fill)
+ FILL(3)
+ 3:3 5:3
+   256: O: O598 (fill)
+ FILL(5)
+ 3:3 5:5
+   257: O: O603 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   258: O: O605 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   259: O: O607 (fill)
+ FILL(5)
+ 3:0 5:5
+   260: O: O608 (fill)
+ FILL(3)
+ 3:3 5:5
+   261: O: O612 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   262: O: O611 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   263: O: O615 (fill)
+ FILL(5)
+ 3:0 5:5
+   264: O: O613 (fill)
+ FILL(3)
+ 3:3 5:5
+   265: O: O617 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   266: O: O620 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   267: O: O623 (fill)
+ FILL(3)
+ 3:3 5:3
+   268: O: O622 (fill)
+ FILL(5)
+ 3:3 5:5
+   269: O: O626 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   270: O: O629 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   271: O: O632 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   272: O: O630 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   273: O: O635 (fill)
+ FILL(5)
+ 3:0 5:5
+   274: O: O637 (fill)
+ FILL(3)
+ 3:3 5:5
+   275: O: O639 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   276: O: O640 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   277: O: O641 (fill)
+ FILL(5)
+ 3:0 5:5
+   278: O: O643 (fill)
+ FILL(3)
+ 3:3 5:5
+   279: O: O645 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   280: O: O646 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   281: O: O647 (fill)
+ FILL(5)
+ 3:0 5:5
+   282: O: O650 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   283: O: O655 (fill)
+ FILL(5)
+ 3:3 5:5
+   284: O: O657 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   285: O: O659 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   286: O: O661 (fill)
+ FILL(5)
+ 3:0 5:5
+   287: O: O662 (fill)
+ FILL(3)
+ 3:3 5:5
+   288: O: O666 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   289: O: O668 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   290: O: O669 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   291: O: O671 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   292: O: O674 (fill)
+ FILL(3)
+ 3:3 5:0
+   293: O: O677 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   294: O: O679 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   295: O: O683 (fill)
+ FILL(5)
+ 3:0 5:5
+   296: O: O681 (fill)
+ FILL(3)
+ 3:3 5:5
+   297: O: O686 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   298: O: O688 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   299: O: O692 (fill)
+ FILL(5)
+ 3:3 5:5
+   300: O: O689 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   301: O: O694 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   302: O: O695 (fill)
+ FILL(3)
+ 3:3 5:0
+   303: O: O698 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   304: O: O702 (fill)
+ FILL(3)
+ 3:3 5:3
+   305: O: O704 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   306: O: O706 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   307: O: O708 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   308: O: O711 (fill)
+ FILL(5)
+ 3:0 5:5
+   309: O: O713 (fill)
+ FILL(3)
+ 3:3 5:5
+   310: O: O716 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   311: O: O718 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   312: O: O719 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   313: O: O721 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   314: O: O724 (fill)
+ FILL(3)
+ 3:3 5:0
+   315: O: O726 (fill)
+ FILL(5)
+ 3:3 5:5
+   316: O: O729 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   317: O: O728 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   318: O: O732 (fill)
+ FILL(3)
+ 3:3 5:0
+   319: O: O733 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   320: O: O736 (fill)
+ FILL(5)
+ 3:0 5:5
+   321: O: O737 (fill)
+ FILL(3)
+ 3:3 5:5
+   322: O: O741 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   323: O: O743 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   324: O: O746 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   325: O: O750 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   326: O: O752 (fill)
+ FILL(5)
+ 3:0 5:5
+   327: O: O755 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   328: O: O760 (fill)
+ FILL(5)
+ 3:3 5:5
+   329: O: O762 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   330: O: O764 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   331: O: O765 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   332: O: O767 (fill)
+ FILL(3)
+ 3:3 5:0
+   333: O: O770 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   334: O: O772 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   335: O: O776 (fill)
+ FILL(5)
+ 3:0 5:5
+   336: O: O777 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   337: O: O782 (fill)
+ FILL(5)
+ 3:3 5:5
+   338: O: O779 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   339: O: O784 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   340: O: O787 (fill)
+ FILL(5)
+ 3:0 5:5
+   341: O: O788 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   342: O: O793 (fill)
+ FILL(5)
+ 3:3 5:5
+   343: O: O790 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   344: O: O795 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   345: O: O796 (fill)
+ FILL(3)
+ 3:3 5:0
+   346: O: O799 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   347: O: O803 (fill)
+ FILL(3)
+ 3:3 5:3
+   348: O: O802 (fill)
+ FILL(5)
+ 3:3 5:5
+   349: O: O807 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   350: O: O806 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   351: O: O808 (fill)
+ FILL(5)
+ 3:0 5:5
+   352: O: O810 (fill)
+ FILL(3)
+ 3:3 5:5
+   353: O: O813 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   354: O: O812 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   355: O: O816 (fill)
+ FILL(5)
+ 3:0 5:5
+   356: O: O817 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   357: O: O822 (fill)
+ FILL(5)
+ 3:3 5:5
+   358: O: O819 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   359: O: O826 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   360: O: O829 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   361: O: O833 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   362: O: O834 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   363: O: O838 (fill)
+ FILL(5)
+ 3:0 5:5
+   364: O: O836 (fill)
+ FILL(3)
+ 3:3 5:5
+   365: O: O840 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   366: O: O841 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   367: O: O844 (fill)
+ FILL(3)
+ 3:3 5:0
+   368: O: O842 (fill)
+ FILL(5)
+ 3:3 5:5
+   369: O: O847 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   370: O: O846 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   371: O: O850 (fill)
+ FILL(3)
+ 3:3 5:0
+   372: O: O851 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   373: O: O854 (fill)
+ FILL(5)
+ 3:0 5:5
+   374: O: O855 (fill)
+ FILL(3)
+ 3:3 5:5
+   375: O: O859 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   376: O: O861 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   377: O: O865 (fill)
+ FILL(5)
+ 3:3 5:5
+   378: O: O867 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   379: O: O862 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   380: O: O868 (fill)
+ FILL(5)
+ 3:0 5:5
+   381: O: O871 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   382: O: O875 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   383: O: O873 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   384: O: O878 (fill)
+ FILL(5)
+ 3:0 5:5
+   385: O: O881 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   386: O: O886 (fill)
+ FILL(5)
+ 3:3 5:5
+   387: O: O883 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   388: O: O890 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   389: O: O893 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   390: O: O897 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   391: O: O899 (fill)
+ FILL(5)
+ 3:0 5:5
+   392: O: O900 (fill)
+ FILL(3)
+ 3:3 5:5
+   393: O: O903 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   394: O: O904 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   395: O: O907 (fill)
+ FILL(3)
+ 3:3 5:0
+   396: O: O905 (fill)
+ FILL(5)
+ 3:3 5:5
+   397: O: O910 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   398: O: O909 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   399: O: O911 (fill)
+ FILL(5)
+ 3:0 5:5
+   400: O: O914 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   401: O: O919 (fill)
+ FILL(5)
+ 3:3 5:5
+   402: O: O921 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   403: O: O916 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   404: O: O924 (fill)
+ FILL(3)
+ 3:3 5:0
+   405: O: O922 (fill)
+ FILL(5)
+ 3:3 5:5
+   406: O: O927 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   407: O: O926 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   408: O: O928 (fill)
+ FILL(5)
+ 3:0 5:5
+   409: O: O931 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   410: O: O933 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   411: O: O935 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   412: O: O940 (fill)
+ FILL(5)
+ 3:0 5:5
+   413: O: O941 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   414: O: O943 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   415: O: O949 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   416: O: O953 (fill)
+ FILL(5)
+ 3:2 5:5
+   417: O: O952 (fill)
+ FILL(3)
+ 3:3 5:5
+   418: O: O957 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   419: O: O956 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   420: O: O960 (fill)
+ FILL(5)
+ 3:0 5:5
+   421: O: O961 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   422: O: O965 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   423: O: O969 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   424: O: O971 (fill)
+ FILL(5)
+ 3:0 5:5
+   425: O: O972 (fill)
+ FILL(3)
+ 3:3 5:5
+   426: O: O975 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   427: O: O978 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   428: O: O979 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   429: O: O983 (fill)
+ FILL(5)
+ 3:0 5:5
+   430: O: O981 (fill)
+ FILL(3)
+ 3:3 5:5
+   431: O: O986 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   432: O: O988 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   433: O: O989 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   434: O: O991 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   435: O: O994 (fill)
+ FILL(3)
+ 3:3 5:0
+   436: O: O996 (fill)
+ FILL(5)
+ 3:3 5:5
+   437: O: O999 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   438: O: O1001 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   439: O: O1003 (fill)
+ FILL(5)
+ 3:0 5:5
+   440: O: O1004 (fill)
+ FILL(3)
+ 3:3 5:5
+   441: O: O1008 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   442: O: O1007 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   443: O: O1011 (fill)
+ FILL(5)
+ 3:0 5:5
+   444: O: O1012 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   445: O: O1016 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   446: O: O1014 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   447: O: O1021 (fill)
+ FILL(3)
+ 3:3 5:0
+   448: O: O1022 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   449: O: O1026 (fill)
+ FILL(3)
+ 3:3 5:3
+   450: O: O1028 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   451: O: O1033 (fill)
+ FILL(3)
+ 3:3 5:5
+   452: O: O1030 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   453: O: O1037 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   454: O: O1038 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   455: O: O1042 (fill)
+ FILL(5)
+ 3:0 5:5
+   456: O: O1040 (fill)
+ FILL(3)
+ 3:3 5:5
+   457: O: O1045 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   458: O: O1044 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   459: O: O1048 (fill)
+ FILL(5)
+ 3:0 5:5
+   460: O: O1046 (fill)
+ FILL(3)
+ 3:3 5:5
+   461: O: O1051 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   462: O: O1050 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   463: O: O1052 (fill)
+ FILL(3)
+ 3:3 5:0
+   464: O: O1055 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   465: O: O1059 (fill)
+ FILL(3)
+ 3:3 5:3
+   466: O: O1061 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   467: O: O1066 (fill)
+ FILL(3)
+ 3:3 5:5
+   468: O: O1068 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   469: O: O1063 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   470: O: O1069 (fill)
+ FILL(3)
+ 3:3 5:0
+   471: O: O1071 (fill)
+ FILL(5)
+ 3:3 5:5
+   472: O: O1074 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   473: O: O1076 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   474: O: O1078 (fill)
+ FILL(5)
+ 3:0 5:5
+   475: O: O1081 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   476: O: O1083 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   477: O: O1089 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   478: O: O1092 (fill)
+ FILL(3)
+ 3:3 5:0
+   479: O: O1093 (fill)
+ FILL(5)
+ 3:3 5:5
+   480: O: O1097 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   481: O: O1096 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   482: O: O1098 (fill)
+ FILL(5)
+ 3:0 5:5
+   483: O: O1100 (fill)
+ FILL(3)
+ 3:3 5:5
+   484: O: O1103 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   485: O: O1102 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   486: O: O1106 (fill)
+ FILL(5)
+ 3:0 5:5
+   487: O: O1107 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   488: O: O1112 (fill)
+ FILL(5)
+ 3:3 5:5
+   489: O: O1114 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   490: O: O1109 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   491: O: O1117 (fill)
+ FILL(3)
+ 3:3 5:0
+   492: O: O1118 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   493: O: O1120 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   494: O: O1122 (fill)
+ FILL(3)
+ 3:3 5:0
+   495: O: O1124 (fill)
+ FILL(5)
+ 3:3 5:5
+   496: O: O1126 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   497: O: O1127 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   498: O: O1130 (fill)
+ FILL(5)
+ 3:0 5:5
+   499: O: O1128 (fill)
+ FILL(3)
+ 3:3 5:5
+   500: O: O1132 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   501: O: O1135 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   502: O: O1136 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   503: O: O1138 (fill)
+ FILL(3)
+ 3:3 5:0
+   504: O: O1140 (fill)
+ FILL(5)
+ 3:3 5:5
+   505: O: O1143 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   506: O: O1142 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   507: O: O1146 (fill)
+ FILL(3)
+ 3:3 5:0
+   508: O: O1144 (fill)
+ FILL(5)
+ 3:3 5:5
+   509: O: O1149 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   510: O: O1148 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   511: O: O1152 (fill)
+ FILL(3)
+ 3:3 5:0
+   512: O: O1153 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   513: O: O1156 (fill)
+ FILL(5)
+ 3:0 5:5
+   514: O: O1157 (fill)
+ FILL(3)
+ 3:3 5:5
+   515: O: O1161 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   516: O: O1163 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   517: O: O1164 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   518: O: O1170 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   519: O: O1173 (fill)
+ FILL(3)
+ 3:3 5:0
+   520: O: O1176 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   521: O: O1180 (fill)
+ FILL(3)
+ 3:3 5:3
+   522: O: O1182 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   523: O: O1184 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   524: O: O1190 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+   525: O: O1193 (fill)
+ FILL(5)
+ 3:0 5:5
+   526: O: O1196 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   527: O: O1200 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   528: O: O1204 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   529: O: O1205 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   530: O: O1209 (fill)
+ FILL(5)
+ 3:0 5:5
+   531: O: O1207 (fill)
+ FILL(3)
+ 3:3 5:5
+   532: O: O1212 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   533: O: O1214 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   534: O: O1217 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   535: O: O1215 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   536: O: O1220 (fill)
+ FILL(5)
+ 3:0 5:5
+   537: O: O1223 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   538: O: O1227 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   539: O: O1231 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   540: O: O1232 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   541: O: O1236 (fill)
+ FILL(5)
+ 3:0 5:5
+   542: O: O1237 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   543: O: O1241 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   544: O: O1245 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   545: O: O1246 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   546: O: O1248 (fill)
+ FILL(3)
+ 3:3 5:0
+   547: O: O1251 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   548: O: O1255 (fill)
+ FILL(3)
+ 3:3 5:3
+   549: O: O1254 (fill)
+ FILL(5)
+ 3:3 5:5
+   550: O: O1259 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   551: O: O1258 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   552: O: O1260 (fill)
+ FILL(5)
+ 3:0 5:5
+   553: O: O1262 (fill)
+ FILL(3)
+ 3:3 5:5
+   554: O: O1264 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   555: O: O1265 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   556: O: O1266 (fill)
+ FILL(5)
+ 3:0 5:5
+   557: O: O1268 (fill)
+ FILL(3)
+ 3:3 5:5
+   558: O: O1271 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   559: O: O1270 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   560: O: O1274 (fill)
+ FILL(5)
+ 3:0 5:5
+   561: O: O1272 (fill)
+ FILL(3)
+ 3:3 5:5
+   562: O: O1277 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   563: O: O1276 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   564: O: O1278 (fill)
+ FILL(3)
+ 3:3 5:0
+   565: O: O1281 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   566: O: O1285 (fill)
+ FILL(3)
+ 3:3 5:3
+   567: O: O1284 (fill)
+ FILL(5)
+ 3:3 5:5
+   568: O: O1288 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   569: O: O1291 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   570: O: O1292 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   571: O: O1294 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   572: O: O1299 (fill)
+ FILL(5)
+ 3:0 5:5
+   573: O: O1297 (fill)
+ FILL(3)
+ 3:3 5:5
+   574: O: O1302 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   575: O: O1304 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   576: O: O1308 (fill)
+ FILL(5)
+ 3:3 5:5
+   577: O: O1305 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   578: O: O1312 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   579: O: O1313 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   580: O: O1315 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   581: O: O1320 (fill)
+ FILL(5)
+ 3:0 5:5
+   582: O: O1318 (fill)
+ FILL(3)
+ 3:3 5:5
+   583: O: O1323 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   584: O: O1322 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   585: O: O1326 (fill)
+ FILL(5)
+ 3:0 5:5
+   586: O: O1324 (fill)
+ FILL(3)
+ 3:3 5:5
+   587: O: O1328 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   588: O: O1329 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   589: O: O1332 (fill)
+ FILL(3)
+ 3:3 5:0
+   590: O: O1333 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   591: O: O1336 (fill)
+ FILL(5)
+ 3:0 5:5
+   592: O: O1337 (fill)
+ FILL(3)
+ 3:3 5:5
+   593: O: O1340 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   594: O: O1343 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   595: O: O1345 (fill)
+ FILL(5)
+ 3:0 5:5
+   596: O: O1348 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   597: O: O1350 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   598: O: O1352 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   599: O: O1355 (fill)
+ FILL(3)
+ 3:3 5:0
+   600: O: O1357 (fill)
+ FILL(5)
+ 3:3 5:5
+   601: O: O1359 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   602: O: O1362 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   603: O: O1365 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   604: O: O1363 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   605: O: O1370 (fill)
+ FILL(3)
+ 3:3 5:0
+   606: O: O1371 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   607: O: O1375 (fill)
+ FILL(3)
+ 3:3 5:3
+   608: O: O1374 (fill)
+ FILL(5)
+ 3:3 5:5
+   609: O: O1379 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   610: O: O1378 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   611: O: O1380 (fill)
+ FILL(5)
+ 3:0 5:5
+   612: O: O1382 (fill)
+ FILL(3)
+ 3:3 5:5
+   613: O: O1385 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   614: O: O1387 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   615: O: O1388 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   616: O: O1394 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   617: O: O1398 (fill)
+ FILL(5)
+ 3:2 5:5
+   618: O: O1400 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+init-soar
+     0: ==>S: S1
+Agent reinitialized.
+run
+     1: O: O1 (init-water-jugs)
+ 3:3 5:5
+     2: O: O2 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     3: O: O5 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+     4: O: O8 (fill)
+ FILL(3)
+ 3:3 5:3
+     5: O: O7 (fill)
+ FILL(5)
+ 3:3 5:5
+     6: O: O12 (empty)
+ EMPTY(5)
+ 3:3 5:0
+     7: O: O11 (empty)
+ EMPTY(3)
+ 3:0 5:0
+     8: O: O13 (fill)
+ FILL(5)
+ 3:0 5:5
+     9: O: O15 (fill)
+ FILL(3)
+ 3:3 5:5
+    10: O: O17 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    11: O: O18 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    12: O: O21 (fill)
+ FILL(3)
+ 3:3 5:0
+    13: O: O19 (fill)
+ FILL(5)
+ 3:3 5:5
+    14: O: O23 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    15: O: O24 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    16: O: O25 (fill)
+ FILL(3)
+ 3:3 5:0
+    17: O: O28 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    18: O: O31 (fill)
+ FILL(5)
+ 3:0 5:5
+    19: O: O32 (fill)
+ FILL(3)
+ 3:3 5:5
+    20: O: O35 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    21: O: O36 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    22: O: O39 (fill)
+ FILL(3)
+ 3:3 5:0
+    23: O: O40 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    24: O: O44 (fill)
+ FILL(3)
+ 3:3 5:3
+    25: O: O46 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    26: O: O50 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    27: O: O54 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    28: O: O55 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    29: O: O57 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    30: O: O60 (fill)
+ FILL(3)
+ 3:3 5:0
+    31: O: O62 (fill)
+ FILL(5)
+ 3:3 5:5
+    32: O: O65 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    33: O: O67 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    34: O: O68 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    35: O: O72 (fill)
+ FILL(5)
+ 3:0 5:5
+    36: O: O73 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    37: O: O77 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    38: O: O75 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    39: O: O82 (fill)
+ FILL(3)
+ 3:3 5:0
+    40: O: O83 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    41: O: O87 (fill)
+ FILL(3)
+ 3:3 5:3
+    42: O: O89 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    43: O: O91 (empty)
+ EMPTY(5)
+ 3:1 5:0
+    44: O: O93 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    45: O: O98 (fill)
+ FILL(3)
+ 3:3 5:0
+    46: O: O96 (fill)
+ FILL(5)
+ 3:3 5:5
+    47: O: O101 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    48: O: O100 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    49: O: O104 (fill)
+ FILL(3)
+ 3:3 5:0
+    50: O: O105 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    51: O: O107 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    52: O: O111 (fill)
+ FILL(5)
+ 3:0 5:5
+    53: O: O112 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    54: O: O116 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    55: O: O120 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    56: O: O123 (fill)
+ FILL(3)
+ 3:3 5:3
+    57: O: O125 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+    58: O: O127 (empty)
+ EMPTY(5)
+ 3:1 5:0
+    59: O: O129 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    60: O: O134 (fill)
+ FILL(3)
+ 3:3 5:0
+    61: O: O135 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    62: O: O138 (fill)
+ FILL(5)
+ 3:0 5:5
+    63: O: O139 (fill)
+ FILL(3)
+ 3:3 5:5
+    64: O: O142 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    65: O: O143 (empty)
+ EMPTY(3)
+ 3:0 5:0
+    66: O: O144 (fill)
+ FILL(5)
+ 3:0 5:5
+    67: O: O146 (fill)
+ FILL(3)
+ 3:3 5:5
+    68: O: O148 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    69: O: O151 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    70: O: O153 (fill)
+ FILL(5)
+ 3:0 5:5
+    71: O: O156 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    72: O: O161 (fill)
+ FILL(5)
+ 3:3 5:5
+    73: O: O158 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    74: O: O163 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    75: O: O164 (fill)
+ FILL(3)
+ 3:3 5:0
+    76: O: O166 (fill)
+ FILL(5)
+ 3:3 5:5
+    77: O: O168 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    78: O: O171 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    79: O: O175 (fill)
+ FILL(5)
+ 3:3 5:5
+    80: O: O177 (empty)
+ EMPTY(5)
+ 3:3 5:0
+    81: O: O179 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+    82: O: O180 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    83: O: O184 (fill)
+ FILL(5)
+ 3:0 5:5
+    84: O: O182 (fill)
+ FILL(3)
+ 3:3 5:5
+    85: O: O187 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    86: O: O189 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    87: O: O190 (empty)
+ EMPTY(3)
+ 3:0 5:2
+    88: O: O192 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    89: O: O195 (fill)
+ FILL(3)
+ 3:3 5:0
+    90: O: O197 (fill)
+ FILL(5)
+ 3:3 5:5
+    91: O: O199 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    92: O: O200 (empty)
+ EMPTY(5)
+ 3:0 5:0
+    93: O: O203 (fill)
+ FILL(5)
+ 3:0 5:5
+    94: O: O204 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    95: O: O209 (fill)
+ FILL(5)
+ 3:3 5:5
+    96: O: O206 (empty)
+ EMPTY(3)
+ 3:0 5:5
+    97: O: O213 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+    98: O: O217 (fill)
+ FILL(5)
+ 3:3 5:5
+    99: O: O214 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   100: O: O221 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   101: O: O225 (fill)
+ FILL(5)
+ 3:3 5:5
+   102: O: O222 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   103: O: O229 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   104: O: O230 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   105: O: O236 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   106: O: O240 (fill)
+ FILL(5)
+ 3:2 5:5
+   107: O: O239 (fill)
+ FILL(3)
+ 3:3 5:5
+   108: O: O243 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   109: O: O244 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   110: O: O247 (fill)
+ FILL(3)
+ 3:3 5:0
+   111: O: O245 (fill)
+ FILL(5)
+ 3:3 5:5
+   112: O: O250 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   113: O: O252 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   114: O: O254 (fill)
+ FILL(5)
+ 3:0 5:5
+   115: O: O255 (fill)
+ FILL(3)
+ 3:3 5:5
+   116: O: O259 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   117: O: O258 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   118: O: O260 (fill)
+ FILL(3)
+ 3:3 5:0
+   119: O: O263 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   120: O: O265 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   121: O: O267 (fill)
+ FILL(3)
+ 3:3 5:0
+   122: O: O270 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   123: O: O274 (fill)
+ FILL(3)
+ 3:3 5:3
+   124: O: O276 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   125: O: O280 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   126: O: O278 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   127: O: O285 (fill)
+ FILL(5)
+ 3:0 5:5
+   128: O: O286 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   129: O: O291 (fill)
+ FILL(5)
+ 3:3 5:5
+   130: O: O293 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   131: O: O295 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   132: O: O296 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   133: O: O300 (fill)
+ FILL(5)
+ 3:0 5:5
+   134: O: O301 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   135: O: O305 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   136: O: O303 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   137: O: O310 (fill)
+ FILL(3)
+ 3:3 5:0
+   138: O: O308 (fill)
+ FILL(5)
+ 3:3 5:5
+   139: O: O312 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   140: O: O315 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   141: O: O316 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   142: O: O322 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   143: O: O325 (fill)
+ FILL(3)
+ 3:3 5:0
+   144: O: O328 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   145: O: O332 (fill)
+ FILL(3)
+ 3:3 5:3
+   146: O: O331 (fill)
+ FILL(5)
+ 3:3 5:5
+   147: O: O335 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   148: O: O338 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   149: O: O341 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   150: O: O345 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   151: O: O348 (fill)
+ FILL(3)
+ 3:3 5:3
+   152: O: O347 (fill)
+ FILL(5)
+ 3:3 5:5
+   153: O: O351 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   154: O: O352 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   155: O: O355 (fill)
+ FILL(5)
+ 3:0 5:5
+   156: O: O353 (fill)
+ FILL(3)
+ 3:3 5:5
+   157: O: O358 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   158: O: O357 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   159: O: O361 (fill)
+ FILL(5)
+ 3:0 5:5
+   160: O: O359 (fill)
+ FILL(3)
+ 3:3 5:5
+   161: O: O363 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   162: O: O366 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   163: O: O368 (fill)
+ FILL(5)
+ 3:0 5:5
+   164: O: O371 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   165: O: O376 (fill)
+ FILL(5)
+ 3:3 5:5
+   166: O: O373 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   167: O: O378 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   168: O: O381 (fill)
+ FILL(5)
+ 3:0 5:5
+   169: O: O379 (fill)
+ FILL(3)
+ 3:3 5:5
+   170: O: O384 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   171: O: O386 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   172: O: O389 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   173: O: O393 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   174: O: O395 (fill)
+ FILL(5)
+ 3:0 5:5
+   175: O: O398 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   176: O: O403 (fill)
+ FILL(5)
+ 3:3 5:5
+   177: O: O400 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   178: O: O405 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   179: O: O406 (fill)
+ FILL(3)
+ 3:3 5:0
+   180: O: O409 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   181: O: O413 (fill)
+ FILL(3)
+ 3:3 5:3
+   182: O: O415 (pour)
+ POUR(3:3,5:3) POUR(3:1,5:5)
+ 3:1 5:5
+   183: O: O417 (empty)
+ EMPTY(5)
+ 3:1 5:0
+   184: O: O423 (pour)
+ POUR(3:1,5:0) POUR(3:0,5:1)
+ 3:0 5:1
+   185: O: O426 (fill)
+ FILL(5)
+ 3:0 5:5
+   186: O: O427 (fill)
+ FILL(3)
+ 3:3 5:5
+   187: O: O430 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   188: O: O431 (empty)
+ EMPTY(3)
+ 3:0 5:0
+   189: O: O432 (fill)
+ FILL(5)
+ 3:0 5:5
+   190: O: O435 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   191: O: O437 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   192: O: O443 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   193: O: O447 (fill)
+ FILL(5)
+ 3:2 5:5
+   194: O: O446 (fill)
+ FILL(3)
+ 3:3 5:5
+   195: O: O451 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   196: O: O450 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   197: O: O452 (fill)
+ FILL(3)
+ 3:3 5:0
+   198: O: O454 (fill)
+ FILL(5)
+ 3:3 5:5
+   199: O: O457 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   200: O: O459 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   201: O: O461 (fill)
+ FILL(5)
+ 3:0 5:5
+   202: O: O462 (fill)
+ FILL(3)
+ 3:3 5:5
+   203: O: O466 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   204: O: O465 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   205: O: O469 (fill)
+ FILL(5)
+ 3:0 5:5
+   206: O: O467 (fill)
+ FILL(3)
+ 3:3 5:5
+   207: O: O472 (empty)
+ EMPTY(3)
+ 3:0 5:5
+   208: O: O471 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   209: O: O475 (fill)
+ FILL(5)
+ 3:0 5:5
+   210: O: O476 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   211: O: O478 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   212: O: O484 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   213: O: O488 (fill)
+ FILL(5)
+ 3:2 5:5
+   214: O: O487 (fill)
+ FILL(3)
+ 3:3 5:5
+   215: O: O491 (empty)
+ EMPTY(5)
+ 3:3 5:0
+   216: O: O494 (pour)
+ POUR(3:3,5:0) POUR(3:0,5:3)
+ 3:0 5:3
+   217: O: O495 (empty)
+ EMPTY(5)
+ 3:0 5:0
+   218: O: O499 (fill)
+ FILL(5)
+ 3:0 5:5
+   219: O: O500 (pour)
+ POUR(5:5,3:0) POUR(5:2,3:3)
+ 3:3 5:2
+   220: O: O502 (empty)
+ EMPTY(3)
+ 3:0 5:2
+   221: O: O508 (pour)
+ POUR(5:2,3:0) POUR(5:0,3:2)
+ 3:2 5:0
+   222: O: O512 (fill)
+ FILL(5)
+ 3:2 5:5
+   223: O: O514 (pour)
+ POUR(5:5,3:2) POUR(5:4,3:3)
+ 3:3 5:4
+The problem has been solved.
+Interrupt received.
+This Agent halted.
+
+An agent halted during the run.
+
