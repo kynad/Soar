@@ -1,0 +1,3 @@
+pushd first-eater
+source first-eater_source.soar
+popd

@@ -1,0 +1,34 @@
+##
+#  @file initialize-first-eater.soar
+#  @author Dany Rovinsky
+#
+#  @brief Initializes state and WMEs.
+##
+
+
+sp {propose*initialize-first-eater
+   (state <s> ^superstate nil
+             -^name)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name initialize-first-eater)
+}
+
+sp {apply*initialize-first-eater
+   (state <s> ^operator <op>)
+   (<op> ^name initialize-first-eater)
+-->
+   (<s> ^name first-eater)
+}
+
+sp {initialize*state*directions
+   (state <state> ^type state)
+   -->
+   (<state> ^directions <n> <e> <s> <w>)  
+   (<n> ^value north ^opposite south)
+   (<e> ^value east  ^opposite west)
+   (<s> ^value south ^opposite north)
+   (<w> ^value west  ^opposite east)
+}
+
+
