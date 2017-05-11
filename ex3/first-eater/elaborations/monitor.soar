@@ -8,7 +8,7 @@ sp {monitor*move-to-food
 sp {monitor*next*value*in-direction
    (state <s> ^io.input-link.my-location.<dir1>.<dir2>.content { <content> <> wall }
               ^operator <o>)
-   (<o> ^name <name> ^direction <dir1> ^content)
+   (<o> ^name <name> ^direction <dir1>)
 -->
    (write (crlf) |Op is: | <name> | direction: | <dir1> |. Content in | <dir2>| is: | <content>)
 }
