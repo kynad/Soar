@@ -1,0 +1,15 @@
+sp {propose*jump
+   (state <s> ^io.input-link.my-location.<dir>.<dir>.content { <content> <> wall })
+-->
+   (<s> ^operator <o> + =)
+   (<o> ^name jump ^direction <dir> ^content <content>)
+}
+
+sp {propose*move
+   (state <s> ^io.input-link.my-location.<dir>.content { <content> <> wall } 
+              ^directions <d> -^last-direction <o-dir>)
+   (<d> ^value <dir> ^opposite <o-dir>)
+-->
+   (<s> ^operator <o> + =)
+   (<o> ^name move ^direction <dir> ^content <content>)
+}

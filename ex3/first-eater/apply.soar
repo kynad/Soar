@@ -1,0 +1,39 @@
+# Apply*move*jump
+# If the move or jump operator for a direction is selected,
+# generate an output name to move in that direction.
+sp {apply*move*jump
+   (state <s> ^io.output-link <out> ^operator <o>)
+   (<o> ^name { <name> << move jump >> } ^direction <dir>)
+-->
+   (<out> ^<name>.direction <dir>)
+}
+
+# Apply*move*jump*remove-name:
+# If the move or jump operator is selected,
+# and there is a completed action (<name>) on the output link,
+# then remove that name.
+sp {apply*move*jump*remove-move
+   (state <s> ^io.output-link <out> ^operator.name <name>)
+   (<out> ^<name> <direction>)
+   (<direction> ^status complete)
+-->
+   (<out> ^<name> <direction> -)
+}
+
+
+sp {apply*move*create*last-dir
+   (state <s> ^operator <o>)
+   (<o> ^name move ^direction <direction>)
+-->
+   (<s> ^last-direction <direction>)
+}
+
+sp {apply*move*remove*last-dir
+   (state <s> ^operator <o>
+              ^last-direction <direction>)
+   (<o> ^name move ^direction <> <direction>)
+-->
+   (<s> ^last-direction <direction> -)
+}
+
+

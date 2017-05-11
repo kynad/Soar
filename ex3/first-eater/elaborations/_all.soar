@@ -10,3 +10,18 @@ sp {elaborate*state*top-state
    (<s> ^top-state <ts>)
 }
 
+sp {elaborate*operator*value
+   (state <s> ^operator <o> + ^name-content-value <ccv>)
+   (<o> ^name <name> ^content <content>)
+   (<ccv> ^name <name> ^content <content> ^value <value>)
+-->
+   (<o> ^value <value>)
+}
+
+sp {select*compare*best*value
+   (state <s> ^operator <o1> + ^operator <o2> +)
+   (<o1> ^value <v>)
+   (<o2> ^value < <v>)
+-->
+   (<s> ^operator <o1> > <o2>)
+}

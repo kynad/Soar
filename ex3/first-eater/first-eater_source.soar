@@ -5,4 +5,6 @@ popd
 pushd elaborations
 source elaborations_source.soar
 popd
+source apply.soar
+source propose.soar
 source initialize-first-eater.soar
