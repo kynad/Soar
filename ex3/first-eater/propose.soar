@@ -1,21 +1,33 @@
+##
+#  @file initialize-first-eater.soar
+#  @author Dany Rovinsky
+#
+#  @brief productions of "propose" type (state-based, or i-support)
+##
+
+## propose jump operator if the content two cells from here (in the same direction) is not a wall.
+#  add the value of this operator to be the value of the content of the cell minus 5 (which is the cost of the jump).
 sp {propose*jump
-   (state <s> ^io.input-link.my-location.<dir>.<dir>.content { <content> <> wall }
+   (state <state> ^io.input-link.my-location.<dir>.<dir>.content { <content> <> wall }
               ^content-value <table>)
    (<table> ^content <content> ^value <value>)
 -->
-   (<s> ^operator <o> + =)
-   (<o> ^name jump ^direction <dir> ^content <content> ^value (- <value> 5))
+   (<state> ^operator <oper> + =)
+   (<oper> ^name jump ^direction <dir> ^content <content> ^value (- <value> 5))
 }
 
+
+## propose move operator if the 
 sp {propose*move
-   (state <s> ^io.input-link.my-location.<dir>.content { <content1> <> wall }
-              ^directions <d> -^last-direction <o-dir>
-              ^io.input-link.my-location.<dir>.<dir2>.content <content2>
-              ^content-value <table1> <table2>)
-   (<d> ^value <dir> ^opposite <o-dir>)
-   (<table1> ^content <content1> ^value <value1>)
-   (<table2> ^content <content2> ^value <value2>)
+   (state <state> ^io.input-link.my-location.<dir_1>.content { <content_1> <> wall }
+              ^directions <directions-map> -^last-direction <o-dir>
+              ^io.input-link.my-location.<dir_1>.<dir_2>.content <content_2>
+              ^content-value <table_1> <table_2>)
+   (<directions-map> ^value <dir_1> ^opposite <o-dir>)
+  -(<directions-map> ^value <dir_2> ^opposite <dir_1>)
+   (<table_1> ^content <content_1> ^value <value_1>)
+   (<table_2> ^content <content_2> ^value <value_2>)
 -->
-   (<s> ^operator <o> + =)
-   (<o> ^name move ^direction <dir> ^content <content1> ^next-dir <dir2> ^next-dir-content <content2> ^value (+ <value1> <value2>))
+   (<state> ^operator <oper> + =)
+   (<oper> ^name move ^direction <dir_1> ^content <content_1> ^value (+ <value_1> <value_2>))
 }

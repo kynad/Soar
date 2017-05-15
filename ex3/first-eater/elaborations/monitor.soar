@@ -1,15 +1,9 @@
 sp {monitor*move-to-food
-   (state <s> ^operator <o>)
-   (<o> ^name { <name> << move jump >> } ^direction <dir> ^content <content> ^value <value>)
+   (state <state> ^operator <oper> ^content-value <map>)
+   (<oper> ^name { <name> << move jump >> } ^direction <dir> ^content <content> ^value <total-value>)
+   (<map> ^content <content> ^value <cell-value>)
 -->
-   (write (crlf) |Op: | <name> | Direction: | <dir> | content: | <content> | value: | <value>)
+   (write (crlf) <name> |s | <dir> | to | <content> | (worth | <cell-value> |). Best value: | <total-value>)
 }
 
-sp {monitor*next*value*in-direction
-   (state <s> ^io.input-link.my-location.<dir1>.<dir2>.content { <content> <> wall }
-              ^operator <o>)
-   (<o> ^name <name> ^direction <dir1>)
--->
-   (write (crlf) |Op is: | <name> | direction: | <dir1> |. Content in | <dir2>| is: | <content>)
-}
 

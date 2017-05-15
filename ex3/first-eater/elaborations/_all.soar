@@ -10,10 +10,23 @@ sp {elaborate*state*top-state
    (<s> ^top-state <ts>)
 }
 
+## prefer operator with higher value
 sp {select*compare*best*value
-   (state <s> ^operator <o1> + ^operator <o2> +)
-   (<o1> ^value <v>)
-   (<o2> ^value < <v>)
+   (state <state> ^operator <oper_1> + ^operator <oper_2> +)
+   (<oper_1> ^value <value>)
+   (<oper_2> ^value < <value>)
 -->
-   (<s> ^operator <o1> > <o2>)
+   (<state> ^operator <oper_1> > <oper_2>)
+}
+
+## if both jump and move have a value of zero - prefer jump
+#  this will mean that jump will be preferred, if all move operators are zero
+#  which can only happen if there is a wall that blocks the eater to get to 
+#  that normalfood via move.
+sp {select*prefer*jump-over-wall*to*move-empty
+   (state <state> ^operator <oper_1> + ^operator <oper_2> +)
+   (<oper_1> ^name jump ^value 0)
+   (<oper_2> ^name move ^value 0)
+-->
+   (<state> ^operator <oper_1> > <oper_2>)
 }
