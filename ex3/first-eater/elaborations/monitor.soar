@@ -1,8 +1,8 @@
 sp {monitor*move-to-food
    (state <s> ^operator <o>)
-   (<o> ^name move-to-food ^direction <direction>)
+   (<o> ^name { <name> << move jump >> } ^direction <dir> ^content <content> ^value <value>)
 -->
-   (write (crlf) |Direction: | <direction>)
+   (write (crlf) |Op: | <name> | Direction: | <dir> | content: | <content> | value: | <value>)
 }
 
 sp {monitor*next*value*in-direction
