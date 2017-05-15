@@ -12,7 +12,7 @@ sp {apply*move*jump
 # If the move or jump operator is selected,
 # and there is a completed action (<name>) on the output link,
 # then remove that name.
-sp {apply*move*jump*remove-move
+sp {apply*move*jump*remove-name
    (state <s> ^io.output-link <out> ^operator.name <name>)
    (<out> ^<name> <direction>)
    (<direction> ^status complete)

@@ -30,3 +30,31 @@ sp {init*elaborate*name-contect-value
    (<c8> ^name jump ^content bonusfood ^value 5)
 }
 
+sp {init*elaborate*names-contect-value
+   (state <state> ^type state)
+-->
+   (<state> ^jump-content-value <j1> <j2> <j3> <j4>)
+   (<j1> ^name jump ^content empty ^value -5)
+   (<j2> ^name jump ^content eater ^value -5)
+   (<j3> ^name jump ^content normalfood ^value 0)
+   (<j4> ^name jump ^content bonusfood ^value 5)
+
+   
+   (<state> ^move-content-value <m1> <m2> <m3> <m4> <m5> <m6> <m7> <m8> <m9> <m10> <m11> <m12>)
+   (<m1> ^name move ^content empty ^next-content empty ^value 0)
+   (<m2> ^name move ^content empty ^next-content wall ^value 0)
+   (<m3> ^name move ^content empty ^next-content normalfood ^value 5)
+   (<m4> ^name move ^content empty ^next-content bonusfood ^value 10)
+   
+   (<m5> ^name move ^content normalfood ^next-content empty ^value 5)
+   (<m6> ^name move ^content normalfood ^next-content wall ^value 5)
+   (<m7> ^name move ^content normalfood ^next-content normalfood ^value 10)
+   (<m8> ^name move ^content normalfood ^next-content bonusfood ^value 15)
+   
+   
+   (<m9> ^name move ^content bonusfood ^next-content empty ^value 10)
+   (<m10> ^name move ^content bonusfood ^next-content wall ^value 10)
+   (<m11> ^name move ^content bonusfood ^next-content normalfood ^value 15)
+   (<m12> ^name move ^content bonusfood ^next-content bonusfood ^value 20)
+}
+

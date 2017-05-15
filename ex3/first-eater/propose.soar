@@ -1,15 +1,20 @@
 sp {propose*jump
-   (state <s> ^io.input-link.my-location.<dir>.<dir>.content { <content> <> wall })
+   (state <s> ^io.input-link.my-location.<dir>.<dir>.content { <content> <> wall }
+              ^jump-content-value <table>)
+   (<table> ^content <content> ^value <value>)
 -->
    (<s> ^operator <o> + =)
-   (<o> ^name jump ^direction <dir> ^content <content>)
+   (<o> ^name jump ^direction <dir> ^content <content> ^value <value>)
 }
 
 sp {propose*move
-   (state <s> ^io.input-link.my-location.<dir>.content { <content> <> wall } 
-              ^directions <d> -^last-direction <o-dir>)
+   (state <s> ^io.input-link.my-location.<dir>.content { <content> <> wall }
+              ^directions <d> -^last-direction <o-dir>
+              ^io.input-link.my-location.<dir>.<dir2>.content <content2>
+              ^move-content-value <table>)
    (<d> ^value <dir> ^opposite <o-dir>)
+   (<table> ^content <content> ^next-content <content2> ^value <value>)
 -->
    (<s> ^operator <o> + =)
-   (<o> ^name move ^direction <dir> ^content <content>)
+   (<o> ^name move ^direction <dir> ^content <content> ^next-dir <dir2> ^next-dir-content <content2> ^value <value>)
 }
