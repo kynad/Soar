@@ -15,6 +15,15 @@ sp {initialize*state*directions
    (<w> ^value west  ^opposite east)
 }
 
+sp {init*elaborate*content*value*map
+   (state <state> ^type state)
+-->
+   (<state> ^content-value <c1> <c2> <c3> <c4>)
+   (<c1> ^content empty ^value 0)
+   (<c2> ^content wall ^value 0)   
+   (<c3> ^content normalfood ^value 5)   
+   (<c4> ^content bonusfood ^value 10)   
+}
 
 sp {init*elaborate*name-contect-value
    (state <state> ^type state)
@@ -40,21 +49,32 @@ sp {init*elaborate*names-contect-value
    (<j4> ^name jump ^content bonusfood ^value 5)
 
    
-   (<state> ^move-content-value <m1> <m2> <m3> <m4> <m5> <m6> <m7> <m8> <m9> <m10> <m11> <m12>)
-   (<m1> ^name move ^content empty ^next-content empty ^value 0)
-   (<m2> ^name move ^content empty ^next-content wall ^value 0)
-   (<m3> ^name move ^content empty ^next-content normalfood ^value 5)
-   (<m4> ^name move ^content empty ^next-content bonusfood ^value 10)
+   (<state> ^move-content-value <m1> <m2> <m3> <m4> <m5> <m6> <m7> <m8> <m9> <m10> 
+    <m11> <m12> <m13> <m14> <m15> <m16> <m17> <m18> <m19> <m20> )
+   (<m1> ^content empty ^next-content empty ^value 0)
+   (<m2> ^content empty ^next-content wall ^value 0)
+   (<m3> ^content empty ^next-content normalfood ^value 5)
+   (<m4> ^content empty ^next-content bonusfood ^value 10)
    
-   (<m5> ^name move ^content normalfood ^next-content empty ^value 5)
-   (<m6> ^name move ^content normalfood ^next-content wall ^value 5)
-   (<m7> ^name move ^content normalfood ^next-content normalfood ^value 10)
-   (<m8> ^name move ^content normalfood ^next-content bonusfood ^value 15)
+   (<m5> ^content normalfood ^next-content empty ^value 5)
+   (<m6> ^content normalfood ^next-content wall ^value 5)
+   (<m7> ^content normalfood ^next-content normalfood ^value 10)
+   (<m8> ^content normalfood ^next-content bonusfood ^value 15)
    
    
-   (<m9> ^name move ^content bonusfood ^next-content empty ^value 10)
-   (<m10> ^name move ^content bonusfood ^next-content wall ^value 10)
-   (<m11> ^name move ^content bonusfood ^next-content normalfood ^value 15)
-   (<m12> ^name move ^content bonusfood ^next-content bonusfood ^value 20)
+   (<m9> ^content bonusfood ^next-content empty ^value 10)
+   (<m10> ^content bonusfood ^next-content wall ^value 10)
+   (<m11> ^content bonusfood ^next-content normalfood ^value 15)
+   (<m12> ^content bonusfood ^next-content bonusfood ^value 20)
+   
+   (<m13> ^content eater ^next-content empty ^value -5)
+   (<m14> ^content eater ^next-content wall ^value -5)
+   (<m15> ^content eater ^next-content normalfood ^value -5)
+   (<m16> ^content eater ^next-content bonusfood ^value -5)
+   
+   (<m17> ^content empty ^next-content eater ^value 0)   
+   (<m18> ^content eater ^next-content eater ^value -10)
+   (<m19> ^content normalfood ^next-content eater ^value 0)
+   (<m20> ^content bonusfood ^next-content eater ^value 0)
 }
 
