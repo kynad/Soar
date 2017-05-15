@@ -17,11 +17,12 @@ sp {initialize*state*directions
 sp {init*content*value*map
    (state <state> ^type state)
 -->
-   (<state> ^content-value <c1> <c2> <c3> <c4>)
+   (<state> ^content-value <c1> <c2> <c3> <c4> <c5>)
    (<c1> ^content empty ^value 0)
    (<c2> ^content wall ^value 0)   
    (<c3> ^content normalfood ^value 5)   
    (<c4> ^content bonusfood ^value 10)   
+   (<c5> ^content eater ^value -10)   
 }
 
 
