@@ -1,0 +1,111 @@
+\documentclass[3p,times]{elsarticle} % final,
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\usepackage{verbatim}
+\usepackage[active]{srcltx}
+
+\usepackage{draftwatermark}
+\SetWatermarkText{\today}
+\SetWatermarkScale{0.8}
+%\usepackage[onEveryPage]{coffee}
+%\usepackage[]{coffee}
+
+% Figures
+\usepackage{wrapfig}
+% \usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+% Algorithms
+\usepackage[ruled]{algorithm}
+%\usepackage{algorithm}
+%\usepackage[noend]{algorithmic}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{definition}{Definition}[section]
+
+% Math notations
+\newcommand{\horizon}{\mathop{\mathrm{horizon}}}
+\newcommand{\support}{\mathop{\mathrm{support}}}
+\newcommand{\pre}{\mathop{\mathrm{preconds}}}
+\newcommand{\term}{\mathop{\mathrm{termconds}}}
+
+
+% Procedure calls
+\newcommand{\noun}[1]{\textsc{#1}}
+
+\newcommand{\alloc}{\mathop{\mathcal{ALLOCATE}}}
+\newcommand{\vote}{\mathop{\mathcal{VOTE}}}
+\newcommand{\sstart}{\mathop{\mathcal{S.START}}}
+\newcommand{\sstop}{\mathop{\mathcal{S.STOP}}}
+
+
+\newcommand{\inform}{\mathop{\mathcal{INFORM}}}
+\newcommand{\fuse}{\mathop{\mathcal{FUSE}}}
+\newcommand{\receive}{\mathop{\mathcal{RECEIVE}}}
+
+
+\begin{document}
+
+\begin{frontmatter}
+\title{Recursive Plan Execution}
+\author{Dany Rovinsky}
+\address{Computer Science Department\\
+Bar Ilan University, Israel}
+\ead{dany.rovinsky@gmail.com}
+
+\begin{keyword}
+Distributed multi-robot systems, collaboration, teamwork, planning
+\end{keyword}
+
+\begin{abstract}
+A common approach to building robot control systems
+is algorithmic in nature; it presupposes that robots are tools to be manipulated perfectly by
+an algorithm built specifically to optimally solve a given task. But the complexities of realistic tasks and missions
+in real-world environments are not easily addressed
+by this approach.  This paper posits that \emph{robots are agents}, who should be capable of execution-time
+reasoning and management of their interactions with their peers. Such reasoning alleviates reliance
+on being able to account for every possible interaction in advance.  To manage these interactions
+in execution time, this paper presents BIPE2 (Bar Ilan Plan Execution Engine), a general plan-execution 
+algorithm. The design of BIPE2 neatly separates knowledge (beliefs) and decision-making procedures (plans).
+\end{abstract}
+
+\end{frontmatter}
+
+\begin{algorithm}[htbp]
+\caption{Individual decision-making algorithm.}
+\label{alg:ibc}
+\input{algorithms/individual-no-recursion.tex}
+\end{algorithm}
+
+%TODO: Explain algorithm
+%- explain going to the parent, do a quick run, ...
+Besides the \noun{Choose} procedure, Algorithm~\ref{alg:ibc} also relies on procedures for accessing a stack
+which holds the behaviors selected for execution, for getting new updates from the world modeling processes
+(\noun{Update}), and for merging these updates with the knowledge-base that the robot maintains of its
+beliefs (\noun{Revise}).  The procedures \noun{Start} and \noun{Stop} are used to begin and end
+execution of a given behavior. In that, I am adopting a view of behaviors as separate threads,
+which are controlled from Algorithm~\ref{alg:ibc}.
+
+\section{Recursion:}
+
+Outline:
+\begin{itemize}
+  \item Why recursion?
+  \item CHOOSE as a plan, not a function (CaaP?). Same assumptions, only now I assume the way to resolve impasses has a form of a plan.
+  \item Communication protocol over KB.
+  \item The algorithm: Instead of set $C$, the key-value "imapsse-(hierarchical|sequential)-set-\$depth\_counter" : $C$ will be added to KB. Instead of CHOOSE procedure a recursive call to Algorithm\ref{alg:ibc} will be used. Then, the value of "impasse-(hierarchical|sequential)-resolution-\$depth\_counter" from KB will be pushed to the stack. In the sequential case, there might be a need to special handling of the empty set case.
+\end{itemize}
+
+\end{document}
