@@ -1,0 +1,78 @@
+
+\begin{algorithmic}[1]
+\small
+
+\Require Knowledebase $W$
+\Require Impasse resolution plan \textit{Choose}
+\Require Impasse set variable name \textit{IS}
+\Require Impasse resolution variable name \textit{IR}
+\Require Condition Testing Procedure \noun{Test}
+\Require Belief Update Procedure \noun{Update}
+\Require Belief Revision Procedure \noun{Revise}
+\Require Start Execution Procedure \noun{Start}
+\Require Stop Execution Procedure \noun{Stop}
+
+\Statex
+
+\Procedure{BIPER}{Plan $\langle B,H,N,b_{0}\rangle$}
+
+\State $S\gets\emptyset$ \Comment New execution stack
+\State $b\gets b_0$
+\State \Call{Push}{$S$,$b$} \label{alg:ibc:push}
+% Allocation
+\While{$\exists n$, where $(b,n)\in H$} \Comment $b$ can be decomposed \label{alg:ibc:allocate}
+  \State $A\gets \{n | (b,n)\in H\}$  \Comment children of $b$
+  \State $S\gets W[\textit{IS}]$ \Comment save the current state of the belief \textit{IS}
+  \State $W[\textit{IS}]\gets \{a | a\in A, \Call{Test}{\pre(a),W}\}$ \Comment store the impasse set in the KB.
+  \State $\Call{BIPER}{Choose}$ \label{alg:ibc:choose-allocate}\Comment Choose among $C$ behaviors
+  \State $W[\textit{IS}]\gets S$ \Comment restore the previous impasse set.
+  \State \Call{Push}{$S$,$W[IR]$}
+\EndWhile \label{alg:ibc:push-end}
+
+\Statex
+
+% Execution
+\ForAll{$s\in S$}\label{alg:ibc:exec} \Comment Start execution of all behaviors in $S$
+ \State {\bf if $s$ not running} \Call{Start}{$s$} 
+\EndFor
+
+\Statex 
+
+\State $E\gets\emptyset$ \label{alg:ibc:monitor-exec}
+\While{$E=\emptyset$} \Comment $E$ is the set of terminating behaviors
+  \State $K\gets\Call{Update}{W}$
+  \State $W\gets\Call{Revise}{W,K}$
+  \State $E\gets \{a | a\in S, \Call{Test}{\term(a),W}\}$ \Comment Check termination conditions
+\EndWhile  \label{alg:ibc:exec-end}
+
+\Statex
+
+% Stop Execution
+\While{$E\neq\emptyset$} \label{alg:ibc:terminate} \Comment Stop and pop all terminating behaviors and descendants
+  \State $e\gets Pop(S)$
+  \State $\Call{Stop}{e}$
+  \If{$e\in E$}
+    \State $E\gets E-\{e\}$
+  \EndIf
+\EndWhile \label{alg:ibc:terminate-end}
+
+\Statex
+
+% Next
+\State $A\gets \{n | (e,n)\in N\}$ \Comment sequential followers of $e$, topmost terminating behavior
+\State $C\gets \{a | a\in A, \Call{Test}{\pre(a),W}\}$
+\If{$C\neq\emptyset$} \Comment There are potential followers
+  \State $S\gets W[\textit{IS}]$ \Comment save the current state of the belief \textit{IS}
+  \State $W[\textit{IS}]\gets C$ \Comment store the impasse set in the KB.
+  \State $\Call{BIPER}{Choose}$ \label{alg:ibc:choose-vote} \Comment Choose among $C$ behaviors
+  \State $W[\textit{IS}]\gets S$ \Comment restore the previous impasse set.
+  \State $b\gets W[IR]$ \Comment get the impasse resolution and store in $b$.
+  \State {\bf Goto} \ref{alg:ibc:push}
+\EndIf
+\State $b\gets\Call{Peek}{S}$ \Comment{No potential followers, continue with parent}
+\If{$b\neq\emptyset$}
+  \State {\bf Goto} \ref{alg:ibc:monitor-exec} % \ref{alg:ibc:allocate}
+\EndIf
+
+\EndProcedure
+\end{algorithmic}

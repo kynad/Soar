@@ -59,8 +59,8 @@
 \begin{document}
 
 \begin{frontmatter}
-\title{Recursive Plan Execution}
-\author{Dany Rovinsky}
+\title{Individual Plan Execution with Recursion}
+\author{Dany Rovinsky\\304359276}
 \address{Computer Science Department\\
 Bar Ilan University, Israel}
 \ead{dany.rovinsky@gmail.com}
@@ -70,27 +70,22 @@ Distributed multi-robot systems, collaboration, teamwork, planning
 \end{keyword}
 
 \begin{abstract}
-A common approach to building robot control systems
-is algorithmic in nature; it presupposes that robots are tools to be manipulated perfectly by
-an algorithm built specifically to optimally solve a given task. But the complexities of realistic tasks and missions
-in real-world environments are not easily addressed
-by this approach.  This paper posits that \emph{robots are agents}, who should be capable of execution-time
-reasoning and management of their interactions with their peers. Such reasoning alleviates reliance
-on being able to account for every possible interaction in advance.  To manage these interactions
-in execution time, this paper presents BIPE2 (Bar Ilan Plan Execution Engine), a general plan-execution 
-algorithm. The design of BIPE2 neatly separates knowledge (beliefs) and decision-making procedures (plans).
+TODO
 \end{abstract}
 
 \end{frontmatter}
 
+\section{Introduction}
+
+The original \textit{BIPE2} algorithm was delegating impasse resolution to a \noun{Choose} procedure that was assumed to be given. In contrast to the original work, the \textit{BIPER} algorithm suggested in this paper assumes an impasse resolution has a form of a plan, rather than a procedure and uses recursive calls to itself in order to execute this plan to solve both sequential and hierarchical impasses.
+
 \begin{algorithm}[htbp]
-\caption{Individual decision-making algorithm.}
+\caption{Individual decision-making algorithm \textbf{with recursion}.}
 \label{alg:ibc}
-\input{algorithms/individual-no-recursion.tex}
+\input{algorithms/individual-with-recursion.tex}
 \end{algorithm}
 
 %TODO: Explain algorithm
-%- explain going to the parent, do a quick run, ...
 Besides the \noun{Choose} procedure, Algorithm~\ref{alg:ibc} also relies on procedures for accessing a stack
 which holds the behaviors selected for execution, for getting new updates from the world modeling processes
 (\noun{Update}), and for merging these updates with the knowledge-base that the robot maintains of its
