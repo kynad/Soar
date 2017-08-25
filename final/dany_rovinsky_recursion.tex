@@ -36,24 +36,12 @@
 \newtheorem{definition}{Definition}[section]
 
 % Math notations
-\newcommand{\horizon}{\mathop{\mathrm{horizon}}}
-\newcommand{\support}{\mathop{\mathrm{support}}}
 \newcommand{\pre}{\mathop{\mathrm{preconds}}}
 \newcommand{\term}{\mathop{\mathrm{termconds}}}
 
 
 % Procedure calls
 \newcommand{\noun}[1]{\textsc{#1}}
-
-\newcommand{\alloc}{\mathop{\mathcal{ALLOCATE}}}
-\newcommand{\vote}{\mathop{\mathcal{VOTE}}}
-\newcommand{\sstart}{\mathop{\mathcal{S.START}}}
-\newcommand{\sstop}{\mathop{\mathcal{S.STOP}}}
-
-
-\newcommand{\inform}{\mathop{\mathcal{INFORM}}}
-\newcommand{\fuse}{\mathop{\mathcal{FUSE}}}
-\newcommand{\receive}{\mathop{\mathcal{RECEIVE}}}
 
 
 \begin{document}
@@ -63,21 +51,25 @@
 \author{Dany Rovinsky\\304359276}
 \address{Computer Science Department\\
 Bar Ilan University, Israel}
-\ead{dany.rovinsky@gmail.com}
-
-\begin{keyword}
-Distributed multi-robot systems, collaboration, teamwork, planning
-\end{keyword}
+%ead{dany.rovinsky@gmail.com}
 
 \begin{abstract}
-TODO
+Building on top of the \textit{BIPE2} algorithm, this paper suggests the \textit{BIPER (Bar Ilan Plan Execution with Recursion)} algorithm which implements recursive approach to impasse resolution.
 \end{abstract}
 
 \end{frontmatter}
 
-\section{Introduction}
+\section{BIPER Explained}
 
-The original \textit{BIPE2} algorithm was delegating impasse resolution to a \noun{Choose} procedure that was assumed to be given. In contrast to the original work, the \textit{BIPER} algorithm suggested in this paper assumes an impasse resolution has a form of a plan, rather than a procedure and uses recursive calls to itself in order to execute this plan to solve both sequential and hierarchical impasses.
+\subsection{CaaP - \noun{Choose} as a Plan}
+
+The original \textit{BIPE2} algorithm was delegating impasse resolution to a \noun{Choose} procedure that was assumed to be given. In contrast to the original work, the \textit{BIPER} algorithm suggested in this paper assumes an impasse resolution, \textit{Choose} has a form of a plan, rather than a procedure and uses recursive calls to itself in order to execute this plan to solve both sequential and hierarchical impasses, including nested impasses.
+
+\subsection{Communication Over  Knowledgebase}
+
+In order to communicate the impasse situation (i.e. the behaviors to choose from, or "Impasse Set") to the \textit{Choose} plan, as well as receiving the feedback from \textit{Choose} (i.e. the selected behavior, or "Impasse Resolution"), the agent's knowledgebase will be used. Here, I separate between the agent's knowledgebase, consistent among all its components and code pieces, and a component-specific (or code-specific) knowledgebase, which is internal to some specific component and isn't accessible to others. \textit{BIPER} requires access to the consistent knowledgebase $W$ and assumes that the \textit{Choose} plan contains behaviors that will extract the tuple $<k,v>$ from $W$, where $k$ is some agreed upon variable name for the impasse set and $v$ is the impasse set. Additional behavior expected to be part of \textit{Choose} is one that will store the chosen behavior in $W$, as another tuple $<\overline{k},\overline{v}>$, where $\overline{k}$ is another agreed upon variable name, identified as the impasse resolution and $\overline{v}$ is the chosen behavior.
+
+
 
 \begin{algorithm}[htbp]
 \caption{Individual decision-making algorithm \textbf{with recursion}.}
@@ -92,15 +84,5 @@ which holds the behaviors selected for execution, for getting new updates from t
 beliefs (\noun{Revise}).  The procedures \noun{Start} and \noun{Stop} are used to begin and end
 execution of a given behavior. In that, I am adopting a view of behaviors as separate threads,
 which are controlled from Algorithm~\ref{alg:ibc}.
-
-\section{Recursion:}
-
-Outline:
-\begin{itemize}
-  \item Why recursion?
-  \item CHOOSE as a plan, not a function (CaaP?). Same assumptions, only now I assume the way to resolve impasses has a form of a plan.
-  \item Communication protocol over KB.
-  \item The algorithm: Instead of set $C$, the key-value "imapsse-(hierarchical|sequential)-set-\$depth\_counter" : $C$ will be added to KB. Instead of CHOOSE procedure a recursive call to Algorithm\ref{alg:ibc} will be used. Then, the value of "impasse-(hierarchical|sequential)-resolution-\$depth\_counter" from KB will be pushed to the stack. In the sequential case, there might be a need to special handling of the empty set case.
-\end{itemize}
 
 \end{document}
