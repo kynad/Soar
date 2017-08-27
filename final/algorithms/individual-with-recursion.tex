@@ -2,31 +2,32 @@
 \begin{algorithmic}[1]
 \small
 
-\Require Knowledebase $W$
+\Require Persistent knowledgebase $W$
 \Require Impasse resolution plan \textit{Choose}
-\Require Impasse set variable name \textbf{IS}
-\Require Impasse resolution variable name \textbf{IR}
+\Require Impasse set variable name \IS (as used by \textit{Choose})
+\Require Impasse resolution variable name \IR (as used by \textit{Choose})
 \Require Condition Testing Procedure \noun{Test}
 \Require Belief Update Procedure \noun{Update}
 \Require Belief Revision Procedure \noun{Revise}
 \Require Start Execution Procedure \noun{Start}
 \Require Stop Execution Procedure \noun{Stop}
-\Require copy Execution Procedure \noun{copy}
 
 \Statex
 
-\Procedure{BIPER}{Plan $\langle B,H,N,b_{0}\rangle$, Knowledgebase $KB$}
+\Procedure{BIPER}{Plan $\langle B,H,N,b_{0}\rangle$}
 
+\State $\Call{Merge}{KB,kb}$ \Comment Merge the knowledge passed as $kb$ to the local knowledgebase $KB$
 \State $S\gets\emptyset$ \Comment New execution stack
 \State $b\gets b_0$
 \State \Call{Push}{$S$,$b$} \label{alg:ibc:push}
 % Allocation
 \While{$\exists n$, where $(b,n)\in H$} \Comment $b$ can be decomposed \label{alg:ibc:allocate}
   \State $A\gets \{n | (b,n)\in H\}$  \Comment children of $b$
-  \State $\overline{KB}\gets copy(KB)$ \Comment create a copy of the local knowledgebase.
-  \State $\overline{KB}[\textit{IS}]\gets \{a | a\in A, \Call{Test}{\pre(a),W}\}$ \Comment store the impasse set in the new local Knowledgebase.
-  \State $\Call{BIPER}{Choose, \overline{KB}$ \label{alg:ibc:choose-allocate}\Comment Choose among $C$ behaviors
-  \State \Call{Push}{$S$,$\overline{KB}[IR]$}
+  \State $T\gets W[\IS]$ \Comment store the current value of the variable IS.
+  \State $W[\IS]\gets \{a | a\in A, \Call{Test}{\pre(a),W}\}$ \Comment store the impasse set in the knowledgebase.
+  \State $\Call{BIPER}{Choose}$ \label{alg:ibc:choose-allocate}\Comment Choose among IS behaviors
+  \State $W[\IS]\gets T$ \Comment restore the previous value of IS
+  \State \Call{Push}{$S$,$W[\IR]$} \Comment push the chosen behavior to S
 \EndWhile \label{alg:ibc:push-end}
 
 \Statex
@@ -62,10 +63,11 @@
 \State $A\gets \{n | (e,n)\in N\}$ \Comment sequential followers of $e$, topmost terminating behavior
 \State $C\gets \{a | a\in A, \Call{Test}{\pre(a),W}\}$
 \If{$C\neq\emptyset$} \Comment There are potential followers
-  \State $\overline{KB}\gets copy(KB)$ \Comment create a copy of the local knowledgebase.
-  \State $\overline{KB}[\textit{IS}]\gets C$ \Comment store the impasse set in the new local knowledgebase.
-  \State $\Call{BIPER}{Choose, \overline{KB}}$ \label{alg:ibc:choose-vote} \Comment Choose among $C$ behaviors
-  \State $b\gets \overline{KB}[IR]$ \Comment get the impasse resolution and store in $b$.
+  \State $T\gets W[\IS]$ \Comment store current value of IS.
+  \State $W[\IS]\gets C$ \Comment store the impasse set in the knowledgebase.
+  \State $\Call{BIPER}{Choose}$ \label{alg:ibc:choose-vote} \Comment Choose among $C$ behaviors
+  \State $W[\IS]\gets T$ \Comment restore the previous value of IS
+  \State $b\gets W[\IR]$ \Comment get the impasse resolution and store in $b$.
   \State {\bf Goto} \ref{alg:ibc:push}
 \EndIf
 \State $b\gets\Call{Peek}{S}$ \Comment{No potential followers, continue with parent}

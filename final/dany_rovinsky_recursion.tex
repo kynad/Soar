@@ -38,10 +38,15 @@
 % Math notations
 \newcommand{\pre}{\mathop{\mathrm{preconds}}}
 \newcommand{\term}{\mathop{\mathrm{termconds}}}
+\newcommand{\tuple}[2]{$\langle #1, #2\rangle$}
 
 
 % Procedure calls
 \newcommand{\noun}[1]{\textsc{#1}}
+
+% Special names
+\newcommand{\IS}{\textit{IS} }
+\newcommand{\IR}{\textit{IR} }
 
 
 \begin{document}
@@ -61,14 +66,13 @@ Building on top of the \textit{BIPE2} algorithm, this paper suggests the \textit
 
 \section{BIPER Explained}
 
-\subsection{CaaP - \noun{Choose} as a Plan}
+\subsection{The CaaP (\noun{Choose} as a Plan) approach}
 
-The original \textit{BIPE2} algorithm was delegating impasse resolution to a \noun{Choose} procedure that was assumed to be given. In contrast to the original work, the \textit{BIPER} algorithm suggested in this paper assumes an impasse resolution, \textit{Choose} has a form of a plan, rather than a procedure and uses recursive calls to itself in order to execute this plan to solve both sequential and hierarchical impasses, including nested impasses.
+The original \textit{BIPE2} algorithm was delegating impasse resolution to a \noun{Choose} procedure that was assumed to be given. In contrast to the original work, \textit{BIPER} algorithm suggested in this paper assumes an impasse resolution \textit{Choose} has a form of a plan, rather than a procedure and uses recursive calls to itself in order to execute this plan to solve both sequential and hierarchical impasses, including nested ones.
 
 \subsection{Communication Over  Knowledgebase}
 
-In order to communicate the impasse situation (i.e. the behaviors to choose from, or "Impasse Set") to the \textit{Choose} plan, as well as receiving the feedback from \textit{Choose} (i.e. the selected behavior, or "Impasse Resolution"), the agent's knowledgebase will be used. Here, I separate between the agent's knowledgebase, consistent among all its components and code pieces, and a component-specific (or code-specific) knowledgebase, which is internal to some specific component and isn't accessible to others. \textit{BIPER} requires access to the consistent knowledgebase $W$ and assumes that the \textit{Choose} plan contains behaviors that will extract the tuple $<k,v>$ from $W$, where $k$ is some agreed upon variable name for the impasse set and $v$ is the impasse set. Additional behavior expected to be part of \textit{Choose} is one that will store the chosen behavior in $W$, as another tuple $<\overline{k},\overline{v}>$, where $\overline{k}$ is another agreed upon variable name, identified as the impasse resolution and $\overline{v}$ is the chosen behavior.
-
+In order to communicate the impasse set (i.e. the behaviors to choose from) to the \textit{Choose} plan, as well as receiving back the impasse resolution (i.e. the selected behavior, or "Impasse Resolution"), the agent's knowledgebase will be used. \textit{BIPER} requires access to the consistent knowledgebase $W$ and assumes that the \textit{Choose} plan contains behaviors that will extract the tuple \tuple{n}{v} from $W$, where $n$ is some agreed upon variable name for the impasse set and $v$ is the impasse set. Additional behavior expected to be part of \textit{Choose} is one that will store the chosen behavior in $W$, as another tuple \tuple{m}{u}, where $m$ is another agreed upon variable name, identified as the impasse resolution and $u$ is the chosen behavior. For convenience, the notation $W[n]$ will be used to 
 
 
 \begin{algorithm}[htbp]
@@ -78,11 +82,11 @@ In order to communicate the impasse situation (i.e. the behaviors to choose from
 \end{algorithm}
 
 %TODO: Explain algorithm
-Besides the \noun{Choose} procedure, Algorithm~\ref{alg:ibc} also relies on procedures for accessing a stack
-which holds the behaviors selected for execution, for getting new updates from the world modeling processes
-(\noun{Update}), and for merging these updates with the knowledge-base that the robot maintains of its
-beliefs (\noun{Revise}).  The procedures \noun{Start} and \noun{Stop} are used to begin and end
-execution of a given behavior. In that, I am adopting a view of behaviors as separate threads,
-which are controlled from Algorithm~\ref{alg:ibc}.
+%Besides the \noun{Choose} procedure, Algorithm~\ref{alg:ibc} also relies on procedures for accessing a stack
+%which holds the behaviors selected for execution, for getting new updates from the world modeling processes
+%(\noun{Update}), and for merging these updates with the knowledge-base that the robot maintains of its
+%beliefs (\noun{Revise}).  The procedures \noun{Start} and \noun{Stop} are used to begin and end
+%execution of a given behavior. In that, I am adopting a view of behaviors as separate threads,
+%which are controlled from Algorithm~\ref{alg:ibc}.
 
 \end{document}
